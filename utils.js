@@ -76,6 +76,7 @@ function parseUrlList(urls, skipSongs, info) {
           song.tonality = tab.tonality;
           song.tuning = tab.tuning;
           song.rawChords = extractRawChords(tab.content.text);
+          song.simplifedChords = simplifyChords(song.rawChords);
           song.decade = info.decade;
 
           skipSongs.add(song.name);
