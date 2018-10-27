@@ -1,9 +1,8 @@
 /* global require */
-const ugs = require('../ultimate-guitar-scraper/lib/index.js');
 const utils = require('./utils.js');
 const fs = require('fs');
 
-let urls = fs.readFileSync('data/urlList.txt', 'utf8').split('\n');
+let urls = fs.readFileSync('data/urlList2010.txt', 'utf8').split('\n');
 let parsedSongs = JSON.parse(fs.readFileSync('data/parsedSongs.json', 'utf8'));
 let skipSongs = new Set(parsedSongs.map(x => x.name));
 

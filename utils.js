@@ -1,10 +1,12 @@
 /* global module require */
 const ugs = require('../ultimate-guitar-scraper/lib/index.js');
 const fs = require('fs');
+const cheerio = require('cheerio');
 
 const debug = true;
 
 /**
+ * Extracts raw chords from 
  * @param  {String} text - text of tab.content
  * @return {String[]} raw chords
  */
@@ -15,6 +17,39 @@ function extractRawChords(text) {
 }
 
 /**
+ * Simplifies raw chords.  For our purposes everything is a major chord
+ * except for minor and diminished.  We're ignoring 7 chords and stuff like that.
+ * @param  {String[]} chords - array of raw chords
+ * @return {String[]} array of simplified chords
+ */
+function simplifyChords(chords) {
+  return chords.map(c => {
+    let note = c[0];
+    if (c.length === 1) return note;
+
+    let suffix = c.substring(1, c.length);
+
+    // take care sharps and flats
+    if (c[1] === '#' || c[1] === 'b') {
+      note += c[1];
+      suffix = c.substring(2, c.length);
+    }
+
+    switch (suffix) {
+      case '': return note;
+      case 'm': return note + 'm';
+      default:
+        if (suffix.substring(0,3) === 'dim') return note + 'm';
+        if (suffix.substring(0,3) === 'maj') return note;
+        if (suffix[0] === 'm') return note + 'm';
+        return note;
+    }
+  });
+}
+
+/**
+ * Parses a url list in the form of txt and returns an array of promises
+ * that resolve the song information
  * @param  {String[]} urls - array of urls
  * @param  {Set} skipSongs - set of songs that are being skipped
  * @param  {Object} info - extra information (e.g. decade)
@@ -31,8 +66,7 @@ function parseUrlList(urls, skipSongs, info) {
         if (skipSongs.has(tab.name)) {
           if (debug) console.log('Skipping ' + tab.name + ' because it has already been parsed.');
           resolve(null);
-        }
-        else {
+        } else {
           if (debug) console.log('Parsing ' + tab.name + '...');
 
           let song = {};
@@ -41,13 +75,13 @@ function parseUrlList(urls, skipSongs, info) {
           song.capo = tab.capo;
           song.tonality = tab.tonality;
           song.tuning = tab.tuning;
-          song.chords = extractRawChords(tab.content.text);
+          song.rawChords = extractRawChords(tab.content.text);
           song.decade = info.decade;
 
           skipSongs.add(song.name);
           resolve(song);
         }
-        
+
       });
     });
     songs.push(songPromise);
@@ -55,46 +89,8 @@ function parseUrlList(urls, skipSongs, info) {
   return songs;
 }
 
-// function parseUrlList(urls, skipSongs, info) {
-//   return new Promise((resolve, reject) => {
-//     let songs = [];
-//     let i = 0;
-//     urls.forEach((url, _, array) => {
-
-//       ugs.get(url, (err, tab) => {
-//         if (err) reject(err);
-
-//         i++;
-//         console.log(i, array.length, songs.length)
-//         if (skipSongs.has(tab.name)) {
-//           if (debug) console.log('Skipping ' + tab.name + ' because it has already been parsed.');
-//           return;
-//         }
-//         if (debug) console.log('Parsing ' + tab.name + '...');
-
-//         let song = {};
-//         song.name = tab.name;
-//         song.artist = tab.artist;
-//         song.capo = tab.capo;
-//         song.tonality = tab.tonality;
-//         song.tuning = tab.tuning;
-//         song.chords = extractRawChords(tab.content.text);
-//         song.decade = info.decade;
-
-//         skipSongs.add(song.name);
-//         songs.push(song);
-//         if (i === array.length-1) {
-//           resolve(songs);
-//         }
-//       });
-
-//     });
-
-//   });
-
-// }
-
 module.exports = {
   extractRawChords,
+  simplifyChords,
   parseUrlList
 };
