@@ -1,6 +1,7 @@
 /* global module require */
 const ugs = require('../ultimate-guitar-scraper/lib/index.js');
 const fs = require('fs');
+const request = require('request');
 const cheerio = require('cheerio');
 
 const debug = true;
@@ -48,28 +49,58 @@ function simplifyChords(chords) {
 }
 
 /**
+ * Grabs all the tab urls off a page and writes it to a text file.
+ * @param  {String} url
+ * @param  {String} filePath
+ */
+function writeUrlList (url, filePath){
+  const requestOptions = {url: url, followRedirect: false};
+  const varName = 'window.UGAPP.store.page';
+
+  request.get(requestOptions, (err, response, html) => {
+    let $ = cheerio.load(html);
+    
+    // look for a script with the varName
+    let script = $('script').toArray().find(script => 
+      $(script).html().indexOf(varName) !== -1
+    );
+
+    let raw = script.children[0].data;
+    let json = JSON.parse(raw.substring(raw.indexOf('{'), raw.indexOf(';')));
+    json.data.data.tabs.forEach((tab, index, array) => {
+      fs.appendFileSync(filePath, tab.tab_url);
+      if (index !== array.length-1) fs.appendFileSync('\n');
+    });
+  });
+}
+
+/**
  * Parses a url list in the form of txt and returns an array of promises
  * that resolve the song information
- * @param  {String[]} urls - array of urls
- * @param  {Set} skipSongs - set of songs that are being skipped
+ * @param  {String[]} filePath - urls separated by \n
+ * @param  {Set} songSet - set of songs that have been previously parsed
  * @param  {Object} info - extra information (e.g. decade)
  * @return {Promise[]} songs as promises, use with Promise.all()
  */
-function parseUrlList(urls, skipSongs, info) {
+function parseUrlList(filePath, songSet, info) {
   let songs = [];
+  info = info || {};
 
+  let urls = fs.readFileSync(filePath, 'utf8').split('\n');
   urls.forEach((url) => {
     let songPromise = new Promise((resolve, reject) => {
       ugs.get(url, (err, tab) => {
         if (err) reject(err);
 
-        if (skipSongs.has(tab.name)) {
-          if (debug) console.log('Skipping ' + tab.name + ' because it has already been parsed.');
+        if (songSet.has(tab.name)) {
+          if (debug) console.log('Skipping ' + tab.name + ', song name already parsed.');
           resolve(null);
         } else {
           if (debug) console.log('Parsing ' + tab.name + '...');
 
           let song = {};
+
+          // basic song info
           song.name = tab.name;
           song.artist = tab.artist;
           song.capo = tab.capo;
@@ -77,9 +108,12 @@ function parseUrlList(urls, skipSongs, info) {
           song.tuning = tab.tuning;
           song.rawChords = extractRawChords(tab.content.text);
           song.simplifedChords = simplifyChords(song.rawChords);
-          song.decade = info.decade;
 
-          skipSongs.add(song.name);
+          // any additional info
+          song.decade = info.decade;
+          song.genre = info.genre;
+
+          songSet.add(song.name);
           resolve(song);
         }
 
@@ -93,5 +127,6 @@ function parseUrlList(urls, skipSongs, info) {
 module.exports = {
   extractRawChords,
   simplifyChords,
+  writeUrlList,
   parseUrlList
 };

@@ -243,4 +243,516 @@
   "decade": "2010",
   "rawChords": ["Am", "Fmaj7", "C", "G", "Am", "Fmaj7", "C", "G", "Am", "Fmaj7", "C", "G", "Am", "Fmaj7", "C", "G", "Am", "Fmaj7", "C", "Am", "F", "C", "Am", "Fmaj7", "C", "Am", "F", "C", "Am", "Fmaj7", "C", "Am", "F", "C", "Am", "Fmaj7", "C", "G", "Am", "F", "C", "Am", "Fmaj7", "C", "G", "Am", "Fmaj7", "C", "G", "Am", "Fmaj7", "C", "G", "Am", "Fmaj7", "C", "G", "Am", "Fmaj7", "C", "Am", "Fmaj7", "C", "Am", "Fmaj7", "C", "Am", "Fmaj7", "C", "Am", "Fmaj7", "C", "Am", "Fmaj7", "C", "Am", "Fmaj7", "C", "G", "Am", "Fmaj7", "C", "G", "Am", "Fmaj7", "C", "G", "Am", "Fmaj7", "C", "G", "Am", "Fmaj7", "C", "G", "Am", "Fmaj7", "C", "G", "Am", "Fmaj7", "C", "G", "Am", "Fmaj7", "C", "G", "Am", "Fmaj7", "C", "G", "Am", "Fmaj7", "C", "Am", "Am", "Am", "Am", "Am", "Am", "Fmaj7", "C", "Am", "Fmaj7", "C", "G", "Am", "Fmaj7", "C", "G", "Am", "Fmaj7", "C", "G", "Am", "Fmaj7", "C", "G", "Am", "Fmaj7", "C", "G", "Am", "Fmaj7", "C", "G", "Am", "Fmaj7", "C", "G", "Am", "Fmaj7", "C", "G", "Am", "Fmaj7", "C", "G", "Am", "Fmaj7", "C", "G", "Am", "F", "C", "Am", "Fmaj7", "C", "G", "Am", "F", "C"],
   "simplifiedChords": ["Am", "F", "C", "G", "Am", "F", "C", "G", "Am", "F", "C", "G", "Am", "F", "C", "G", "Am", "F", "C", "Am", "F", "C", "Am", "F", "C", "Am", "F", "C", "Am", "F", "C", "Am", "F", "C", "Am", "F", "C", "G", "Am", "F", "C", "Am", "F", "C", "G", "Am", "F", "C", "G", "Am", "F", "C", "G", "Am", "F", "C", "G", "Am", "F", "C", "Am", "F", "C", "Am", "F", "C", "Am", "F", "C", "Am", "F", "C", "Am", "F", "C", "Am", "F", "C", "G", "Am", "F", "C", "G", "Am", "F", "C", "G", "Am", "F", "C", "G", "Am", "F", "C", "G", "Am", "F", "C", "G", "Am", "F", "C", "G", "Am", "F", "C", "G", "Am", "F", "C", "G", "Am", "F", "C", "Am", "Am", "Am", "Am", "Am", "Am", "F", "C", "Am", "F", "C", "G", "Am", "F", "C", "G", "Am", "F", "C", "G", "Am", "F", "C", "G", "Am", "F", "C", "G", "Am", "F", "C", "G", "Am", "F", "C", "G", "Am", "F", "C", "G", "Am", "F", "C", "G", "Am", "F", "C", "G", "Am", "F", "C", "Am", "F", "C", "G", "Am", "F", "C"]
+},
+{
+  "name": "All Of Me",
+  "artist": "John Legend",
+  "capo": 1,
+  "tonality": "Em",
+  "tuning": "E A D G B E",
+  "rawChords": ["Em", "C", "G", "D", "Em", "Cmaj7", "G", "D", "Em", "C", "G", "D", "Em", "Cmaj7", "G", "D", "Em", "Cadd9", "G", "D", "Amadd9", "Am", "G", "D", "Amadd9", "G", "D", "G", "Emadd9", "Am/C", "C/D", "D", "G", "Emadd9", "Am/C", "C/D", "D", "Em", "C", "G", "Dadd9", "Em", "C", "G", "Dadd9", "Em", "C", "G", "D", "Em", "C", "G", "D", "Em", "C", "G", "D", "Em", "C", "G", "D", "Am", "Am", "G", "D", "Amadd9", "G", "D", "G", "Emadd9", "Am/C", "C/D", "D", "G", "Emadd9", "Am/C", "C/D", "D", "Em", "C", "G", "Dadd9", "Em", "C", "G", "Dadd9", "Am", "G", "D", "Amadd9", "Am", "G", "D", "G", "Emadd9", "Am/C", "C/D", "D", "G", "Emadd9", "Am/C", "C/D", "D", "Em", "C", "G", "Dadd9", "Em", "C", "G", "Dadd9", "Em", "C", "G", "D", "Em", "C", "G", "D"],
+  "simplifedChords": ["Em", "C", "G", "D", "Em", "C", "G", "D", "Em", "C", "G", "D", "Em", "C", "G", "D", "Em", "C", "G", "D", "Am", "Am", "G", "D", "Am", "G", "D", "G", "Em", "Am", "C", "D", "G", "Em", "Am", "C", "D", "Em", "C", "G", "D", "Em", "C", "G", "D", "Em", "C", "G", "D", "Em", "C", "G", "D", "Em", "C", "G", "D", "Em", "C", "G", "D", "Am", "Am", "G", "D", "Am", "G", "D", "G", "Em", "Am", "C", "D", "G", "Em", "Am", "C", "D", "Em", "C", "G", "D", "Em", "C", "G", "D", "Am", "G", "D", "Am", "Am", "G", "D", "G", "Em", "Am", "C", "D", "G", "Em", "Am", "C", "D", "Em", "C", "G", "D", "Em", "C", "G", "D", "Em", "C", "G", "D", "Em", "C", "G", "D"],
+  "decade": "2010"
+},
+{
+  "name": "Shape Of You",
+  "artist": "Ed Sheeran",
+  "capo": 2,
+  "tonality": "C#m",
+  "tuning": "E A D G B E",
+  "rawChords": ["Bm", "Em", "G", "A", "Bm", "Em", "G", "A", "Bm", "Em", "G", "A", "Bm", "Em", "G", "A", "Bm", "Em", "G", "A", "Bm", "Em", "G", "A", "Bm", "Em", "G", "A", "Bm", "Em", "G", "A", "Bm", "Em", "G", "Bm", "Em", "G", "A", "Bm", "Em", "G", "A", "Bm", "Em", "G", "A", "Bm", "Em", "G", "A", "Bm", "Em", "G", "A", "Bm", "Em", "G", "A", "Bm", "Em", "G", "A", "Bm", "Em", "G", "A", "Bm", "Em", "G", "A", "Bm", "Em", "G", "A", "Bm", "Em", "G", "A", "Bm", "Em", "G", "A", "Bm", "Em", "G", "A", "Bm", "Em", "G", "A", "Bm", "Em", "G", "A", "Bm", "Em", "G", "Bm", "Em", "G", "A", "Bm", "Em", "G", "A", "Bm", "Em", "G", "A", "Bm", "Em", "G", "A", "Bm", "Bm", "Em", "G", "A", "Bm", "Em", "G", "A", "Bm", "Em", "G", "A", "Bm", "Em", "G", "A", "Bm", "Em", "G", "A", "Bm", "Em", "G", "A", "Bm", "Em", "G", "A", "Bm", "Em", "G", "A", "Bm", "Em", "G", "A", "Bm", "Em", "G", "A", "Bm", "Em", "G", "A", "Bm", "Em", "G", "A", "Bm", "Em", "G", "A", "Bm", "Em", "G", "A", "Bm", "Em", "G", "A", "Bm", "Em", "G", "A", "Bm"],
+  "simplifedChords": ["Bm", "Em", "G", "A", "Bm", "Em", "G", "A", "Bm", "Em", "G", "A", "Bm", "Em", "G", "A", "Bm", "Em", "G", "A", "Bm", "Em", "G", "A", "Bm", "Em", "G", "A", "Bm", "Em", "G", "A", "Bm", "Em", "G", "Bm", "Em", "G", "A", "Bm", "Em", "G", "A", "Bm", "Em", "G", "A", "Bm", "Em", "G", "A", "Bm", "Em", "G", "A", "Bm", "Em", "G", "A", "Bm", "Em", "G", "A", "Bm", "Em", "G", "A", "Bm", "Em", "G", "A", "Bm", "Em", "G", "A", "Bm", "Em", "G", "A", "Bm", "Em", "G", "A", "Bm", "Em", "G", "A", "Bm", "Em", "G", "A", "Bm", "Em", "G", "A", "Bm", "Em", "G", "Bm", "Em", "G", "A", "Bm", "Em", "G", "A", "Bm", "Em", "G", "A", "Bm", "Em", "G", "A", "Bm", "Bm", "Em", "G", "A", "Bm", "Em", "G", "A", "Bm", "Em", "G", "A", "Bm", "Em", "G", "A", "Bm", "Em", "G", "A", "Bm", "Em", "G", "A", "Bm", "Em", "G", "A", "Bm", "Em", "G", "A", "Bm", "Em", "G", "A", "Bm", "Em", "G", "A", "Bm", "Em", "G", "A", "Bm", "Em", "G", "A", "Bm", "Em", "G", "A", "Bm", "Em", "G", "A", "Bm", "Em", "G", "A", "Bm", "Em", "G", "A", "Bm"],
+  "decade": "2010"
+},
+{
+  "name": "Rude",
+  "artist": "MAGIC!",
+  "capo": 6,
+  "tuning": "E A D G B E",
+  "rawChords": ["C", "D", "Em", "Em", "C", "D", "Em", "Em", "C", "D", "G", "Em", "C", "D", "G", "Em", "C", "D", "G/B", "Em", "C", "D", "G", "Em", "C", "D", "G", "Em", "C", "D", "G", "Em", "C", "D", "G", "Em", "C", "D", "G", "Em", "C", "D", "G", "Em", "C", "D", "G", "Em", "C", "D", "G", "Em", "C", "D", "G", "Em", "C", "D", "G", "Em", "C", "D", "G/B", "Em", "C", "D", "G", "Em", "C", "D", "G", "Em", "C", "D", "G", "Em", "C", "D", "G", "Em", "C", "D", "G", "Em", "C", "D", "G", "Em", "C", "D", "G/B", "Em", "C", "D", "G", "Em", "C", "D", "G", "Em", "C", "D", "G", "Em", "C", "D", "G", "Em", "C", "D", "G", "Em", "C", "D", "G", "Em"],
+  "simplifedChords": ["C", "D", "Em", "Em", "C", "D", "Em", "Em", "C", "D", "G", "Em", "C", "D", "G", "Em", "C", "D", "G", "Em", "C", "D", "G", "Em", "C", "D", "G", "Em", "C", "D", "G", "Em", "C", "D", "G", "Em", "C", "D", "G", "Em", "C", "D", "G", "Em", "C", "D", "G", "Em", "C", "D", "G", "Em", "C", "D", "G", "Em", "C", "D", "G", "Em", "C", "D", "G", "Em", "C", "D", "G", "Em", "C", "D", "G", "Em", "C", "D", "G", "Em", "C", "D", "G", "Em", "C", "D", "G", "Em", "C", "D", "G", "Em", "C", "D", "G", "Em", "C", "D", "G", "Em", "C", "D", "G", "Em", "C", "D", "G", "Em", "C", "D", "G", "Em", "C", "D", "G", "Em", "C", "D", "G", "Em"],
+  "decade": "2010"
+},
+{
+  "name": "Say You Wont Let Go",
+  "artist": "James Arthur",
+  "capo": 3,
+  "tonality": "G",
+  "tuning": "E A D G B E",
+  "rawChords": ["G", "D", "Em", "C", "G", "D", "Em", "C", "G", "D", "Em", "C", "G", "D", "Em", "C", "G", "D", "Em", "C", "G", "D", "Em", "C", "G", "D", "Em", "C", "G", "D", "Em", "C", "G", "D", "Em", "C", "G", "D", "Em", "C", "G", "D", "Em", "C", "G", "D", "Em", "C", "G", "D", "Em", "C", "G", "D", "Em", "C", "G", "D", "Em", "C", "G", "D", "Em", "C", "G", "D", "Em", "C", "G", "D", "Em", "C", "G", "D", "Em", "C", "G", "D", "Em", "C", "G"],
+  "simplifedChords": ["G", "D", "Em", "C", "G", "D", "Em", "C", "G", "D", "Em", "C", "G", "D", "Em", "C", "G", "D", "Em", "C", "G", "D", "Em", "C", "G", "D", "Em", "C", "G", "D", "Em", "C", "G", "D", "Em", "C", "G", "D", "Em", "C", "G", "D", "Em", "C", "G", "D", "Em", "C", "G", "D", "Em", "C", "G", "D", "Em", "C", "G", "D", "Em", "C", "G", "D", "Em", "C", "G", "D", "Em", "C", "G", "D", "Em", "C", "G", "D", "Em", "C", "G", "D", "Em", "C", "G"],
+  "decade": "2010"
+},
+{
+  "name": "When We Were Young",
+  "artist": "Adele",
+  "capo": 3,
+  "tonality": "Cm",
+  "tuning": "E A D G B E",
+  "rawChords": ["Am", "Em", "F", "C/E", "Dm", "C", "Am", "Em", "F", "C/E", "Dm", "C", "Am", "Em", "F", "C/E", "Dm", "C", "C", "C/B", "Am", "Em", "F", "C/E", "Dm", "C", "C", "C/B", "Am", "Em", "F", "C/E", "Dm", "G", "F", "G", "Em", "F", "F", "G", "Em", "G", "C", "Em", "F", "G", "C", "Em", "F", "G", "Am", "C/E", "F", "Fm", "Dm", "F", "G", "Am", "Em", "F", "C/E", "Dm", "C", "Am", "Em", "F", "C/E", "Dm", "G", "F", "G", "Em", "F", "F", "G", "Em", "G", "C", "Em", "F", "G", "C", "Em", "F", "G", "Am", "C/E", "F", "Fm", "Dm", "F", "G", "G/Ab", "Am", "C/G", "F", "C/E", "Am", "C", "F", "G/Ab", "Am", "C/G", "F", "C/E", "Dm", "C", "G", "G/Ab", "Am", "C/G", "F", "C/E", "Dm", "G", "F", "G", "Em", "F", "F", "G", "Em", "G", "C", "Em", "F", "G", "C", "Em", "F", "G", "C", "Em", "F", "G", "C", "Em", "F", "G", "Am", "C/E", "F", "G", "Am", "C/E", "F", "Fm", "Dm", "F", "G", "C"],
+  "simplifedChords": ["Am", "Em", "F", "C", "Dm", "C", "Am", "Em", "F", "C", "Dm", "C", "Am", "Em", "F", "C", "Dm", "C", "C", "C", "Am", "Em", "F", "C", "Dm", "C", "C", "C", "Am", "Em", "F", "C", "Dm", "G", "F", "G", "Em", "F", "F", "G", "Em", "G", "C", "Em", "F", "G", "C", "Em", "F", "G", "Am", "C", "F", "Fm", "Dm", "F", "G", "Am", "Em", "F", "C", "Dm", "C", "Am", "Em", "F", "C", "Dm", "G", "F", "G", "Em", "F", "F", "G", "Em", "G", "C", "Em", "F", "G", "C", "Em", "F", "G", "Am", "C", "F", "Fm", "Dm", "F", "G", "G", "Am", "C", "F", "C", "Am", "C", "F", "G", "Am", "C", "F", "C", "Dm", "C", "G", "G", "Am", "C", "F", "C", "Dm", "G", "F", "G", "Em", "F", "F", "G", "Em", "G", "C", "Em", "F", "G", "C", "Em", "F", "G", "C", "Em", "F", "G", "C", "Em", "F", "G", "Am", "C", "F", "G", "Am", "C", "F", "Fm", "Dm", "F", "G", "C"],
+  "decade": "2010"
+},
+{
+  "name": "Stitches",
+  "artist": "Shawn Mendes",
+  "capo": 1,
+  "tonality": "Am",
+  "tuning": "E A D G B E",
+  "rawChords": ["Am", "G", "C", "F", "Am", "G", "C", "F", "Am", "G", "C", "F", "Am", "G", "F", "F", "G", "Am", "G", "F", "G", "Am", "Am", "G", "C", "F", "Am", "G", "F", "C", "Am", "G", "C", "F", "Am", "G", "F", "C", "Am", "G", "C", "F", "Am", "G", "C", "F", "Am", "G", "C", "F", "Am", "G", "C", "F", "F", "G", "Am", "G", "F", "G", "Am", "Am", "G", "C", "F", "Am", "G", "F", "C", "Am", "G", "C", "F", "Am", "G", "F", "C", "Am", "G", "C", "F", "Am", "G", "C", "F", "Am", "G", "C", "F", "Am", "G", "C", "F", "Am", "G", "C", "F", "Am", "G", "F", "C", "Am", "G", "C", "F", "Am", "G", "F", "C"],
+  "simplifedChords": ["Am", "G", "C", "F", "Am", "G", "C", "F", "Am", "G", "C", "F", "Am", "G", "F", "F", "G", "Am", "G", "F", "G", "Am", "Am", "G", "C", "F", "Am", "G", "F", "C", "Am", "G", "C", "F", "Am", "G", "F", "C", "Am", "G", "C", "F", "Am", "G", "C", "F", "Am", "G", "C", "F", "Am", "G", "C", "F", "F", "G", "Am", "G", "F", "G", "Am", "Am", "G", "C", "F", "Am", "G", "F", "C", "Am", "G", "C", "F", "Am", "G", "F", "C", "Am", "G", "C", "F", "Am", "G", "C", "F", "Am", "G", "C", "F", "Am", "G", "C", "F", "Am", "G", "C", "F", "Am", "G", "F", "C", "Am", "G", "C", "F", "Am", "G", "F", "C"],
+  "decade": "2010"
+},
+{
+  "name": "Demons",
+  "artist": "Imagine Dragons",
+  "capo": 1,
+  "tonality": "D",
+  "tuning": "E A D G B E",
+  "rawChords": ["D", "A", "Bm", "G", "D", "A", "Bm", "G", "D", "A", "Bm", "Bm", "G", "D", "A", "Bm", "Bm", "G", "D", "A", "Bm", "G", "D", "A", "Bm", "G", "D", "A", "Bm", "G", "D", "A", "Bm", "G", "D", "A", "Bm", "G", "D", "A", "Bm", "G", "D", "A", "Bm", "G", "D", "A", "Bm", "G", "D", "A", "Bm", "G", "D", "A", "Bm", "D", "A", "Bm", "G", "D", "A", "Bm", "G", "D"],
+  "simplifedChords": ["D", "A", "Bm", "G", "D", "A", "Bm", "G", "D", "A", "Bm", "Bm", "G", "D", "A", "Bm", "Bm", "G", "D", "A", "Bm", "G", "D", "A", "Bm", "G", "D", "A", "Bm", "G", "D", "A", "Bm", "G", "D", "A", "Bm", "G", "D", "A", "Bm", "G", "D", "A", "Bm", "G", "D", "A", "Bm", "G", "D", "A", "Bm", "G", "D", "A", "Bm", "D", "A", "Bm", "G", "D", "A", "Bm", "G", "D"],
+  "decade": "2010"
+},
+{
+  "name": "Oceans Where Feet May Fail",
+  "artist": "Hillsong United",
+  "tonality": "Bm",
+  "rawChords": ["Bm", "A/C#", "D", "A", "G", "Bm", "A/C#", "D", "A", "G", "Bm", "A/C#", "D", "A", "G", "G", "D", "A", "G", "D", "A", "G", "D", "A", "G", "A", "Bm", "Bm", "A/C#", "D", "A", "Em/G", "Bm", "A/C#", "D", "A", "G", "Bm", "A/C#", "D", "A", "G", "G", "D", "A", "G", "D", "A", "G", "D", "A", "G", "A", "Bm", "Bm", "A/C#", "D", "A", "Em/G", "Bm", "A/C#", "D", "A", "Em/G", "Bm", "G", "D", "A", "Bm", "G", "D", "A", "Bm", "G", "D", "A", "Bm", "G", "D", "A", "G", "D", "A", "Em", "G", "D", "A", "Em", "Bm", "A/C#", "D", "A", "Em", "Bm", "A/C#", "D", "A", "Em", "Bm", "A/C#", "D", "A", "Em", "Bm", "A/C#", "D", "A", "Em", "G", "D", "A", "G", "D", "A", "G", "D", "A", "G", "A", "Bm", "A/C#", "D", "A", "G", "Bm", "A/C#", "D"],
+  "simplifedChords": ["Bm", "A", "D", "A", "G", "Bm", "A", "D", "A", "G", "Bm", "A", "D", "A", "G", "G", "D", "A", "G", "D", "A", "G", "D", "A", "G", "A", "Bm", "Bm", "A", "D", "A", "Em", "Bm", "A", "D", "A", "G", "Bm", "A", "D", "A", "G", "G", "D", "A", "G", "D", "A", "G", "D", "A", "G", "A", "Bm", "Bm", "A", "D", "A", "Em", "Bm", "A", "D", "A", "Em", "Bm", "G", "D", "A", "Bm", "G", "D", "A", "Bm", "G", "D", "A", "Bm", "G", "D", "A", "G", "D", "A", "Em", "G", "D", "A", "Em", "Bm", "A", "D", "A", "Em", "Bm", "A", "D", "A", "Em", "Bm", "A", "D", "A", "Em", "Bm", "A", "D", "A", "Em", "G", "D", "A", "G", "D", "A", "G", "D", "A", "G", "A", "Bm", "A", "D", "A", "G", "Bm", "A", "D"],
+  "decade": "2010"
+},
+{
+  "name": "Sweater Weather",
+  "artist": "The Neighbourhood",
+  "capo": 3,
+  "tonality": "C",
+  "tuning": "E A D G B E",
+  "rawChords": ["C", "Am", "Em", "G", "C", "Am", "Em", "G", "C", "Am", "Em", "G", "C", "Am", "Em", "G", "C", "Am", "Em", "G", "C", "Am", "Em", "G", "C", "Am", "Em", "G", "C", "Am", "Em", "G", "C", "Am", "Em", "G", "C", "Am", "Em", "G", "G", "C", "Am", "Em", "G", "C", "Am", "Em", "G", "C", "Am", "Em", "G", "C", "Am", "Em", "G", "C", "Am", "Em", "G", "C", "Am", "Em", "G", "C", "Am", "Em", "G", "Am", "G", "D", "Am", "G", "D", "Am", "G", "D", "D", "D", "D", "C", "Am", "Em", "G", "C", "Am", "Em", "G", "C", "Am", "Em", "G", "C", "Am", "Em", "G", "C", "Am", "Em", "G"],
+  "simplifedChords": ["C", "Am", "Em", "G", "C", "Am", "Em", "G", "C", "Am", "Em", "G", "C", "Am", "Em", "G", "C", "Am", "Em", "G", "C", "Am", "Em", "G", "C", "Am", "Em", "G", "C", "Am", "Em", "G", "C", "Am", "Em", "G", "C", "Am", "Em", "G", "G", "C", "Am", "Em", "G", "C", "Am", "Em", "G", "C", "Am", "Em", "G", "C", "Am", "Em", "G", "C", "Am", "Em", "G", "C", "Am", "Em", "G", "C", "Am", "Em", "G", "Am", "G", "D", "Am", "G", "D", "Am", "G", "D", "D", "D", "D", "C", "Am", "Em", "G", "C", "Am", "Em", "G", "C", "Am", "Em", "G", "C", "Am", "Em", "G", "C", "Am", "Em", "G"],
+  "decade": "2010"
+},
+{
+  "name": "Let It Go",
+  "artist": "James Bay",
+  "capo": 6,
+  "tonality": "G",
+  "tuning": "E A D G B E",
+  "rawChords": ["G", "C", "Em7", "D", "G", "C", "Em7", "D", "G", "C", "Em7", "D", "G", "C", "Em7", "D", "G", "C", "Em7", "D", "Em", "D", "Em/C#", "C", "Em", "D", "Em/C#", "C", "G", "Em7", "D", "Am", "G", "D", "C", "G", "Em7", "D", "Am", "G", "D", "G", "G", "C", "Em7", "D", "G", "C", "Em7", "D", "G", "C", "Em7", "D", "G", "C", "Em7", "D", "G", "C", "Em7", "D", "G", "C", "Em7", "D", "Em", "D", "Em/C#", "C", "Em", "D", "Em/C#", "C", "G", "Em", "D", "C", "G", "D", "C", "G", "Em", "D", "Am", "G", "D", "G", "G", "C", "Em7", "D", "G", "C", "Em7", "D", "Am", "G", "D", "Em", "Am", "G", "D", "Em", "C", "G", "Em", "D", "C", "G", "D", "C", "G", "Em7", "D", "C", "G", "D", "C", "G", "Em7", "D", "C", "G", "D", "G", "G", "C", "Em7", "D", "G", "C", "Em7", "D", "G"],
+  "simplifedChords": ["G", "C", "Em", "D", "G", "C", "Em", "D", "G", "C", "Em", "D", "G", "C", "Em", "D", "G", "C", "Em", "D", "Em", "D", "Em", "C", "Em", "D", "Em", "C", "G", "Em", "D", "Am", "G", "D", "C", "G", "Em", "D", "Am", "G", "D", "G", "G", "C", "Em", "D", "G", "C", "Em", "D", "G", "C", "Em", "D", "G", "C", "Em", "D", "G", "C", "Em", "D", "G", "C", "Em", "D", "Em", "D", "Em", "C", "Em", "D", "Em", "C", "G", "Em", "D", "C", "G", "D", "C", "G", "Em", "D", "Am", "G", "D", "G", "G", "C", "Em", "D", "G", "C", "Em", "D", "Am", "G", "D", "Em", "Am", "G", "D", "Em", "C", "G", "Em", "D", "C", "G", "D", "C", "G", "Em", "D", "C", "G", "D", "C", "G", "Em", "D", "C", "G", "D", "G", "G", "C", "Em", "D", "G", "C", "Em", "D", "G"],
+  "decade": "2010"
+},
+{
+  "name": "It Will Rain",
+  "artist": "Bruno Mars",
+  "capo": 2,
+  "tonality": "C",
+  "tuning": "E A D G B E",
+  "rawChords": ["C", "Em", "C", "Em", "Dm", "Am", "Dm", "G", "C", "Em", "C", "Em", "Dm", "Am", "Dm", "G", "F", "G", "Em", "Am", "Gsus2", "F", "G", "Em", "Am", "Gsus2", "F", "G", "E7", "Am", "Gsus2", "Dm", "C", "Cmaj7", "C", "Em", "C", "Cmaj7", "C", "Em", "C", "Em", "Dm", "Am", "Dm", "G", "C", "Em", "C", "Em", "Dm", "Am", "Dm", "G", "F", "G", "Em", "Am", "Gsus2", "F", "G", "Em", "Am", "Gsus2", "F", "G", "E7", "Am", "Gsus2", "Dm", "C", "Cmaj7", "C", "Em", "C", "Cmaj7", "C", "Em", "F", "Em", "F", "Em", "Dm", "G", "F", "G", "Em", "Am", "Gsus2", "F", "G", "Em", "Am", "Gsus2", "F", "G", "E7", "Am", "Gsus2", "Dm", "C", "Cmaj7", "C", "Em", "C", "Cmaj7", "C", "Em"],
+  "simplifedChords": ["C", "Em", "C", "Em", "Dm", "Am", "Dm", "G", "C", "Em", "C", "Em", "Dm", "Am", "Dm", "G", "F", "G", "Em", "Am", "G", "F", "G", "Em", "Am", "G", "F", "G", "E", "Am", "G", "Dm", "C", "C", "C", "Em", "C", "C", "C", "Em", "C", "Em", "Dm", "Am", "Dm", "G", "C", "Em", "C", "Em", "Dm", "Am", "Dm", "G", "F", "G", "Em", "Am", "G", "F", "G", "Em", "Am", "G", "F", "G", "E", "Am", "G", "Dm", "C", "C", "C", "Em", "C", "C", "C", "Em", "F", "Em", "F", "Em", "Dm", "G", "F", "G", "Em", "Am", "G", "F", "G", "Em", "Am", "G", "F", "G", "E", "Am", "G", "Dm", "C", "C", "C", "Em", "C", "C", "C", "Em"],
+  "decade": "2010"
+},
+{
+  "name": "I Knew You Were Trouble",
+  "artist": "Taylor Swift",
+  "capo": 4,
+  "tuning": "E A D G B E",
+  "rawChords": ["D", "D", "A", "Bm", "G", "D", "A", "Bm", "G", "D", "A", "Bm", "G", "Bm", "G", "A", "D", "A", "Bm", "G", "A", "D", "A", "Bm", "G", "A", "D", "A", "Bm", "G", "A", "D", "Bm", "Bm", "G", "A", "D", "A", "Bm", "Bm", "G", "A", "D", "A", "D", "A", "Bm", "G", "D", "A", "Bm", "G", "D", "A", "Bm", "G", "G", "Bm", "G", "A", "D", "A", "Bm", "G", "A", "D", "A", "Bm", "G", "A", "D", "A", "Bm", "G", "A", "D", "A", "Bm", "Bm", "G", "A", "D", "A", "Bm", "Bm", "G", "A", "D", "A", "G", "Bm", "G", "A", "A", "A", "Bm", "G", "A", "D", "A", "Bm", "G", "A", "D", "A", "Bm", "G", "A", "D", "A", "Bm", "G", "A", "D", "A", "Bm", "Bm", "G", "A", "D", "A", "Bm", "Bm", "G", "A", "D", "A", "Bm", "G", "A", "D", "A", "Bm", "G", "A", "D", "A"],
+  "simplifedChords": ["D", "D", "A", "Bm", "G", "D", "A", "Bm", "G", "D", "A", "Bm", "G", "Bm", "G", "A", "D", "A", "Bm", "G", "A", "D", "A", "Bm", "G", "A", "D", "A", "Bm", "G", "A", "D", "Bm", "Bm", "G", "A", "D", "A", "Bm", "Bm", "G", "A", "D", "A", "D", "A", "Bm", "G", "D", "A", "Bm", "G", "D", "A", "Bm", "G", "G", "Bm", "G", "A", "D", "A", "Bm", "G", "A", "D", "A", "Bm", "G", "A", "D", "A", "Bm", "G", "A", "D", "A", "Bm", "Bm", "G", "A", "D", "A", "Bm", "Bm", "G", "A", "D", "A", "G", "Bm", "G", "A", "A", "A", "Bm", "G", "A", "D", "A", "Bm", "G", "A", "D", "A", "Bm", "G", "A", "D", "A", "Bm", "G", "A", "D", "A", "Bm", "Bm", "G", "A", "D", "A", "Bm", "Bm", "G", "A", "D", "A", "Bm", "G", "A", "D", "A", "Bm", "G", "A", "D", "A"],
+  "decade": "2010"
+},
+{
+  "name": "Skinny Love",
+  "artist": "Birdy",
+  "capo": 4,
+  "tonality": "C#m",
+  "tuning": "E A D G B E",
+  "rawChords": ["Am", "F", "C", "Am", "F", "C", "Am", "F", "C", "Am", "F", "C", "Am", "F", "C", "Dm", "Am", "Am", "F", "C", "Am", "F", "C", "Am", "F", "C", "Dm", "Am", "C", "Am", "F", "C", "Am", "F", "C", "Am", "F", "C", "Am", "F", "Am", "F", "C", "Am", "F", "C", "Am", "F", "C", "Dm", "Am", "C", "Am", "F", "C", "Am", "F", "C", "Am", "F", "C", "Am", "F", "C", "Am", "F", "C", "Am", "F", "Am", "F", "C", "F", "Am", "F", "C", "Am", "F", "C", "Am", "F", "C", "Am", "F", "C"],
+  "simplifedChords": ["Am", "F", "C", "Am", "F", "C", "Am", "F", "C", "Am", "F", "C", "Am", "F", "C", "Dm", "Am", "Am", "F", "C", "Am", "F", "C", "Am", "F", "C", "Dm", "Am", "C", "Am", "F", "C", "Am", "F", "C", "Am", "F", "C", "Am", "F", "Am", "F", "C", "Am", "F", "C", "Am", "F", "C", "Dm", "Am", "C", "Am", "F", "C", "Am", "F", "C", "Am", "F", "C", "Am", "F", "C", "Am", "F", "C", "Am", "F", "Am", "F", "C", "F", "Am", "F", "C", "Am", "F", "C", "Am", "F", "C", "Am", "F", "C"],
+  "decade": "2010"
+},
+{
+  "name": "Payphone",
+  "artist": "Maroon 5",
+  "rawChords": ["Cadd9", "G", "Em", "Dsus4", "Cadd9", "G", "Em", "Dsus4", "Cadd9", "G", "Em", "Dsus4", "Cadd9", "G", "Em", "Dsus4", "Cadd9", "G", "Em", "Dsus4", "Cadd9", "G", "Em", "Dsus4", "Cadd9", "G", "Em", "Dsus4", "Cadd9", "G", "Em", "Dsus4", "Cadd9", "G", "Em", "Dsus4", "Cadd9", "G", "Em", "Dsus4", "Cadd9", "G", "Em", "Dsus4", "Cadd9", "G", "Em", "Dsus4", "Cadd9", "G", "Em", "Dsus4", "Cadd9", "G", "Em", "Dsus4", "Cadd9", "G", "Em", "Dsus4", "Cadd9", "G", "Em", "Dsus4", "Cadd9", "G", "Em", "Dsus4", "Cadd9", "G", "Em", "Dsus4", "Cadd9", "G", "Em", "Dsus4", "Cadd9", "G", "Em", "Dsus4", "G", "G", "Em", "D", "D", "C", "G", "Em", "Em", "D", "D", "C", "G", "Em", "Em", "D", "D", "C", "G", "Em", "D", "Cadd9", "G", "Em", "Dsus4", "Cadd9", "G", "Em", "Dsus4", "Cadd9", "G", "Em", "Dsus4", "Cadd9", "G", "Em", "Dsus4", "Cadd9"],
+  "simplifedChords": ["C", "G", "Em", "D", "C", "G", "Em", "D", "C", "G", "Em", "D", "C", "G", "Em", "D", "C", "G", "Em", "D", "C", "G", "Em", "D", "C", "G", "Em", "D", "C", "G", "Em", "D", "C", "G", "Em", "D", "C", "G", "Em", "D", "C", "G", "Em", "D", "C", "G", "Em", "D", "C", "G", "Em", "D", "C", "G", "Em", "D", "C", "G", "Em", "D", "C", "G", "Em", "D", "C", "G", "Em", "D", "C", "G", "Em", "D", "C", "G", "Em", "D", "C", "G", "Em", "D", "G", "G", "Em", "D", "D", "C", "G", "Em", "Em", "D", "D", "C", "G", "Em", "Em", "D", "D", "C", "G", "Em", "D", "C", "G", "Em", "D", "C", "G", "Em", "D", "C", "G", "Em", "D", "C", "G", "Em", "D", "C"],
+  "decade": "2010"
+},
+{
+  "name": "Give Me Love",
+  "artist": "Ed Sheeran",
+  "capo": 1,
+  "tonality": "Am",
+  "tuning": "E A D G B E",
+  "rawChords": ["G#m7", "E", "B5", "Bmaj7", "G#m7", "E", "B5", "B7+", "G#m7", "E", "B5", "B7+", "G#m7", "E", "B5", "Bmaj7", "G#m7", "E", "B5", "Bmaj7", "G#m7", "E", "B5", "Bmaj7", "G#m7", "E", "B5", "Bmaj7", "C#m", "E", "B", "F#", "C#m", "E", "B", "C#m", "E", "B", "C#m", "E", "B", "C#m", "E", "G#m", "F#", "E", "G#m", "F#", "E", "G#m7", "E", "B5", "Bmaj7", "G#m7", "E", "B5", "Bmaj7", "G#m7", "E", "B5", "Bmaj7", "G#m7", "E", "B5", "Bmaj7", "C#m", "E", "B", "F#", "C#m", "E", "B", "C#m", "E", "B", "C#m", "E", "B", "C#m", "E", "G#m", "F#", "E", "B", "C#m", "E", "B", "C#m", "E", "B", "C#m", "E", "G#m", "F#", "E", "G#", "F#", "G#", "F#", "G#", "F#", "G#", "F#", "G#", "F#", "G#", "F#", "G#", "F#", "G#", "F#", "G#", "F#", "G#", "F#", "G#", "F#", "G#", "F#", "G#", "F#", "G#m", "E", "B", "F#", "G#m", "E", "B", "F#", "G#m", "E", "B", "F#", "G#m", "E", "B", "F#", "G#", "F#"],
+  "simplifedChords": ["G#m", "E", "B", "B", "G#m", "E", "B", "B", "G#m", "E", "B", "B", "G#m", "E", "B", "B", "G#m", "E", "B", "B", "G#m", "E", "B", "B", "G#m", "E", "B", "B", "C#m", "E", "B", "F#", "C#m", "E", "B", "C#m", "E", "B", "C#m", "E", "B", "C#m", "E", "G#m", "F#", "E", "G#m", "F#", "E", "G#m", "E", "B", "B", "G#m", "E", "B", "B", "G#m", "E", "B", "B", "G#m", "E", "B", "B", "C#m", "E", "B", "F#", "C#m", "E", "B", "C#m", "E", "B", "C#m", "E", "B", "C#m", "E", "G#m", "F#", "E", "B", "C#m", "E", "B", "C#m", "E", "B", "C#m", "E", "G#m", "F#", "E", "G#", "F#", "G#", "F#", "G#", "F#", "G#", "F#", "G#", "F#", "G#", "F#", "G#", "F#", "G#", "F#", "G#", "F#", "G#", "F#", "G#", "F#", "G#", "F#", "G#", "F#", "G#m", "E", "B", "F#", "G#m", "E", "B", "F#", "G#m", "E", "B", "F#", "G#m", "E", "B", "F#", "G#", "F#"],
+  "decade": "2010"
+},
+{
+  "name": "Wake Me Up",
+  "artist": "Avicii",
+  "tonality": "Bm",
+  "tuning": "E A D G B E",
+  "rawChords": ["Bm", "G", "D", "A", "Bm", "G", "D", "A", "Bm", "G", "D", "A", "Bm", "G", "D", "A", "Bm", "G", "D", "A", "Bm", "G", "D", "A", "Bm", "G", "D", "A", "Bm", "G", "D", "A", "Bm", "G", "D", "A", "Bm", "G", "D", "A", "Bm", "G", "D", "A", "Bm", "G", "D", "A", "Bm", "G", "D", "A", "Bm", "G", "D", "A", "Bm", "G", "D", "A", "Bm", "G", "D", "A", "Bm", "G", "D", "A", "Bm", "G", "D", "A", "Bm", "G", "D", "A", "Bm", "G", "D", "A", "Bm", "G", "D", "A", "Bm", "G", "D", "A", "Bm", "G", "D", "A", "Bm", "G", "D", "A", "Bm", "G", "D", "A", "Bm", "G", "D", "A", "Bm", "G", "D", "A", "Bm", "G", "D", "A", "Bm", "G", "D", "A", "Bm", "G", "D", "A", "Bm", "G", "D", "A", "Bm", "G", "D", "A", "Bm", "G", "D", "A", "Bm", "G", "D", "A", "Bm", "G", "D", "A", "Bm", "G", "D", "A", "Bm", "G", "D", "A", "Bm", "G", "D", "A"],
+  "simplifedChords": ["Bm", "G", "D", "A", "Bm", "G", "D", "A", "Bm", "G", "D", "A", "Bm", "G", "D", "A", "Bm", "G", "D", "A", "Bm", "G", "D", "A", "Bm", "G", "D", "A", "Bm", "G", "D", "A", "Bm", "G", "D", "A", "Bm", "G", "D", "A", "Bm", "G", "D", "A", "Bm", "G", "D", "A", "Bm", "G", "D", "A", "Bm", "G", "D", "A", "Bm", "G", "D", "A", "Bm", "G", "D", "A", "Bm", "G", "D", "A", "Bm", "G", "D", "A", "Bm", "G", "D", "A", "Bm", "G", "D", "A", "Bm", "G", "D", "A", "Bm", "G", "D", "A", "Bm", "G", "D", "A", "Bm", "G", "D", "A", "Bm", "G", "D", "A", "Bm", "G", "D", "A", "Bm", "G", "D", "A", "Bm", "G", "D", "A", "Bm", "G", "D", "A", "Bm", "G", "D", "A", "Bm", "G", "D", "A", "Bm", "G", "D", "A", "Bm", "G", "D", "A", "Bm", "G", "D", "A", "Bm", "G", "D", "A", "Bm", "G", "D", "A", "Bm", "G", "D", "A", "Bm", "G", "D", "A"],
+  "decade": "2010"
+},
+{
+  "name": "7 Years",
+  "artist": "Lukas Graham",
+  "capo": 3,
+  "tonality": "Gm",
+  "tuning": "E A D G B E",
+  "rawChords": ["Em", "G", "C", "D", "Em", "G", "C", "Em", "G", "C", "D", "Em", "G", "C", "Em", "D", "G", "C", "D", "Em", "D", "G", "C", "D", "Em", "D", "G", "C", "D", "Em", "D", "G", "C", "Em", "D", "G", "C", "D", "Em", "D", "G", "C", "D", "Em", "D", "G", "C", "D", "Em", "D", "G", "C", "Em", "D", "G", "C", "D", "Em", "D", "G", "C", "D", "Em", "D", "G", "C", "D", "Em", "D", "G", "C", "Em", "D", "G", "C", "D", "Em", "D", "G", "C", "Em", "G", "C", "D", "C", "Cmaj7", "C", "F#/D", "C", "D", "Em", "D", "F#/D", "C", "D", "Em", "Bm", "C", "D", "G", "D", "F#/D", "C", "D", "G", "C", "Em", "D", "G", "C", "D", "Em", "D", "G", "C", "Em", "G", "C", "G", "Em", "D", "G", "C", "Em", "D", "G"],
+  "simplifedChords": ["Em", "G", "C", "D", "Em", "G", "C", "Em", "G", "C", "D", "Em", "G", "C", "Em", "D", "G", "C", "D", "Em", "D", "G", "C", "D", "Em", "D", "G", "C", "D", "Em", "D", "G", "C", "Em", "D", "G", "C", "D", "Em", "D", "G", "C", "D", "Em", "D", "G", "C", "D", "Em", "D", "G", "C", "Em", "D", "G", "C", "D", "Em", "D", "G", "C", "D", "Em", "D", "G", "C", "D", "Em", "D", "G", "C", "Em", "D", "G", "C", "D", "Em", "D", "G", "C", "Em", "G", "C", "D", "C", "C", "C", "F#", "C", "D", "Em", "D", "F#", "C", "D", "Em", "Bm", "C", "D", "G", "D", "F#", "C", "D", "G", "C", "Em", "D", "G", "C", "D", "Em", "D", "G", "C", "Em", "G", "C", "G", "Em", "D", "G", "C", "Em", "D", "G"],
+  "decade": "2010"
+},
+{
+  "name": "Blank Space",
+  "artist": "Taylor Swift",
+  "capo": 3,
+  "tonality": "F",
+  "rawChords": ["A7sus4", "D", "Bm", "G", "A7sus4", "A", "D", "Bm", "G", "A", "G", "A", "D", "Bm", "Em", "G", "D", "D", "Bm", "Em", "G", "G", "D", "D", "Bm", "G", "A7sus4", "A", "D", "Bm", "G", "A", "G", "D", "Bm", "Em", "G", "D", "D", "Bm", "Em", "G", "G", "D", "D", "D", "D", "Bm", "Em", "G", "D", "Bm", "Em", "G", "G"],
+  "simplifedChords": ["A", "D", "Bm", "G", "A", "A", "D", "Bm", "G", "A", "G", "A", "D", "Bm", "Em", "G", "D", "D", "Bm", "Em", "G", "G", "D", "D", "Bm", "G", "A", "A", "D", "Bm", "G", "A", "G", "D", "Bm", "Em", "G", "D", "D", "Bm", "Em", "G", "G", "D", "D", "D", "D", "Bm", "Em", "G", "D", "Bm", "Em", "G", "G"],
+  "decade": "2010"
+},
+{
+  "name": "The Lazy Song",
+  "artist": "Bruno Mars",
+  "capo": 4,
+  "tonality": "B",
+  "tuning": "E A D G B E",
+  "rawChords": ["B", "F#", "E", "B", "F#", "E", "B", "F#", "E", "B", "D#7", "E", "B", "F#", "E", "B", "F#", "E", "B", "F#", "E", "B", "F#", "E", "C#m", "D#m", "E", "F#", "B", "F#", "E", "B", "F#", "E", "B", "F#", "E", "B", "D#7", "E", "B", "F#", "E", "B", "F#", "E", "B", "F#", "E", "B", "F#", "E", "B", "F#", "E", "B", "F#", "E", "C#m", "D#m", "E", "F#", "B", "F#", "E", "B", "F#", "E", "B", "F#", "E", "B", "D#7", "E", "C#m", "F#", "G#m", "C#m", "F#", "G#m", "C#m", "F#", "G#m", "C#m", "F#", "G#m", "B", "F#", "E", "B", "F#", "E", "B", "F#", "E", "B", "D#7", "E", "B", "F#", "E", "B", "F#", "E"],
+  "simplifedChords": ["B", "F#", "E", "B", "F#", "E", "B", "F#", "E", "B", "D#", "E", "B", "F#", "E", "B", "F#", "E", "B", "F#", "E", "B", "F#", "E", "C#m", "D#m", "E", "F#", "B", "F#", "E", "B", "F#", "E", "B", "F#", "E", "B", "D#", "E", "B", "F#", "E", "B", "F#", "E", "B", "F#", "E", "B", "F#", "E", "B", "F#", "E", "B", "F#", "E", "C#m", "D#m", "E", "F#", "B", "F#", "E", "B", "F#", "E", "B", "F#", "E", "B", "D#", "E", "C#m", "F#", "G#m", "C#m", "F#", "G#m", "C#m", "F#", "G#m", "C#m", "F#", "G#m", "B", "F#", "E", "B", "F#", "E", "B", "F#", "E", "B", "D#", "E", "B", "F#", "E", "B", "F#", "E"],
+  "decade": "2010"
+},
+{
+  "name": "Hallelujah",
+  "artist": "Jeff Buckley",
+  "capo": 1,
+  "tonality": "Db",
+  "tuning": "E A D G B E",
+  "rawChords": ["C", "Am", "C", "Am", "C", "Am", "C", "Am", "F", "G", "C", "G", "C", "F", "G", "Am", "F", "G", "E7", "Am", "F", "Am", "F", "C", "G", "C", "G", "C", "Am", "C", "Am", "F", "G", "C", "G", "C", "F", "G", "Am", "F", "G", "E7", "Am", "F", "Am", "F", "C", "G", "C", "G", "C", "Am", "C", "Am", "F", "G", "C", "G", "C", "F", "G", "Am", "F", "G", "E7", "Am", "F", "Am", "F", "C", "G", "C", "G", "C", "Am", "C", "Am", "F", "G", "C", "G", "C", "F", "G", "Am", "F", "G", "E7", "Am", "F", "Am", "F", "C", "G", "C", "G", "C", "Am", "C", "Am", "F", "G", "C", "G", "C", "F", "G", "Am", "F", "G", "E7", "Am", "F", "Am", "F", "C", "G", "C", "G"],
+  "simplifedChords": ["C", "Am", "C", "Am", "C", "Am", "C", "Am", "F", "G", "C", "G", "C", "F", "G", "Am", "F", "G", "E", "Am", "F", "Am", "F", "C", "G", "C", "G", "C", "Am", "C", "Am", "F", "G", "C", "G", "C", "F", "G", "Am", "F", "G", "E", "Am", "F", "Am", "F", "C", "G", "C", "G", "C", "Am", "C", "Am", "F", "G", "C", "G", "C", "F", "G", "Am", "F", "G", "E", "Am", "F", "Am", "F", "C", "G", "C", "G", "C", "Am", "C", "Am", "F", "G", "C", "G", "C", "F", "G", "Am", "F", "G", "E", "Am", "F", "Am", "F", "C", "G", "C", "G", "C", "Am", "C", "Am", "F", "G", "C", "G", "C", "F", "G", "Am", "F", "G", "E", "Am", "F", "Am", "F", "C", "G", "C", "G"],
+  "genre": "rock"
+},
+{
+  "name": "Wonderwall",
+  "artist": "Oasis",
+  "capo": 2,
+  "tonality": "F#m",
+  "tuning": "E A D G B E",
+  "rawChords": ["Em7", "G", "Dsus4", "A7sus4", "Em7", "G", "Dsus4", "A7sus4", "Em7", "G", "Dsus4", "A7sus4", "Em7", "G", "Dsus4", "A7sus4", "Em7", "G", "Dsus4", "A7sus4", "Cadd9", "Dsus", "A7sus4", "Em7", "G", "Dsus4", "A7sus4", "Em7", "G", "Dsus4", "A7sus4", "Em7", "G", "Dsus4", "A7sus4", "Em7", "G", "Dsus4", "A7sus4", "C", "D", "Em", "C", "D", "Em", "C", "D", "G5", "G5/F#", "G5/E", "G5", "A7sus4", "Cadd9", "Em7", "G", "Em7", "Cadd9", "Em7", "G", "Em7", "Cadd9", "Em7", "G", "Em7", "Cadd9", "Em7", "G", "Em7/B", "A7sus4", "Em7", "G", "Dsus4", "A7sus4", "Em7", "G", "Dsus4", "A7sus4", "Em7", "G", "Dsus4", "A7sus4", "Em7", "G", "Dsus4", "A7sus4", "C", "D", "Em", "C", "D", "Em", "C", "D", "G5", "G5/F#", "G5/E", "G5", "A7sus4", "Cadd9", "Em7", "G", "Em7", "Cadd9", "Em7", "G", "Em7", "Cadd9", "Em7", "G", "Em7", "Cadd9", "Em7", "G", "Em7", "Cadd9", "Em7", "G", "Em7", "Cadd9", "Em7", "G", "Em7", "Cadd9", "Em7", "G", "Em7", "Cadd9", "Em7", "G", "Em7", "Cadd9", "Em7", "G", "Em7", "Cadd9", "Em7", "G", "Em7", "Cadd9", "Em7", "G", "Em7", "Cadd9", "Em7", "G", "Em7", "Cadd9", "Em7", "G", "Em7", "Cadd9", "Em7", "G", "Em7"],
+  "simplifedChords": ["Em", "G", "D", "A", "Em", "G", "D", "A", "Em", "G", "D", "A", "Em", "G", "D", "A", "Em", "G", "D", "A", "C", "D", "A", "Em", "G", "D", "A", "Em", "G", "D", "A", "Em", "G", "D", "A", "Em", "G", "D", "A", "C", "D", "Em", "C", "D", "Em", "C", "D", "G", "G", "G", "G", "A", "C", "Em", "G", "Em", "C", "Em", "G", "Em", "C", "Em", "G", "Em", "C", "Em", "G", "Em", "A", "Em", "G", "D", "A", "Em", "G", "D", "A", "Em", "G", "D", "A", "Em", "G", "D", "A", "C", "D", "Em", "C", "D", "Em", "C", "D", "G", "G", "G", "G", "A", "C", "Em", "G", "Em", "C", "Em", "G", "Em", "C", "Em", "G", "Em", "C", "Em", "G", "Em", "C", "Em", "G", "Em", "C", "Em", "G", "Em", "C", "Em", "G", "Em", "C", "Em", "G", "Em", "C", "Em", "G", "Em", "C", "Em", "G", "Em", "C", "Em", "G", "Em", "C", "Em", "G", "Em", "C", "Em", "G", "Em", "C", "Em", "G", "Em"],
+  "genre": "rock"
+},
+{
+  "name": "Wish You Were Here",
+  "artist": "Pink Floyd",
+  "tonality": "Em",
+  "tuning": "E A D G B E",
+  "rawChords": ["Em7", "G", "Em7", "G", "Em7", "A7sus4", "Em7", "A7sus4", "G", "C", "D/F#", "Am/E", "G", "D/F#", "C", "Am", "G", "C", "D/F#", "Am/E", "G", "D/F#", "C", "Am", "G", "Em7", "G", "Em7", "G", "Em7", "A7sus4", "Em7", "A7sus4", "G", "C", "D/F#", "Am/E", "G", "D/F#", "C", "Am", "G", "Em7", "G", "Em7", "G", "Em7", "A7sus4", "Em7", "A7sus4", "G"],
+  "simplifedChords": ["Em", "G", "Em", "G", "Em", "A", "Em", "A", "G", "C", "D", "Am", "G", "D", "C", "Am", "G", "C", "D", "Am", "G", "D", "C", "Am", "G", "Em", "G", "Em", "G", "Em", "A", "Em", "A", "G", "C", "D", "Am", "G", "D", "C", "Am", "G", "Em", "G", "Em", "G", "Em", "A", "Em", "A", "G"],
+  "genre": "rock"
+},
+{
+  "name": "Cant Help Falling In Love",
+  "artist": "Elvis Presley",
+  "capo": 2,
+  "tonality": "C",
+  "tuning": "E A D G B E",
+  "rawChords": ["C", "G", "Am", "C", "G", "C", "Em", "Am", "F", "C", "G", "F", "G", "Am", "F", "C", "G", "C", "C", "Em", "Am", "F", "C", "G", "F", "G", "Am", "F", "C", "G", "C", "Em", "B7", "Em", "B7", "Em", "B7", "Em", "A7", "Dm", "G", "C", "Em", "Am", "F", "C", "G", "F", "G", "Am", "F", "C", "G", "C", "Em", "B7", "Em", "B7", "Em", "B7", "Em", "A7", "Dm", "G", "C", "Em", "Am", "F", "C", "G", "F", "G", "Am", "F", "C", "G", "C", "F", "G", "Am", "F", "C", "G", "C", "C", "D", "Em", "F#m", "Am", "Bm", "F", "G", "G", "A", "B7", "C#7", "A7", "B7", "Dm", "Em"],
+  "simplifedChords": ["C", "G", "Am", "C", "G", "C", "Em", "Am", "F", "C", "G", "F", "G", "Am", "F", "C", "G", "C", "C", "Em", "Am", "F", "C", "G", "F", "G", "Am", "F", "C", "G", "C", "Em", "B", "Em", "B", "Em", "B", "Em", "A", "Dm", "G", "C", "Em", "Am", "F", "C", "G", "F", "G", "Am", "F", "C", "G", "C", "Em", "B", "Em", "B", "Em", "B", "Em", "A", "Dm", "G", "C", "Em", "Am", "F", "C", "G", "F", "G", "Am", "F", "C", "G", "C", "F", "G", "Am", "F", "C", "G", "C", "C", "D", "Em", "F#m", "Am", "Bm", "F", "G", "G", "A", "B", "C#", "A", "B", "Dm", "Em"],
+  "genre": "rock"
+},
+{
+  "name": "The Only Exception",
+  "artist": "Paramore",
+  "capo": 4,
+  "tonality": "B",
+  "tuning": "E A D G B E",
+  "rawChords": ["G", "Dm", "Cmaj7", "G", "Dm", "Cmaj7", "G", "Dm", "Cmaj7", "G", "Dm", "Cmaj7", "G", "Dm", "Cmaj7", "G", "Dm", "Cmaj7", "G", "Dm", "Cmaj7", "G", "Dm", "Cmaj7", "G", "Dm", "Cmaj7", "G", "Dm", "Cmaj7", "G", "Dm", "Cmaj7", "G", "Dm", "Cmaj7", "G", "Dm", "Cmaj7", "Am", "G", "D", "Am", "G", "D", "Am", "G", "D", "Am", "G", "D", "C", "G", "Dm", "Cmaj7", "G", "Dm", "Cmaj7", "G", "Dm", "Cmaj7", "G", "Dm", "Cmaj7", "F", "C", "G", "F", "C", "G"],
+  "simplifedChords": ["G", "Dm", "C", "G", "Dm", "C", "G", "Dm", "C", "G", "Dm", "C", "G", "Dm", "C", "G", "Dm", "C", "G", "Dm", "C", "G", "Dm", "C", "G", "Dm", "C", "G", "Dm", "C", "G", "Dm", "C", "G", "Dm", "C", "G", "Dm", "C", "Am", "G", "D", "Am", "G", "D", "Am", "G", "D", "Am", "G", "D", "C", "G", "Dm", "C", "G", "Dm", "C", "G", "Dm", "C", "G", "Dm", "C", "F", "C", "G", "F", "C", "G"],
+  "genre": "rock"
+},
+{
+  "name": "Creep",
+  "artist": "Radiohead",
+  "tonality": "G",
+  "tuning": "E A D G B E",
+  "rawChords": ["G", "B", "C", "Cm", "G", "B", "C", "Cm", "G", "B", "C", "Cm", "G", "B", "C", "Cm", "G", "B", "C", "Cm", "G", "B", "C", "Cm", "G", "B", "C", "Cm", "G", "B", "C", "Cm", "G", "B", "C", "Cm", "G", "B", "C", "Cm", "G", "B", "C", "Cm", "G"],
+  "simplifedChords": ["G", "B", "C", "Cm", "G", "B", "C", "Cm", "G", "B", "C", "Cm", "G", "B", "C", "Cm", "G", "B", "C", "Cm", "G", "B", "C", "Cm", "G", "B", "C", "Cm", "G", "B", "C", "Cm", "G", "B", "C", "Cm", "G", "B", "C", "Cm", "G", "B", "C", "Cm", "G"],
+  "genre": "rock"
+},
+{
+  "name": "Iris",
+  "artist": "Goo Goo Dolls",
+  "tonality": "Bm",
+  "tuning": "D G C F A D",
+  "rawChords": ["Bm", "Bsus2", "G", "D", "Em", "G", "Bm", "A", "G", "D", "Em", "G", "Bm", "A", "G", "D", "Em", "G", "Bm", "A", "G", "D", "Em", "G", "Bm", "A", "G", "Bm", "A", "G", "Bm", "A", "G", "Bm", "A", "G", "Bm", "A", "G", "D", "Em", "G", "Bm", "A", "G", "D", "Em", "G", "Bm", "A", "G", "Bm", "A", "G", "Bm", "A", "G", "Bm", "A", "G", "Bm", "A", "G", "Bm", "Bm/A", "D", "D", "Bm", "Bm/A", "G", "G", "Bm", "Bm/A", "D", "D", "Bm", "Bm/A", "G", "G", "Bm", "Bsus2", "G", "G", "Bm", "Bsus2", "G", "G", "Bm", "Bsus2", "G", "G", "Bm", "Bsus2", "G", "F#m", "G", "Bm", "G", "F#m", "Bm", "Bm", "G", "F#m", "Bm", "Bm", "Bm", "Bm/A", "G", "G", "Bm", "Bm/A", "G", "G", "Bm", "Bm/A", "G", "G", "Bm", "Bm/A", "G", "G", "Bm", "A", "G", "Bm", "A", "G", "Bm", "A", "G", "Bm", "A", "G", "Bm", "A", "G", "Bm", "A", "G", "Bm", "A", "Bm", "Bm", "Bm/A", "G", "G", "Bm", "Bm/A", "G", "G", "Bm", "Bm/A", "G", "G", "Bm", "Bm/A", "G", "G"],
+  "simplifedChords": ["Bm", "B", "G", "D", "Em", "G", "Bm", "A", "G", "D", "Em", "G", "Bm", "A", "G", "D", "Em", "G", "Bm", "A", "G", "D", "Em", "G", "Bm", "A", "G", "Bm", "A", "G", "Bm", "A", "G", "Bm", "A", "G", "Bm", "A", "G", "D", "Em", "G", "Bm", "A", "G", "D", "Em", "G", "Bm", "A", "G", "Bm", "A", "G", "Bm", "A", "G", "Bm", "A", "G", "Bm", "A", "G", "Bm", "Bm", "D", "D", "Bm", "Bm", "G", "G", "Bm", "Bm", "D", "D", "Bm", "Bm", "G", "G", "Bm", "B", "G", "G", "Bm", "B", "G", "G", "Bm", "B", "G", "G", "Bm", "B", "G", "F#m", "G", "Bm", "G", "F#m", "Bm", "Bm", "G", "F#m", "Bm", "Bm", "Bm", "Bm", "G", "G", "Bm", "Bm", "G", "G", "Bm", "Bm", "G", "G", "Bm", "Bm", "G", "G", "Bm", "A", "G", "Bm", "A", "G", "Bm", "A", "G", "Bm", "A", "G", "Bm", "A", "G", "Bm", "A", "G", "Bm", "A", "Bm", "Bm", "Bm", "G", "G", "Bm", "Bm", "G", "G", "Bm", "Bm", "G", "G", "Bm", "Bm", "G", "G"],
+  "genre": "rock"
+},
+{
+  "name": "Love Story",
+  "artist": "Taylor Swift",
+  "capo": 2,
+  "tonality": "C",
+  "tuning": "E A D G B E",
+  "rawChords": ["C", "G", "Am", "F", "C", "F", "Am", "F", "C", "F", "Am", "G", "F", "G", "Am", "C", "F", "G", "Am", "F", "G", "C", "G", "Am", "F", "G", "C", "C", "F", "Am", "G", "F", "G", "Am", "C", "F", "G", "Am", "F", "G", "C", "G", "Am", "F", "G", "C", "G", "Am", "F", "G", "C", "G", "Am", "F", "G", "Am", "F", "C", "G", "Am", "F", "C", "G", "C", "G", "Am", "F", "G", "D", "A", "Bm", "G", "A", "D", "D", "A", "Bm", "G", "A", "D"],
+  "simplifedChords": ["C", "G", "Am", "F", "C", "F", "Am", "F", "C", "F", "Am", "G", "F", "G", "Am", "C", "F", "G", "Am", "F", "G", "C", "G", "Am", "F", "G", "C", "C", "F", "Am", "G", "F", "G", "Am", "C", "F", "G", "Am", "F", "G", "C", "G", "Am", "F", "G", "C", "G", "Am", "F", "G", "C", "G", "Am", "F", "G", "Am", "F", "C", "G", "Am", "F", "C", "G", "C", "G", "Am", "F", "G", "D", "A", "Bm", "G", "A", "D", "D", "A", "Bm", "G", "A", "D"],
+  "genre": "rock"
+},
+{
+  "name": "Dont Look Back In Anger",
+  "artist": "Oasis",
+  "tonality": "C",
+  "tuning": "E A D G B E",
+  "rawChords": ["C", "F", "C", "F", "C", "G", "Am", "E", "F", "G", "C", "Am", "G", "C", "G", "Am", "E", "F", "G", "C", "Am", "G", "F", "F", "Fm", "C", "F", "Fm", "C", "F", "Fm", "C", "G", "E", "Am", "G", "F", "G", "C", "G", "Am", "E", "F", "G", "C", "Am", "G", "C", "G", "Am", "E", "F", "G", "C", "G", "Am", "E", "F", "G", "C", "Am", "G", "C", "G", "Am", "E", "F", "G", "C", "Am", "G", "C", "G", "Am", "E", "F", "G", "C", "Am", "G", "F", "Fm", "C", "F", "Fm", "C", "F", "Fm", "C", "G", "E", "Am", "G", "F", "G", "C", "G", "Am", "E", "F", "G", "C", "Am", "G", "C", "G", "Am", "E", "F", "G", "C", "Am", "G", "F", "Fm", "C", "G", "E/G#", "Am", "G", "F", "G", "C", "G", "Am", "E", "F", "G", "C", "Am", "G", "C", "G", "Am", "E", "F", "G", "C", "Am", "G", "C", "G", "Am", "E", "F", "G", "C", "Am", "G", "C", "G", "Am", "F", "Fm", "C", "G", "Am", "E", "F", "Fm", "C"],
+  "simplifedChords": ["C", "F", "C", "F", "C", "G", "Am", "E", "F", "G", "C", "Am", "G", "C", "G", "Am", "E", "F", "G", "C", "Am", "G", "F", "F", "Fm", "C", "F", "Fm", "C", "F", "Fm", "C", "G", "E", "Am", "G", "F", "G", "C", "G", "Am", "E", "F", "G", "C", "Am", "G", "C", "G", "Am", "E", "F", "G", "C", "G", "Am", "E", "F", "G", "C", "Am", "G", "C", "G", "Am", "E", "F", "G", "C", "Am", "G", "C", "G", "Am", "E", "F", "G", "C", "Am", "G", "F", "Fm", "C", "F", "Fm", "C", "F", "Fm", "C", "G", "E", "Am", "G", "F", "G", "C", "G", "Am", "E", "F", "G", "C", "Am", "G", "C", "G", "Am", "E", "F", "G", "C", "Am", "G", "F", "Fm", "C", "G", "E", "Am", "G", "F", "G", "C", "G", "Am", "E", "F", "G", "C", "Am", "G", "C", "G", "Am", "E", "F", "G", "C", "Am", "G", "C", "G", "Am", "E", "F", "G", "C", "Am", "G", "C", "G", "Am", "F", "Fm", "C", "G", "Am", "E", "F", "Fm", "C"],
+  "genre": "rock"
+},
+{
+  "name": "Let It Be",
+  "artist": "The Beatles",
+  "tonality": "C",
+  "tuning": "E A D G B E",
+  "rawChords": ["C", "G", "Am", "Fmaj7", "F6", "C", "G", "F", "C/E", "Dm", "C", "C", "G", "Am", "Fmaj7", "F6", "C", "G", "F", "C/E", "Dm", "C", "Am", "C/G", "F", "C", "C", "G", "F", "C/E", "Dm", "C", "C", "G", "Am", "Fmaj7", "F6", "C", "G", "F", "C/E", "Dm", "C", "C", "G", "Am", "Fmaj7", "F6", "C", "G", "F", "C/E", "Dm", "C", "Am", "C/G", "F", "C", "C", "G", "F", "C/E", "Dm", "C", "Am", "C/G", "F", "C", "C", "G", "F", "C/E", "Dm", "C", "F", "C/E", "Dm", "C", "Bb", "F/A", "G", "F", "C", "C", "G", "Am", "F", "C", "G", "F", "C", "Am", "C/G", "F", "C", "C", "G", "F", "C/E", "Dm", "C", "C", "G", "Am", "Fmaj7", "F6", "C", "G", "F", "C/E", "Dm", "C", "C", "G", "Am", "Fmaj7", "F6", "C", "G", "F", "C/E", "Dm", "C", "Am", "C/G", "F", "C", "C", "G", "F", "C/E", "Dm", "C", "F", "C/E", "Dm", "C", "Bb", "F/A", "G", "F", "C"],
+  "simplifedChords": ["C", "G", "Am", "F", "F", "C", "G", "F", "C", "Dm", "C", "C", "G", "Am", "F", "F", "C", "G", "F", "C", "Dm", "C", "Am", "C", "F", "C", "C", "G", "F", "C", "Dm", "C", "C", "G", "Am", "F", "F", "C", "G", "F", "C", "Dm", "C", "C", "G", "Am", "F", "F", "C", "G", "F", "C", "Dm", "C", "Am", "C", "F", "C", "C", "G", "F", "C", "Dm", "C", "Am", "C", "F", "C", "C", "G", "F", "C", "Dm", "C", "F", "C", "Dm", "C", "Bb", "F", "G", "F", "C", "C", "G", "Am", "F", "C", "G", "F", "C", "Am", "C", "F", "C", "C", "G", "F", "C", "Dm", "C", "C", "G", "Am", "F", "F", "C", "G", "F", "C", "Dm", "C", "C", "G", "Am", "F", "F", "C", "G", "F", "C", "Dm", "C", "Am", "C", "F", "C", "C", "G", "F", "C", "Dm", "C", "F", "C", "Dm", "C", "Bb", "F", "G", "F", "C"],
+  "genre": "rock"
+},
+{
+  "name": "Viva La Vida",
+  "artist": "Coldplay",
+  "capo": 1,
+  "tonality": "D",
+  "tuning": "E A D G B E",
+  "rawChords": ["C", "D", "G", "Em", "Em", "C", "D", "G", "Em", "C", "D", "G", "Em", "C", "D", "G", "Em", "Em", "C", "D", "G", "Em", "C", "D", "G", "Em", "Em", "C", "D", "G", "Em", "C", "D", "G", "Em", "C", "D", "G", "Em", "C", "D", "G", "Em", "C", "D", "G", "Em", "C", "D", "G", "Em", "C", "D", "G", "Em", "Em", "C", "D", "G", "Em", "C", "D", "G", "Em", "Em", "C", "D", "G", "Em", "C", "D", "G", "Em", "C", "D", "G", "Em", "C", "D", "G", "Em", "C", "D", "G", "Em", "C", "D", "G", "Em", "C", "Em", "C", "D", "G", "Em", "C", "D", "G", "Em", "C", "D", "G", "Em", "C", "D", "G", "Em", "C", "D", "G", "Em", "C", "D", "G", "Em"],
+  "simplifedChords": ["C", "D", "G", "Em", "Em", "C", "D", "G", "Em", "C", "D", "G", "Em", "C", "D", "G", "Em", "Em", "C", "D", "G", "Em", "C", "D", "G", "Em", "Em", "C", "D", "G", "Em", "C", "D", "G", "Em", "C", "D", "G", "Em", "C", "D", "G", "Em", "C", "D", "G", "Em", "C", "D", "G", "Em", "C", "D", "G", "Em", "Em", "C", "D", "G", "Em", "C", "D", "G", "Em", "Em", "C", "D", "G", "Em", "C", "D", "G", "Em", "C", "D", "G", "Em", "C", "D", "G", "Em", "C", "D", "G", "Em", "C", "D", "G", "Em", "C", "Em", "C", "D", "G", "Em", "C", "D", "G", "Em", "C", "D", "G", "Em", "C", "D", "G", "Em", "C", "D", "G", "Em", "C", "D", "G", "Em"],
+  "genre": "rock"
+},
+{
+  "name": "Hey There Delilah",
+  "artist": "Plain White T's",
+  "tonality": "D",
+  "tuning": "E A D G B E",
+  "rawChords": ["D", "F#m", "D", "F#m", "D", "F#m", "D", "F#m", "Bm", "G", "A", "Bm", "A", "D", "F#m", "D", "F#m", "Bm", "G", "A", "Bm", "A", "D", "Bm", "D", "Bm", "A", "D", "Bm", "D", "Bm", "D", "D", "F#m", "D", "F#m", "Bm", "G", "A", "Bm", "A", "D", "F#m", "D", "F#m", "Bm", "G", "A", "Bm", "A", "D", "Bm", "D", "Bm", "A", "D", "Bm", "D", "Bm", "A", "G", "A", "D", "Bm", "G", "A", "D", "Bm", "G", "A", "Bm", "A", "D", "F#m", "D", "F#m", "Bm", "G", "A", "Bm", "G", "A", "Bm", "G", "A", "Bm", "A", "D", "Bm", "D", "Bm", "A", "D", "Bm", "D", "Bm", "D", "Bm", "D", "Bm", "D", "Bm", "D", "Bm", "D", "D"],
+  "simplifedChords": ["D", "F#m", "D", "F#m", "D", "F#m", "D", "F#m", "Bm", "G", "A", "Bm", "A", "D", "F#m", "D", "F#m", "Bm", "G", "A", "Bm", "A", "D", "Bm", "D", "Bm", "A", "D", "Bm", "D", "Bm", "D", "D", "F#m", "D", "F#m", "Bm", "G", "A", "Bm", "A", "D", "F#m", "D", "F#m", "Bm", "G", "A", "Bm", "A", "D", "Bm", "D", "Bm", "A", "D", "Bm", "D", "Bm", "A", "G", "A", "D", "Bm", "G", "A", "D", "Bm", "G", "A", "Bm", "A", "D", "F#m", "D", "F#m", "Bm", "G", "A", "Bm", "G", "A", "Bm", "G", "A", "Bm", "A", "D", "Bm", "D", "Bm", "A", "D", "Bm", "D", "Bm", "D", "Bm", "D", "Bm", "D", "Bm", "D", "Bm", "D", "D"],
+  "genre": "rock"
+},
+{
+  "name": "You Belong With Me",
+  "artist": "Taylor Swift",
+  "capo": 4,
+  "tonality": "F#",
+  "tuning": "E A D G B E",
+  "rawChords": ["D", "D", "D", "A", "Em", "G", "D", "A", "Em", "G", "Em", "G", "D", "A", "Em", "G", "A", "D", "A", "Em", "G", "D", "D", "D", "A", "Em", "G", "D", "A", "Em", "G", "Em", "G", "D", "A", "Em", "G", "A", "D", "A", "Em", "G", "D", "A", "Em", "G", "D", "D", "A", "Em", "G", "Em", "G", "D", "A", "Em", "G", "D", "A", "D", "A", "Em", "G", "D", "A", "Em", "G", "D", "A", "Em", "G", "D"],
+  "simplifedChords": ["D", "D", "D", "A", "Em", "G", "D", "A", "Em", "G", "Em", "G", "D", "A", "Em", "G", "A", "D", "A", "Em", "G", "D", "D", "D", "A", "Em", "G", "D", "A", "Em", "G", "Em", "G", "D", "A", "Em", "G", "A", "D", "A", "Em", "G", "D", "A", "Em", "G", "D", "D", "A", "Em", "G", "Em", "G", "D", "A", "Em", "G", "D", "A", "D", "A", "Em", "G", "D", "A", "Em", "G", "D", "A", "Em", "G", "D"],
+  "genre": "rock"
+},
+{
+  "name": "Fix You",
+  "artist": "Coldplay",
+  "capo": 3,
+  "tonality": "C",
+  "tuning": "E A D G B E",
+  "rawChords": ["C", "Em", "Am7", "Em/G", "C", "Em", "Am7", "Em/G", "C", "Em", "Am7", "Em/G", "C", "Em", "Am7", "Em/G", "C", "Em", "Am7", "Em/G", "C", "Em", "Am7", "Em/G", "C", "Em", "Am7", "Em/G", "C", "Em", "Am7", "Em/G", "C", "Em", "Am7", "Em/G", "F", "C", "G", "Gsus4", "F", "F", "C", "G", "Gsus4", "F", "F", "C", "G", "Gsus4", "C", "Em", "Am7", "G", "C", "Em", "Am7", "Em/G", "C", "Em", "Am7", "Em/G", "C", "Em", "Am7", "Em/G", "C", "Em", "Am7", "Em/G", "F", "C", "G", "Gsus4", "F", "F", "C", "G", "Gsus4", "F", "F", "C", "G", "Gsus4", "C", "F", "C", "G", "Am7", "F", "C", "G", "C", "F", "C", "G", "Am7", "F", "C", "G", "F", "C", "G", "Gsus4", "F", "F", "C", "G", "Gsus4", "F", "F", "C", "G", "Gsus4"],
+  "simplifedChords": ["C", "Em", "Am", "Em", "C", "Em", "Am", "Em", "C", "Em", "Am", "Em", "C", "Em", "Am", "Em", "C", "Em", "Am", "Em", "C", "Em", "Am", "Em", "C", "Em", "Am", "Em", "C", "Em", "Am", "Em", "C", "Em", "Am", "Em", "F", "C", "G", "G", "F", "F", "C", "G", "G", "F", "F", "C", "G", "G", "C", "Em", "Am", "G", "C", "Em", "Am", "Em", "C", "Em", "Am", "Em", "C", "Em", "Am", "Em", "C", "Em", "Am", "Em", "F", "C", "G", "G", "F", "F", "C", "G", "G", "F", "F", "C", "G", "G", "C", "F", "C", "G", "Am", "F", "C", "G", "C", "F", "C", "G", "Am", "F", "C", "G", "F", "C", "G", "G", "F", "F", "C", "G", "G", "F", "F", "C", "G", "G"],
+  "genre": "rock"
+},
+{
+  "name": "Boulevard Of Broken Dreams",
+  "artist": "Green Day",
+  "capo": 1,
+  "tonality": "Em",
+  "tuning": "E A D G B E",
+  "rawChords": ["Em", "G", "D", "A", "Em", "G", "D", "A", "Em", "Em", "G", "D", "A", "Em", "G", "D", "A", "Em", "G", "D", "A", "Em", "Em", "G", "D", "A", "Em", "Em", "G", "D", "A", "C", "G", "D", "Em", "C", "G", "D", "Em", "C", "G", "D", "Em", "C", "G", "B", "Em", "G", "D", "A", "Em", "G", "D", "A", "Em", "G", "D", "A", "Em", "G", "D", "A", "Em", "G", "D", "A", "Em", "G", "D", "A", "Em", "G", "D", "A", "Em", "G", "D", "A", "Em", "Em", "G", "D", "A", "C", "G", "D", "Em", "C", "G", "D", "Em", "C", "G", "D", "Em", "C", "G", "B", "Em", "G", "D", "A", "Em", "G", "D", "A", "C", "G", "D", "Em", "C", "G", "D", "Em", "C", "G", "D", "Em", "C", "G", "B", "B", "Em", "G", "D", "A", "Em", "G", "D", "A", "C", "G", "D", "Em", "C", "G", "D", "Em", "C", "G", "D", "Em", "C", "G", "B", "Em", "C", "D", "A/C#", "G", "D#5", "Em", "C", "D", "A/C#", "G", "D#5", "Em", "C", "D", "A/C#", "G", "D#5", "Em", "C", "D", "A/C#", "G", "D#5"],
+  "simplifedChords": ["Em", "G", "D", "A", "Em", "G", "D", "A", "Em", "Em", "G", "D", "A", "Em", "G", "D", "A", "Em", "G", "D", "A", "Em", "Em", "G", "D", "A", "Em", "Em", "G", "D", "A", "C", "G", "D", "Em", "C", "G", "D", "Em", "C", "G", "D", "Em", "C", "G", "B", "Em", "G", "D", "A", "Em", "G", "D", "A", "Em", "G", "D", "A", "Em", "G", "D", "A", "Em", "G", "D", "A", "Em", "G", "D", "A", "Em", "G", "D", "A", "Em", "G", "D", "A", "Em", "Em", "G", "D", "A", "C", "G", "D", "Em", "C", "G", "D", "Em", "C", "G", "D", "Em", "C", "G", "B", "Em", "G", "D", "A", "Em", "G", "D", "A", "C", "G", "D", "Em", "C", "G", "D", "Em", "C", "G", "D", "Em", "C", "G", "B", "B", "Em", "G", "D", "A", "Em", "G", "D", "A", "C", "G", "D", "Em", "C", "G", "D", "Em", "C", "G", "D", "Em", "C", "G", "B", "Em", "C", "D", "A", "G", "D#", "Em", "C", "D", "A", "G", "D#", "Em", "C", "D", "A", "G", "D#", "Em", "C", "D", "A", "G", "D#"],
+  "genre": "rock"
+},
+{
+  "name": "Good Riddance Time Of Your Life",
+  "artist": "Green Day",
+  "tonality": "G",
+  "tuning": "E A D G B E",
+  "rawChords": ["G", "G", "Cadd9", "D", "G", "G", "Cadd9", "D", "G", "C", "D", "G", "C", "D", "Em", "D", "C", "G", "Em", "D", "C", "G", "Em", "G", "Em", "G", "Em", "D", "G", "G", "G", "Cadd9", "D", "G", "G", "Cadd9", "D", "G", "C", "D", "G", "C", "D", "Em", "D", "C", "G", "Em", "D", "C", "G", "Em", "G", "Em", "G", "Em", "D", "G", "G", "G", "Cadd9", "D", "G", "G", "Cadd9", "D", "G", "G", "Cadd9", "D", "G", "G", "Cadd9", "D", "Em", "D", "C", "G", "Em", "D", "C", "G", "Em", "G", "Em", "G", "Em", "D", "G", "G", "G", "Cadd9", "D", "G", "G", "Cadd9", "D", "Em", "G", "Em", "G", "Em", "D", "G", "G", "G", "Cadd9", "D", "G", "G", "Cadd9", "D", "G"],
+  "simplifedChords": ["G", "G", "C", "D", "G", "G", "C", "D", "G", "C", "D", "G", "C", "D", "Em", "D", "C", "G", "Em", "D", "C", "G", "Em", "G", "Em", "G", "Em", "D", "G", "G", "G", "C", "D", "G", "G", "C", "D", "G", "C", "D", "G", "C", "D", "Em", "D", "C", "G", "Em", "D", "C", "G", "Em", "G", "Em", "G", "Em", "D", "G", "G", "G", "C", "D", "G", "G", "C", "D", "G", "G", "C", "D", "G", "G", "C", "D", "Em", "D", "C", "G", "Em", "D", "C", "G", "Em", "G", "Em", "G", "Em", "D", "G", "G", "G", "C", "D", "G", "G", "C", "D", "Em", "G", "Em", "G", "Em", "D", "G", "G", "G", "C", "D", "G", "G", "C", "D", "G"],
+  "genre": "rock"
+},
+{
+  "name": "Breakeven",
+  "artist": "The Script",
+  "capo": 3,
+  "tonality": "Em",
+  "tuning": "E A D G B E",
+  "rawChords": ["C", "G", "D", "Em", "Em", "D", "G", "Am7", "Em", "D", "G", "Am7", "Em", "D", "G", "Am7", "Em", "D", "G", "Am7", "Em", "D", "G", "Am7", "Em", "D", "G", "Am7", "Em", "D", "G", "Am7", "Em", "D", "G", "Am7", "Em", "D", "G", "Am7", "C", "G", "D", "Em", "C", "G", "D", "Em", "C", "G", "D", "Em", "C", "G", "D", "Em", "Em", "D", "G", "Am7", "Em", "D", "G", "Am7", "Em", "D", "G", "Am7", "Em", "D", "G", "Am7", "Em", "D", "G", "Am7", "C", "G", "D", "Em", "C", "G", "D", "Em", "C", "G", "D", "Em", "C", "G", "D", "Em", "C", "G", "D", "Em", "C", "G", "D", "Em", "Em", "D", "G", "Am7", "Em", "D", "G", "Am7", "Em", "D", "G", "Am7", "Em", "D", "G", "Am7", "Em", "D", "G", "Am7", "Em", "D", "G", "Am7", "Em", "D", "G", "Am7", "C", "C", "G", "D", "Em", "C", "G", "D", "Em", "C", "G", "D", "Em", "C", "G", "D", "Em", "C", "G", "D", "Em", "C", "G", "D", "Em", "C", "G", "D", "Em", "C", "G", "D", "Em", "C", "G", "D", "Em", "C", "G", "D", "Em", "C", "G", "D", "Em"],
+  "simplifedChords": ["C", "G", "D", "Em", "Em", "D", "G", "Am", "Em", "D", "G", "Am", "Em", "D", "G", "Am", "Em", "D", "G", "Am", "Em", "D", "G", "Am", "Em", "D", "G", "Am", "Em", "D", "G", "Am", "Em", "D", "G", "Am", "Em", "D", "G", "Am", "C", "G", "D", "Em", "C", "G", "D", "Em", "C", "G", "D", "Em", "C", "G", "D", "Em", "Em", "D", "G", "Am", "Em", "D", "G", "Am", "Em", "D", "G", "Am", "Em", "D", "G", "Am", "Em", "D", "G", "Am", "C", "G", "D", "Em", "C", "G", "D", "Em", "C", "G", "D", "Em", "C", "G", "D", "Em", "C", "G", "D", "Em", "C", "G", "D", "Em", "Em", "D", "G", "Am", "Em", "D", "G", "Am", "Em", "D", "G", "Am", "Em", "D", "G", "Am", "Em", "D", "G", "Am", "Em", "D", "G", "Am", "Em", "D", "G", "Am", "C", "C", "G", "D", "Em", "C", "G", "D", "Em", "C", "G", "D", "Em", "C", "G", "D", "Em", "C", "G", "D", "Em", "C", "G", "D", "Em", "C", "G", "D", "Em", "C", "G", "D", "Em", "C", "G", "D", "Em", "C", "G", "D", "Em", "C", "G", "D", "Em"],
+  "genre": "rock"
+},
+{
+  "name": "Chasing Cars",
+  "artist": "Snow Patrol",
+  "tonality": "A",
+  "tuning": "E A D G B E",
+  "rawChords": ["A", "A", "E/G#", "D", "A", "A", "E/G#", "D", "A", "A", "E/G#", "Dmaj7", "A", "A", "E/G#", "D", "A", "A", "E/G#", "D", "A", "A", "E/G#", "Dmaj7", "A", "A", "E/G#", "Dmaj7", "A", "A", "E/G#", "D", "A", "A", "E/G#", "D", "A", "A", "E/G#", "Dmaj7", "A", "A", "E/G#", "Dmaj7", "A", "A", "E/G#", "Dmaj7", "A", "A", "E/G#", "Dmaj7", "A", "A", "E/G#", "Dmaj7", "A", "A"],
+  "simplifedChords": ["A", "A", "E", "D", "A", "A", "E", "D", "A", "A", "E", "D", "A", "A", "E", "D", "A", "A", "E", "D", "A", "A", "E", "D", "A", "A", "E", "D", "A", "A", "E", "D", "A", "A", "E", "D", "A", "A", "E", "D", "A", "A", "E", "D", "A", "A", "E", "D", "A", "A", "E", "D", "A", "A", "E", "D", "A", "A"],
+  "genre": "rock"
+},
+{
+  "name": "Youre Beautiful",
+  "artist": "James Blunt",
+  "capo": 8,
+  "tonality": "G",
+  "tuning": "E A D G B E",
+  "rawChords": ["G", "G/F#", "Em7", "Cadd9", "G", "G/F#", "Em7", "Cadd9", "G", "G/F#", "Em7", "Cadd9", "G", "G/F#", "Em7", "Cadd9", "D/F#", "Cadd9", "D/F#", "Em7", "D/F#", "Cadd9", "D/F#", "G", "Cadd9", "D/F#", "G", "D/F#", "Em7", "Cadd9", "D/F#", "Em7", "Cadd9", "D/F#", "G", "G/F#", "Em7", "Cadd9", "G", "G/F#", "Em7", "Cadd9", "G", "G/F#", "Em7", "Cadd9", "Cadd9", "D/F#", "Em7", "D/F#", "Cadd9", "D/F#", "G", "Cadd9", "D/F#", "G", "D/F#", "Em7", "Cadd9", "D/F#", "Em7", "Cadd9", "D/F#", "G", "Cadd9", "Em7", "Cadd9", "D/F#", "Cadd9", "D/F#", "Cadd9", "D/F#", "Em7", "D/F#", "Cadd9", "D/F#", "G", "Cadd9", "D/F#", "G", "D/F#", "Em7", "Cadd9", "D/F#", "G", "D/F#", "Em7", "Cadd9", "D/F#", "Em7", "Cadd9", "D/F#", "G"],
+  "simplifedChords": ["G", "G", "Em", "C", "G", "G", "Em", "C", "G", "G", "Em", "C", "G", "G", "Em", "C", "D", "C", "D", "Em", "D", "C", "D", "G", "C", "D", "G", "D", "Em", "C", "D", "Em", "C", "D", "G", "G", "Em", "C", "G", "G", "Em", "C", "G", "G", "Em", "C", "C", "D", "Em", "D", "C", "D", "G", "C", "D", "G", "D", "Em", "C", "D", "Em", "C", "D", "G", "C", "Em", "C", "D", "C", "D", "C", "D", "Em", "D", "C", "D", "G", "C", "D", "G", "D", "Em", "C", "D", "G", "D", "Em", "C", "D", "Em", "C", "D", "G"],
+  "genre": "rock"
+},
+{
+  "name": "Imagine",
+  "artist": "John Lennon",
+  "tonality": "C",
+  "tuning": "E A D G B E",
+  "rawChords": ["C", "Cmaj7", "F", "Cadd9", "Cadd9", "Cmaj7", "F", "Cadd9", "C", "Cmaj7", "F", "C", "Cmaj7", "F", "C", "Cmaj7", "F", "C", "Cmaj7", "F", "C", "Cmaj7", "F", "C", "Cmaj7", "F", "F", "Am/E", "Dm7", "F/C", "G", "C/G", "G7", "C", "Cmaj7", "F", "C", "Cmaj7", "F", "C", "Cmaj7", "F", "C", "Cmaj7", "F", "F", "Am/E", "Dm7", "F/C", "G", "C/G", "G7", "F", "G", "C", "Cmaj7", "E", "E7", "F", "G", "C", "Cmaj7", "E", "E7", "F", "G", "C", "Cmaj7", "E", "E7", "F", "G", "C", "C", "Cmaj7", "F", "C", "Cmaj7", "F", "C", "Cmaj7", "F", "C", "Cmaj7", "F", "F", "Am/E", "Dm7", "F/C", "G", "C/G", "G7", "F", "G", "C", "Cmaj7", "E", "E7", "F", "G", "C", "Cmaj7", "E", "E7", "F", "G", "C", "Cmaj7", "E", "E7", "F", "G", "C"],
+  "simplifedChords": ["C", "C", "F", "C", "C", "C", "F", "C", "C", "C", "F", "C", "C", "F", "C", "C", "F", "C", "C", "F", "C", "C", "F", "C", "C", "F", "F", "Am", "Dm", "F", "G", "C", "G", "C", "C", "F", "C", "C", "F", "C", "C", "F", "C", "C", "F", "F", "Am", "Dm", "F", "G", "C", "G", "F", "G", "C", "C", "E", "E", "F", "G", "C", "C", "E", "E", "F", "G", "C", "C", "E", "E", "F", "G", "C", "C", "C", "F", "C", "C", "F", "C", "C", "F", "C", "C", "F", "F", "Am", "Dm", "F", "G", "C", "G", "F", "G", "C", "C", "E", "E", "F", "G", "C", "C", "E", "E", "F", "G", "C", "C", "E", "E", "F", "G", "C"],
+  "genre": "rock"
+},
+{
+  "name": "The Man Who Cant Be Moved",
+  "artist": "The Script",
+  "capo": 3,
+  "tonality": "G",
+  "rawChords": ["G", "D/F#", "C", "G", "D/F#", "Am", "C", "G", "D/F#", "Am", "C", "G", "D/F#", "Am", "C", "G", "D/F#", "Am", "C", "G", "D", "Am", "C", "G", "D", "Am", "C", "D", "G", "D", "Am", "C", "G", "D/F#", "Am", "C", "G", "D/F#", "Am", "C", "G", "D", "Am", "C", "G", "D", "Am", "C", "D", "G", "D", "Am", "C", "G", "D", "Am", "C", "G", "D", "Am", "C", "Em", "Am", "C", "Em", "Am", "C", "Em", "D", "Am", "C", "D", "Em", "D", "Am", "C", "G", "D", "Am", "C", "G", "D", "Am", "C", "D", "G", "D", "Am", "C", "G", "D", "Am", "C", "G", "D", "Am", "C", "G", "D/F#", "Am", "C", "D"],
+  "simplifedChords": ["G", "D", "C", "G", "D", "Am", "C", "G", "D", "Am", "C", "G", "D", "Am", "C", "G", "D", "Am", "C", "G", "D", "Am", "C", "G", "D", "Am", "C", "D", "G", "D", "Am", "C", "G", "D", "Am", "C", "G", "D", "Am", "C", "G", "D", "Am", "C", "G", "D", "Am", "C", "D", "G", "D", "Am", "C", "G", "D", "Am", "C", "G", "D", "Am", "C", "Em", "Am", "C", "Em", "Am", "C", "Em", "D", "Am", "C", "D", "Em", "D", "Am", "C", "G", "D", "Am", "C", "G", "D", "Am", "C", "D", "G", "D", "Am", "C", "G", "D", "Am", "C", "G", "D", "Am", "C", "G", "D", "Am", "C", "D"],
+  "genre": "rock"
+},
+{
+  "name": "House Of The Rising Sun",
+  "artist": "The Animals",
+  "tonality": "Am",
+  "tuning": "E A D G B E",
+  "rawChords": ["Am", "C", "D", "F", "Am", "E", "Am", "E", "Am", "C", "D", "F", "Am", "C", "E", "Am", "C", "D", "F", "Am", "E", "Am", "C", "D", "F", "Am", "E", "Am", "E", "Am", "C", "D", "F", "Am", "C", "E", "Am", "C", "D", "F", "Am", "E", "Am", "C", "D", "F", "Am", "E", "Am", "E", "Am", "C", "D", "F", "Am", "C", "E", "Am", "C", "D", "F", "Am", "E", "Am", "C", "D", "F", "Am", "E", "Am", "E", "Am", "C", "D", "F", "Am", "C", "E", "Am", "C", "D", "F", "Am", "E", "Am", "C", "D", "F", "Am", "E", "Am", "E", "Am", "C", "D", "F", "Am", "C", "E", "Am", "C", "D", "F", "Am", "E", "Am", "C", "D", "F", "Am", "E", "Am", "E", "Am", "C", "D", "F", "Am", "C", "E", "Am", "C", "D", "F", "Am", "E", "Am", "C", "D", "F", "Am", "E", "Am", "E", "Am", "C", "D", "F", "Am", "C", "E", "Am", "C", "D", "F", "Am", "E7", "Am", "C", "D", "F7", "Am", "E7", "Am", "Dm", "Am", "Dm", "Am", "Dm", "Am", "Dm", "Am", "Dm", "Am"],
+  "simplifedChords": ["Am", "C", "D", "F", "Am", "E", "Am", "E", "Am", "C", "D", "F", "Am", "C", "E", "Am", "C", "D", "F", "Am", "E", "Am", "C", "D", "F", "Am", "E", "Am", "E", "Am", "C", "D", "F", "Am", "C", "E", "Am", "C", "D", "F", "Am", "E", "Am", "C", "D", "F", "Am", "E", "Am", "E", "Am", "C", "D", "F", "Am", "C", "E", "Am", "C", "D", "F", "Am", "E", "Am", "C", "D", "F", "Am", "E", "Am", "E", "Am", "C", "D", "F", "Am", "C", "E", "Am", "C", "D", "F", "Am", "E", "Am", "C", "D", "F", "Am", "E", "Am", "E", "Am", "C", "D", "F", "Am", "C", "E", "Am", "C", "D", "F", "Am", "E", "Am", "C", "D", "F", "Am", "E", "Am", "E", "Am", "C", "D", "F", "Am", "C", "E", "Am", "C", "D", "F", "Am", "E", "Am", "C", "D", "F", "Am", "E", "Am", "E", "Am", "C", "D", "F", "Am", "C", "E", "Am", "C", "D", "F", "Am", "E", "Am", "C", "D", "F", "Am", "E", "Am", "Dm", "Am", "Dm", "Am", "Dm", "Am", "Dm", "Am", "Dm", "Am"],
+  "genre": "rock"
+},
+{
+  "name": "Use Somebody",
+  "artist": "Kings of Leon",
+  "tuning": "E A D G B E",
+  "rawChords": ["C", "C/E", "F", "F", "C", "C/E", "F", "F", "Am", "C/E", "F", "F", "Am", "C/E", "F", "F", "C", "C/E", "F", "C", "C/E", "F", "Am", "C", "F", "Am", "C", "F", "C", "C/E", "F", "C", "C/E", "F", "Am", "C", "F", "Am", "C", "F", "C", "C/E", "F", "C", "C/E", "F", "C", "C/E", "F", "C", "C/E", "F", "Am", "C", "F", "Am", "C", "F", "C", "C/E", "F", "C", "C/E", "F", "C", "C/E", "F", "C", "C/E", "F", "D", "F#", "C", "C/E", "F", "C", "C/E", "F", "C", "C/E", "F", "C", "C/E", "F", "C", "C/E", "F"],
+  "simplifedChords": ["C", "C", "F", "F", "C", "C", "F", "F", "Am", "C", "F", "F", "Am", "C", "F", "F", "C", "C", "F", "C", "C", "F", "Am", "C", "F", "Am", "C", "F", "C", "C", "F", "C", "C", "F", "Am", "C", "F", "Am", "C", "F", "C", "C", "F", "C", "C", "F", "C", "C", "F", "C", "C", "F", "Am", "C", "F", "Am", "C", "F", "C", "C", "F", "C", "C", "F", "C", "C", "F", "C", "C", "F", "D", "F#", "C", "C", "F", "C", "C", "F", "C", "C", "F", "C", "C", "F", "C", "C", "F"],
+  "genre": "rock"
+},
+{
+  "name": "I Will Follow You Into The Dark",
+  "artist": "Death Cab for Cutie",
+  "capo": 5,
+  "tonality": "Am",
+  "tuning": "E A D G B E",
+  "rawChords": ["Am", "C", "F", "C", "G/B", "Am", "C", "G", "Am", "C", "E", "Am", "Am/G", "F", "Fm", "C/G", "C/G", "Am/E", "F", "C", "G", "C/G", "Am/E", "F", "C", "G", "Am", "C", "F", "C", "G/B", "Am", "C", "G", "Am", "C", "E", "Am", "Am/G", "F", "Fm", "C/G", "C/G", "Am/E", "F", "C", "G", "C/G", "Am/E", "F", "C", "G", "Am", "C", "F", "C", "G/B", "Am", "C", "G", "Am", "C", "E", "Am", "Am/G", "F", "Fm", "C/G", "C/G", "Am/E", "F", "C", "G", "C/G", "Am/E", "F", "C", "G", "Am", "F", "Am", "C", "F", "C", "G/B", "Am", "C", "G", "Am", "C", "E", "Am", "Am/G", "F", "Fm", "C", "G/B", "Am", "F", "Fm", "C/G"],
+  "simplifedChords": ["Am", "C", "F", "C", "G", "Am", "C", "G", "Am", "C", "E", "Am", "Am", "F", "Fm", "C", "C", "Am", "F", "C", "G", "C", "Am", "F", "C", "G", "Am", "C", "F", "C", "G", "Am", "C", "G", "Am", "C", "E", "Am", "Am", "F", "Fm", "C", "C", "Am", "F", "C", "G", "C", "Am", "F", "C", "G", "Am", "C", "F", "C", "G", "Am", "C", "G", "Am", "C", "E", "Am", "Am", "F", "Fm", "C", "C", "Am", "F", "C", "G", "C", "Am", "F", "C", "G", "Am", "F", "Am", "C", "F", "C", "G", "Am", "C", "G", "Am", "C", "E", "Am", "Am", "F", "Fm", "C", "G", "Am", "F", "Fm", "C"],
+  "genre": "rock"
+},
+{
+  "name": "Lucky",
+  "artist": "Jason Mraz",
+  "tuning": "E A D G B E",
+  "rawChords": ["C", "C", "Am", "Dm7", "G", "E7", "Am", "Dm7", "G", "C", "Am", "Dm7", "G", "E7", "Am", "Dm7", "G", "G#dim", "Am", "Dm7", "G", "C", "C/B", "Am", "Dm7", "Gsus4", "G", "C", "Am", "Em", "G", "Dm7", "Am", "G", "Dm7", "Am", "G", "Dm7", "Am", "G", "Am7", "C/B", "Am", "Dm7", "G", "C", "C/B", "Am", "Dm7", "Gsus4", "G", "Am", "Dm7", "G", "C", "C/B", "Am", "Dm7", "Gsus4", "G", "C", "Am", "Dm7", "G", "E7", "Am", "Dm7", "G", "C", "Am", "Dm7", "G", "E7", "Am", "Dm7", "G", "Am", "Dm7", "G", "C", "C/B", "Am", "Dm7", "G", "Am", "Dm7", "G", "C", "C/B", "Am", "Dm7", "G", "C", "Am", "Em", "G", "C"],
+  "simplifedChords": ["C", "C", "Am", "Dm", "G", "E", "Am", "Dm", "G", "C", "Am", "Dm", "G", "E", "Am", "Dm", "G", "G#m", "Am", "Dm", "G", "C", "C", "Am", "Dm", "G", "G", "C", "Am", "Em", "G", "Dm", "Am", "G", "Dm", "Am", "G", "Dm", "Am", "G", "Am", "C", "Am", "Dm", "G", "C", "C", "Am", "Dm", "G", "G", "Am", "Dm", "G", "C", "C", "Am", "Dm", "G", "G", "C", "Am", "Dm", "G", "E", "Am", "Dm", "G", "C", "Am", "Dm", "G", "E", "Am", "Dm", "G", "Am", "Dm", "G", "C", "C", "Am", "Dm", "G", "Am", "Dm", "G", "C", "C", "Am", "Dm", "G", "C", "Am", "Em", "G", "C"],
+  "genre": "rock"
+},
+{
+  "name": "Have You Ever Seen The Rain",
+  "artist": "Creedence Clearwater Revival",
+  "tonality": "C",
+  "tuning": "E A D G B E",
+  "rawChords": ["Am", "F/C", "C", "G", "C", "C", "C", "G", "C", "C", "C", "G", "C", "F", "G", "C", "C/B", "Am", "Am/G", "F", "G", "C", "C/B", "Am", "Am/G", "F", "G", "C", "C", "C", "G", "C", "C", "C", "G", "C", "F", "G", "C", "C/B", "Am", "Am/G", "F", "G", "C", "C/B", "Am", "Am/G", "F", "G", "C", "F", "G", "C", "C/B", "Am", "Am/G", "F", "G", "C", "C/B", "Am", "Am/G", "F", "G", "C", "G", "C"],
+  "simplifedChords": ["Am", "F", "C", "G", "C", "C", "C", "G", "C", "C", "C", "G", "C", "F", "G", "C", "C", "Am", "Am", "F", "G", "C", "C", "Am", "Am", "F", "G", "C", "C", "C", "G", "C", "C", "C", "G", "C", "F", "G", "C", "C", "Am", "Am", "F", "G", "C", "C", "Am", "Am", "F", "G", "C", "F", "G", "C", "C", "Am", "Am", "F", "G", "C", "C", "Am", "Am", "F", "G", "C", "G", "C"],
+  "genre": "rock"
+},
+{
+  "name": "21 Guns",
+  "artist": "Green Day",
+  "tuning": "E A D G B E",
+  "rawChords": ["A", "Bb", "C", "Dm", "F", "Bb5", "C5", "C/E", "D5", "F5", "Dm", "Bb", "F", "C", "Dm", "Bb", "F", "C", "Dm", "Bb", "F", "C", "Dm", "Bb", "F", "C", "Dm", "Bb", "F", "C", "Bb", "C", "Dm", "Bb", "F", "C", "Dm", "Bb", "F", "C", "Dm", "Bb", "F", "C", "Bb", "C5", "F5", "C/E", "D5", "C5", "Bb5", "F5", "C5", "F5", "C/E", "D5", "C5", "Bb5", "F5", "C5", "Bb5", "F5", "C5", "Dm", "Bb", "F", "C", "Dm", "Bb", "F", "C", "Dm", "Bb", "F", "C", "Bb", "C", "Dm", "Bb", "F", "C", "Dm", "Bb", "F", "C", "Dm", "Bb", "F", "C", "Bb", "C5", "F5", "C/E", "D5", "C5", "Bb5", "F5", "C5", "F5", "C/E", "D5", "C5", "Bb5", "F5", "C5", "Bb5", "F5", "C5", "D5", "Bb5", "F5", "C5", "D5", "Bb5", "F5", "A5", "D5", "Bb5", "F5", "A5", "Bb5", "C5", "F5", "F5", "C/E", "D5", "C5", "Bb5", "F5", "C5", "F5", "C/E", "D5", "C5", "Bb5", "F5", "C5", "Bb5", "F5", "A5", "Dm", "Bb", "F", "C", "Dm", "Bb", "F", "C", "Dm", "Bb", "F", "C", "Dm", "Bb", "F", "C", "Dm", "Bb", "F", "C", "Bb", "F5", "C/E", "D5", "C5", "Bb5", "F5", "C5", "F5", "C/E", "D5", "C5", "Bb5", "F5", "C5", "F5", "C/E", "D5", "C5", "Bb5", "F5", "C5", "F5", "C/E", "D5", "C5", "Bb5", "F5", "C5", "Bb5", "F5", "C5"],
+  "simplifedChords": ["A", "Bb", "C", "Dm", "F", "Bb", "C", "C", "D", "F", "Dm", "Bb", "F", "C", "Dm", "Bb", "F", "C", "Dm", "Bb", "F", "C", "Dm", "Bb", "F", "C", "Dm", "Bb", "F", "C", "Bb", "C", "Dm", "Bb", "F", "C", "Dm", "Bb", "F", "C", "Dm", "Bb", "F", "C", "Bb", "C", "F", "C", "D", "C", "Bb", "F", "C", "F", "C", "D", "C", "Bb", "F", "C", "Bb", "F", "C", "Dm", "Bb", "F", "C", "Dm", "Bb", "F", "C", "Dm", "Bb", "F", "C", "Bb", "C", "Dm", "Bb", "F", "C", "Dm", "Bb", "F", "C", "Dm", "Bb", "F", "C", "Bb", "C", "F", "C", "D", "C", "Bb", "F", "C", "F", "C", "D", "C", "Bb", "F", "C", "Bb", "F", "C", "D", "Bb", "F", "C", "D", "Bb", "F", "A", "D", "Bb", "F", "A", "Bb", "C", "F", "F", "C", "D", "C", "Bb", "F", "C", "F", "C", "D", "C", "Bb", "F", "C", "Bb", "F", "A", "Dm", "Bb", "F", "C", "Dm", "Bb", "F", "C", "Dm", "Bb", "F", "C", "Dm", "Bb", "F", "C", "Dm", "Bb", "F", "C", "Bb", "F", "C", "D", "C", "Bb", "F", "C", "F", "C", "D", "C", "Bb", "F", "C", "F", "C", "D", "C", "Bb", "F", "C", "F", "C", "D", "C", "Bb", "F", "C", "Bb", "F", "C"],
+  "genre": "rock"
+},
+{
+  "name": "Drops Of Jupiter",
+  "artist": "Train",
+  "tonality": "C",
+  "tuning": "E A D G B E",
+  "rawChords": ["C", "G", "F", "C", "G", "F", "C", "G", "F", "C", "G", "F", "G", "D", "F", "C", "G", "D", "Dm", "F", "C", "G", "F", "C", "G", "F", "C", "G", "F", "G", "D", "F", "C", "G", "D", "Dm", "F", "C", "G", "F", "C", "G", "Bb", "F", "G", "D", "F", "C", "G", "D", "F", "C", "G", "D", "Dm", "F", "C", "G", "F", "C", "G", "F", "C", "G", "Bb", "F"],
+  "simplifedChords": ["C", "G", "F", "C", "G", "F", "C", "G", "F", "C", "G", "F", "G", "D", "F", "C", "G", "D", "Dm", "F", "C", "G", "F", "C", "G", "F", "C", "G", "F", "G", "D", "F", "C", "G", "D", "Dm", "F", "C", "G", "F", "C", "G", "Bb", "F", "G", "D", "F", "C", "G", "D", "F", "C", "G", "D", "Dm", "F", "C", "G", "F", "C", "G", "F", "C", "G", "Bb", "F"],
+  "genre": "rock"
+},
+{
+  "name": "Fall For You",
+  "artist": "Secondhand Serenade",
+  "tonality": "Am",
+  "rawChords": ["Am", "F", "C", "G", "Am", "F", "C", "G", "F", "G", "C", "Am", "F", "G", "C", "Am", "F", "G", "Am", "F", "C", "G", "Am", "F", "C", "G", "Am", "F", "C", "G", "F", "G", "C", "Am", "F", "G", "C", "Am", "F", "G", "Am", "F", "C", "G", "Am", "F", "C", "G", "Am", "F", "C", "G", "F", "C", "Am", "F", "G", "C", "Am", "F", "G", "C", "Am", "F", "G", "C", "Am", "F", "G", "C"],
+  "simplifedChords": ["Am", "F", "C", "G", "Am", "F", "C", "G", "F", "G", "C", "Am", "F", "G", "C", "Am", "F", "G", "Am", "F", "C", "G", "Am", "F", "C", "G", "Am", "F", "C", "G", "F", "G", "C", "Am", "F", "G", "C", "Am", "F", "G", "Am", "F", "C", "G", "Am", "F", "C", "G", "Am", "F", "C", "G", "F", "C", "Am", "F", "G", "C", "Am", "F", "G", "C", "Am", "F", "G", "C", "Am", "F", "G", "C"],
+  "genre": "rock"
+},
+{
+  "name": "Karma Police",
+  "artist": "Radiohead",
+  "tonality": "Am",
+  "tuning": "E A D G B E",
+  "rawChords": ["Am", "D/F#", "Em", "G", "Am", "F", "Em", "G", "Am", "D", "G", "G/F#", "C", "C/B", "Am", "Bm", "D", "Am", "D/F#", "Em", "G", "Am", "F", "Em", "G", "Am", "D", "G", "C", "C/B", "Am", "Bm", "D", "Am", "D/F#", "Em", "G", "Am", "F", "Em", "G", "Am", "D", "G", "C", "C/B", "Am", "Bm", "D", "C", "D", "G", "F#7", "C", "D", "G", "F#7", "C", "D", "G", "Bm", "C", "Bm", "D", "Am", "D/F#", "Em", "G", "Am", "F", "Em", "G", "Am", "D", "G", "C", "C/B", "Am", "Bm", "D", "C", "D", "G", "F#7", "C", "D", "G", "F#7", "C", "D", "G", "Bm", "C", "Bm", "D", "Bm", "D", "G", "D", "G", "D", "E", "Bm", "D", "G", "D", "G", "D", "E", "Bm", "D", "G", "D", "G", "D", "E", "Bm", "D", "G", "D", "G", "D", "E"],
+  "simplifedChords": ["Am", "D", "Em", "G", "Am", "F", "Em", "G", "Am", "D", "G", "G", "C", "C", "Am", "Bm", "D", "Am", "D", "Em", "G", "Am", "F", "Em", "G", "Am", "D", "G", "C", "C", "Am", "Bm", "D", "Am", "D", "Em", "G", "Am", "F", "Em", "G", "Am", "D", "G", "C", "C", "Am", "Bm", "D", "C", "D", "G", "F#", "C", "D", "G", "F#", "C", "D", "G", "Bm", "C", "Bm", "D", "Am", "D", "Em", "G", "Am", "F", "Em", "G", "Am", "D", "G", "C", "C", "Am", "Bm", "D", "C", "D", "G", "F#", "C", "D", "G", "F#", "C", "D", "G", "Bm", "C", "Bm", "D", "Bm", "D", "G", "D", "G", "D", "E", "Bm", "D", "G", "D", "G", "D", "E", "Bm", "D", "G", "D", "G", "D", "E", "Bm", "D", "G", "D", "G", "D", "E"],
+  "genre": "rock"
+},
+{
+  "name": "Yesterday",
+  "artist": "The Beatles",
+  "tonality": "F",
+  "tuning": "E A D G B E",
+  "rawChords": ["F", "Em7", "A7", "Dm", "Dm/C", "Bb", "C7", "Bb", "F", "C", "Dm", "G7", "Bb", "F", "F", "Em7", "A7", "Dm", "Dm/C", "Bb", "C7", "Bb", "F", "C", "Dm", "G7", "Bb", "F", "Em7", "A7", "Dm", "Dm/C", "Bb", "Gm", "C", "F", "Em7", "A7", "Dm", "Dm/C", "Bb", "Gm", "C", "F", "F", "Em7", "A7", "Dm", "Dm/C", "Bb", "C7", "Bb", "F", "C", "Dm", "G7", "Bb", "F", "Em7", "A7", "Dm", "Dm/C", "Bb", "Gm", "C", "F", "Em7", "A7", "Dm", "Dm/C", "Bb", "Gm", "C", "F", "F", "Em7", "A7", "Dm", "Dm/C", "Bb", "C7", "Bb", "F", "C", "Dm", "G7", "Bb", "F", "Dm", "G7", "Bb", "F", "F"],
+  "simplifedChords": ["F", "Em", "A", "Dm", "Dm", "Bb", "C", "Bb", "F", "C", "Dm", "G", "Bb", "F", "F", "Em", "A", "Dm", "Dm", "Bb", "C", "Bb", "F", "C", "Dm", "G", "Bb", "F", "Em", "A", "Dm", "Dm", "Bb", "Gm", "C", "F", "Em", "A", "Dm", "Dm", "Bb", "Gm", "C", "F", "F", "Em", "A", "Dm", "Dm", "Bb", "C", "Bb", "F", "C", "Dm", "G", "Bb", "F", "Em", "A", "Dm", "Dm", "Bb", "Gm", "C", "F", "Em", "A", "Dm", "Dm", "Bb", "Gm", "C", "F", "F", "Em", "A", "Dm", "Dm", "Bb", "C", "Bb", "F", "C", "Dm", "G", "Bb", "F", "Dm", "G", "Bb", "F", "F"],
+  "genre": "rock"
+},
+{
+  "name": "Father And Son",
+  "artist": "Cat Stevens",
+  "tonality": "G",
+  "tuning": "E A D G B E",
+  "rawChords": ["G", "D/F#", "C", "Am7", "G", "Em", "Am", "D", "G", "D/F#", "C", "Am7", "G", "Em", "Am", "D", "G", "D", "C", "Am7", "G", "Em", "Am", "D", "G", "D", "C", "Am7", "G", "Em", "D", "G", "G", "Bm", "C", "Am7", "G", "Em", "Am", "D", "G", "Bm", "C", "Am7", "G", "Em", "D", "G", "D", "C", "G", "G", "D", "C", "Am7", "G", "Em", "Am", "C", "D", "G", "D", "C", "Am7", "G", "Em", "D", "G", "D", "C", "G", "G", "D", "C", "Am7", "G", "Em", "Am", "D", "G", "D", "C", "Am7", "G", "Em", "Am", "D", "G", "Bm", "C", "Am7", "G", "Em", "Am", "D", "G", "Bm", "C", "Am7", "G", "Em", "D", "G", "D", "C", "G"],
+  "simplifedChords": ["G", "D", "C", "Am", "G", "Em", "Am", "D", "G", "D", "C", "Am", "G", "Em", "Am", "D", "G", "D", "C", "Am", "G", "Em", "Am", "D", "G", "D", "C", "Am", "G", "Em", "D", "G", "G", "Bm", "C", "Am", "G", "Em", "Am", "D", "G", "Bm", "C", "Am", "G", "Em", "D", "G", "D", "C", "G", "G", "D", "C", "Am", "G", "Em", "Am", "C", "D", "G", "D", "C", "Am", "G", "Em", "D", "G", "D", "C", "G", "G", "D", "C", "Am", "G", "Em", "Am", "D", "G", "D", "C", "Am", "G", "Em", "Am", "D", "G", "Bm", "C", "Am", "G", "Em", "Am", "D", "G", "Bm", "C", "Am", "G", "Em", "D", "G", "D", "C", "G"],
+  "genre": "rock"
+},
+{
+  "name": "Hey Soul Sister",
+  "artist": "Train",
+  "rawChords": ["E", "B", "C#m", "A", "E", "B", "C#m", "A", "E", "B", "C#m", "A", "B", "E", "B", "C#m", "A", "E", "B", "C#m", "A", "B", "A", "B", "E", "B", "A", "B", "E", "B", "A", "B", "E", "B", "A", "B", "E", "B", "C#m", "A", "E", "B", "C#m", "A", "E", "B", "C#m", "A", "B", "E", "B", "C#m", "A", "E", "B", "C#m", "A", "B", "A", "B", "E", "B", "A", "B", "E", "B", "A", "B", "E", "B", "A", "B", "E", "B", "C#m", "A", "E", "B", "C#m", "A", "B", "A", "B", "E", "B", "A", "B", "E", "B", "A", "B", "E", "B", "A", "B", "E", "B", "A", "B", "E", "B", "A", "B", "E", "B", "C#m", "A", "B", "E", "B", "C#m", "A", "B", "E"],
+  "simplifedChords": ["E", "B", "C#m", "A", "E", "B", "C#m", "A", "E", "B", "C#m", "A", "B", "E", "B", "C#m", "A", "E", "B", "C#m", "A", "B", "A", "B", "E", "B", "A", "B", "E", "B", "A", "B", "E", "B", "A", "B", "E", "B", "C#m", "A", "E", "B", "C#m", "A", "E", "B", "C#m", "A", "B", "E", "B", "C#m", "A", "E", "B", "C#m", "A", "B", "A", "B", "E", "B", "A", "B", "E", "B", "A", "B", "E", "B", "A", "B", "E", "B", "C#m", "A", "E", "B", "C#m", "A", "B", "A", "B", "E", "B", "A", "B", "E", "B", "A", "B", "E", "B", "A", "B", "E", "B", "A", "B", "E", "B", "A", "B", "E", "B", "C#m", "A", "B", "E", "B", "C#m", "A", "B", "E"],
+  "genre": "rock"
+},
+{
+  "name": "Im Yours",
+  "artist": "Jason Mraz",
+  "tonality": "B",
+  "tuning": "E A D G B E",
+  "rawChords": ["B", "F#", "G#m", "E", "B", "F#", "G#m", "E", "B", "F#", "G#m", "E", "B", "F#", "G#m", "E", "B", "F#", "G#m", "E", "C#9/F", "B", "F#", "G#m", "E", "B", "F#", "G#m", "E", "B", "F#", "G#m", "E", "B", "F#", "G#m", "E", "B", "F#", "G#m", "E", "B", "F#", "G#m", "E", "B", "F#", "G#m", "E", "B", "F#", "G#m", "E", "B", "F#", "G#m", "E", "B", "F#", "G#m", "E", "C#9/F", "B", "F#", "G#m", "E", "B", "F#", "G#m", "E", "C#9/F", "B", "F#", "G#m", "E", "C#9/F"],
+  "simplifedChords": ["B", "F#", "G#m", "E", "B", "F#", "G#m", "E", "B", "F#", "G#m", "E", "B", "F#", "G#m", "E", "B", "F#", "G#m", "E", "C#", "B", "F#", "G#m", "E", "B", "F#", "G#m", "E", "B", "F#", "G#m", "E", "B", "F#", "G#m", "E", "B", "F#", "G#m", "E", "B", "F#", "G#m", "E", "B", "F#", "G#m", "E", "B", "F#", "G#m", "E", "B", "F#", "G#m", "E", "B", "F#", "G#m", "E", "C#", "B", "F#", "G#m", "E", "B", "F#", "G#m", "E", "C#", "B", "F#", "G#m", "E", "C#"],
+  "genre": "rock"
+},
+{
+  "name": "Zombie",
+  "artist": "The Cranberries",
+  "tonality": "Em",
+  "tuning": "E A D G B E",
+  "rawChords": ["Em", "C", "G", "D/F#", "Em", "C", "G", "D/F#", "Em", "C", "G", "D/F#", "Em", "C", "G", "D/F#", "Em", "C", "G", "D/F#", "Em", "C", "G", "D/F#", "Em", "C", "G", "D/F#", "Em", "C", "G", "D/F#", "Em", "C", "G", "D/F#", "Em", "C", "G", "D/F#", "Em", "C", "G", "D/F#", "Em", "C", "G", "D/F#", "Em", "C", "G", "D/F#", "Em", "C", "G", "D/F#", "Em", "C", "G", "D/F#"],
+  "simplifedChords": ["Em", "C", "G", "D", "Em", "C", "G", "D", "Em", "C", "G", "D", "Em", "C", "G", "D", "Em", "C", "G", "D", "Em", "C", "G", "D", "Em", "C", "G", "D", "Em", "C", "G", "D", "Em", "C", "G", "D", "Em", "C", "G", "D", "Em", "C", "G", "D", "Em", "C", "G", "D", "Em", "C", "G", "D", "Em", "C", "G", "D", "Em", "C", "G", "D"],
+  "genre": "rock"
+},
+{
+  "name": "Hotel California",
+  "artist": "Eagles",
+  "capo": 2,
+  "tonality": "Bm",
+  "tuning": "E A D G B E",
+  "rawChords": ["Am", "E7", "G", "D", "F", "C", "Dm", "E", "Am", "E7", "G", "D", "F", "C", "Dm", "E", "F", "C", "E7", "Am", "F", "C", "Dm", "E", "Am", "E7", "G", "D", "F", "C", "Dm", "E", "Am", "E7", "G", "D", "F", "C", "Dm", "E", "F", "C", "E7", "Am", "F", "C", "Dm", "E", "Am", "E7", "G", "D", "F", "C", "Dm", "E", "Am", "E7", "G", "D", "F", "C", "Dm", "E"],
+  "simplifedChords": ["Am", "E", "G", "D", "F", "C", "Dm", "E", "Am", "E", "G", "D", "F", "C", "Dm", "E", "F", "C", "E", "Am", "F", "C", "Dm", "E", "Am", "E", "G", "D", "F", "C", "Dm", "E", "Am", "E", "G", "D", "F", "C", "Dm", "E", "F", "C", "E", "Am", "F", "C", "Dm", "E", "Am", "E", "G", "D", "F", "C", "Dm", "E", "Am", "E", "G", "D", "F", "C", "Dm", "E"],
+  "genre": "rock"
 }]
