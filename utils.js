@@ -5,8 +5,8 @@ const fs = require('fs');
 const debug = true;
 
 /**
- * @param  {string} text of tab.content
- * @return {array} raw chords
+ * @param  {String} text - text of tab.content
+ * @return {String[]} raw chords
  */
 function extractRawChords(text) {
   return text
@@ -14,16 +14,12 @@ function extractRawChords(text) {
     .map(x => x.substring(4, x.length - 5)); // throw out the [ch] and [/ch]
 }
 
-// const promises = []  // collect all promises here
-// items.forEach(item => {
-//     const promise = item.doWork()
-//     promises.push(promise)
-// })
-// Promise.all(promises).then(results => {
-//     // continue processing here
-//     // results[0] is the result of the first promise in the promises array
-// })
-
+/**
+ * @param  {String[]} urls - array of urls
+ * @param  {Set} skipSongs - set of songs that are being skipped
+ * @param  {Object} info - extra information (e.g. decade)
+ * @return {Promise[]} songs as promises, use with Promise.all()
+ */
 function parseUrlList(urls, skipSongs, info) {
   let songs = [];
 
