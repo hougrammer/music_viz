@@ -1,0 +1,220 @@
+[
+{
+  "name": "Let Her Go",
+  "artist": "Passenger",
+  "capo": 7,
+  "tonality": "Am",
+  "tuning": "E A D G B E",
+  "chords": ["G", "F", "G", "Am", "G", "F", "G", "Am", "G", "F", "G", "Am", "G", "F", "G", "Am", "F", "C", "G", "Am", "F", "C", "G", "F", "C", "G", "Am", "F", "C", "G", "Am", "F", "G", "Em", "Am", "F", "G", "Am", "F", "G", "Em", "Am", "F", "G", "Am", "F", "G", "Em", "Am", "F", "G", "F", "C", "G", "Am", "F", "C", "G", "F", "C", "G", "Am", "F", "C", "G", "Am", "F", "G", "Em", "Am", "F", "G", "Am", "F", "G", "Em", "Am", "F", "G", "F", "C", "G", "Am", "F", "C", "G", "F", "C", "G", "Am", "F", "C", "G", "Am", "F", "G", "Am", "F", "G", "Am", "F", "G", "Em", "Am", "F", "G", "F", "C", "G", "Am", "F", "C", "G", "F", "C", "G", "Am", "F", "C", "F", "C", "G", "Am", "F", "C", "G"],
+  "decade": "2010"
+},
+{
+  "name": "Thinking Out Loud",
+  "artist": "Ed Sheeran",
+  "capo": 2,
+  "tonality": "C",
+  "chords": ["C", "C/E", "F", "G", "C", "C/E", "F", "G", "C", "C/E", "F", "G", "C", "C/E", "F", "G", "C", "C/E", "F", "G", "C", "C/E", "F", "G", "C", "C/E", "F", "G", "C", "C/E", "F", "G", "Dm", "G", "C", "Dm", "G", "Dm", "G", "Am", "Dm", "G", "C", "C/E", "F", "G", "C", "C/E", "F", "G", "C", "C/E", "F", "G", "C", "C/E", "F", "G", "Am", "G", "F", "C/E", "Dm", "G", "C", "C", "C/E", "F", "G", "C", "C/E", "F", "G", "C", "C/E", "F", "G", "C", "C/E", "F", "G", "C", "C/E", "F", "G", "C", "C/E", "F", "G", "C", "C/E", "F", "G", "C", "C/E", "F", "G", "Dm", "G", "C", "Dm", "G", "Dm", "G", "Am", "Dm", "G", "C", "C/E", "F", "G", "C", "C/E", "F", "G", "C", "C/E", "F", "G", "C", "C/E", "F", "G", "Am", "G", "F", "C/E", "Dm", "G", "C", "C", "C/E", "F", "G", "C", "C/E", "F", "G", "C", "C/E", "F", "G", "C", "C/E", "F", "G", "C", "C/E", "F", "G", "C", "C/E", "F", "G", "C", "C/E", "F", "G", "C", "C/E", "F", "G", "Am", "G", "F", "C/E", "Dm", "G", "C", "Am", "G", "F", "C/E", "Dm", "G", "C", "Am", "G", "F", "C/E", "Dm", "G", "C"],
+  "decade": "2010"
+},
+{
+  "name": "Perfect",
+  "artist": "Ed Sheeran",
+  "capo": 1,
+  "tonality": "Ab",
+  "tuning": "E A D G B E",
+  "chords": ["G", "G", "Em", "C", "D", "G", "Em", "C", "D", "G", "Em", "C", "G", "D", "G", "Em", "C", "D", "Em", "C", "G", "D", "Em", "C", "G", "D", "Em", "C", "G", "D", "Em", "C", "G", "D", "G", "G", "D/F#", "Em", "D", "C", "D", "G", "Em", "C", "D", "G", "Em", "C", "D", "G", "Em", "C", "G", "D", "G", "Em", "C", "D", "Em", "C", "G", "D", "Em", "C", "G", "D", "Em", "C", "G", "D", "Em", "C", "G", "D", "G", "G", "Em", "C", "D", "Em", "C", "G", "D", "Em", "C", "G", "D", "Em", "C", "G", "D", "Em", "C", "G", "D", "G/B", "C", "Dadd4", "D", "G", "G", "D/F#", "Em", "D", "C", "D", "G"],
+  "decade": "2010"
+},
+{
+  "name": "Someone Like You",
+  "artist": "Adele",
+  "tonality": "A",
+  "chords": ["A", "A/G#", "Gbm", "D", "A", "A/G#", "F#m", "D", "A", "A/G#", "F#m", "D", "A", "A/G#", "F#m", "D", "E9", "F#m", "D", "E9", "F#m", "D", "E9/D", "D", "A", "E", "F#m", "D", "A", "E", "F#m", "D", "A", "E", "F#m", "D", "A", "E", "F#m", "D", "A", "E", "F#m", "D", "A", "A/G#", "F#m", "D", "A", "A/G#", "F#m", "D", "E", "F#m", "D", "D", "E", "F#m", "D", "E9/D", "D", "A", "E", "F#m", "D", "A", "E", "F#m", "D", "A", "E", "F#m", "D", "A", "E", "F#m", "D", "E/B", "F#m/C#", "D", "Bm", "A/C#", "D", "E/D", "A", "E", "F#m", "D", "A", "E", "F#m", "D", "A", "E", "F#m", "D", "A", "E", "F#m", "D", "A", "E", "F#m", "D", "A", "E", "F#m", "D", "A", "E", "F#m", "D", "A", "E", "F#m", "D", "A", "E", "F#m", "D", "A", "E", "F#m", "D"],
+  "decade": "2010"
+},
+{
+  "name": "When I Was Your Man",
+  "artist": "Bruno Mars",
+  "tonality": "C",
+  "tuning": "E A D G B E",
+  "chords": ["D7", "Dm", "C", "D7", "Dm", "C", "G/B", "Am", "C", "Dm", "G", "G7", "C", "Em/B", "Am", "C", "Dm", "G", "C", "Em/B", "Am", "Em", "Bb", "C/G", "G", "F", "G", "C", "F", "G", "C", "F", "G", "Am", "D7", "F", "Fm", "C", "F", "C", "Em/B", "Am", "C", "Dm", "G", "G7", "C", "Em/B", "Am", "C", "Dm", "G", "C", "Em/B", "Am", "Em", "Bb", "C/G", "G", "F", "G", "C", "F", "G", "C", "F", "G", "Am", "D7", "F", "Fm", "C", "F", "G", "C", "G/B", "Am", "Em/G", "D7", "Dm", "G", "F", "G", "C", "F", "G", "C", "F", "G", "Am", "D7", "F", "Fm", "C", "D7", "F", "Fm", "C"],
+  "decade": "2010"
+},
+{
+  "name": "Love Yourself",
+  "artist": "Justin Bieber",
+  "capo": 4,
+  "tonality": "E",
+  "chords": ["C", "G/B", "Am", "Dm", "C", "G/B", "C", "G/B", "Am", "Dm", "C", "G/B", "C", "G/B", "Am", "Dm", "C", "G/B", "C", "G/B", "Am", "Dm", "C", "G/B", "Am", "F", "C", "Am", "F", "C", "Am", "F", "C", "G", "Am", "F", "G", "C", "G", "Am", "F", "C", "G", "C", "C", "G", "Am", "F", "C", "G", "C", "C", "G/B", "Am", "Dm", "C", "G/B", "C", "G/B", "Am", "Dm", "C", "G/B", "C", "G/B", "Am", "Dm", "C", "G/B", "C", "G/B", "Am", "Dm", "C", "G/B", "Am", "F", "C", "Am", "F", "C", "Am", "F", "C", "G", "Am", "F", "G", "C", "G", "Am", "F", "C", "G", "C", "C", "G", "Am", "F", "C", "G", "C", "C", "G", "Am", "F", "C", "G", "C", "C", "G", "Am", "F", "C", "G", "C", "C", "G/B", "Am", "Dm", "C", "G/B", "C", "G/B", "Am", "Dm", "C", "G/B", "C", "G", "Am", "F", "C", "G", "C", "C", "G", "Am", "F", "C", "G", "C", "C", "G", "Am", "F", "C", "G", "C", "C", "G", "Am", "F", "C", "G", "C"],
+  "decade": "2010"
+},
+{
+  "name": "Photograph",
+  "artist": "Ed Sheeran",
+  "capo": 2,
+  "tonality": "D",
+  "tuning": "E A D G B E",
+  "chords": ["D", "Bm", "A", "G", "D", "Bm", "A", "G", "D", "Bm", "A", "G", "Bm", "G", "D", "A", "Bm", "G", "D", "A", "D", "A", "Bm", "G", "D", "D", "Bm", "A", "G", "D", "Bm", "A", "G", "Bm", "G", "D", "A", "Bm", "G", "D", "A", "D", "A", "Bm", "G", "D", "A", "Bm", "G", "Bm", "G", "D", "A", "D", "A", "Bm", "G", "D", "A", "Bm", "G", "D", "A", "Bm", "G", "D"],
+  "decade": "2010"
+},
+{
+  "name": "Riptide",
+  "artist": "Vance Joy",
+  "capo": 1,
+  "tonality": "Am",
+  "tuning": "E A D G B E",
+  "chords": ["Am", "G", "C", "Am", "G", "C", "Am", "G", "C", "Am", "G", "C", "Am", "G", "C", "Am", "G", "C", "Am", "G", "C", "Am", "G", "C", "Am", "G", "C", "Am", "G", "C", "Am", "G", "C", "Am", "G", "C", "Am", "G", "C", "Am", "G", "C", "Am", "G", "C", "Am", "G", "C", "Am", "G", "C", "Am", "G", "C", "Am", "G", "C", "Am", "G", "C", "Am", "G", "C", "Am", "G", "C", "Am", "G", "C", "Fmaj7", "Am", "G", "C", "Fmaj7", "Am", "G", "C", "Am", "G", "C", "Am", "G", "C", "Am", "G", "C", "Am", "G", "C", "Am", "G", "C", "Am", "G", "C", "Am", "G", "C", "Am", "G", "C", "Am", "G", "C", "Am", "G", "C", "Am", "G", "C", "Am", "G", "C", "Am", "G", "C", "Am", "G", "C"],
+  "decade": "2010"
+},
+{
+  "name": "Rolling In The Deep",
+  "artist": "Adele",
+  "tuning": "E A D G B E",
+  "chords": ["C5", "C5", "G5", "Bb5", "G5", "Bb5", "C5", "G5", "Bb5", "G5", "Bb5", "C5", "G5", "Bb5", "G5", "Bb5", "C5", "G5", "Bb5", "G5", "Bb5", "Ab", "Bb", "Gm", "Ab", "Ab", "Bb", "Gm", "G", "Cm", "Bb", "Ab", "Bb", "Cm", "Bb", "Ab", "Bb", "C5", "G5", "Bb5", "G5", "Bb5", "C5", "G5", "Bb5", "G5", "Bb5", "Ab", "Bb", "Gm", "Ab", "Ab", "Bb", "Gm", "G", "Cm", "Bb", "Ab", "Bb", "Cm", "Bb", "Ab", "Bb", "Ab", "Bb", "Cm", "Bb", "Ab", "Bb", "C5", "C5", "Cm", "Bb", "Ab", "Bb", "Cm", "Bb", "Ab", "Cm", "Bb", "Ab", "Bb", "Cm", "Bb", "Ab", "Bb", "Cm", "Ab", "Bb", "Cm", "Bb", "Ab", "Bb", "Cm"],
+  "decade": "2010"
+},
+{
+  "name": "Radioactive",
+  "artist": "Imagine Dragons",
+  "capo": 2,
+  "tonality": "Am",
+  "tuning": "E A D G B E",
+  "chords": ["Am", "C", "G6", "Am", "Am", "C", "G", "D", "Am", "C", "G", "D", "Am", "C", "G", "D", "Am", "C", "G", "D", "Am", "C", "G", "D", "Am", "C", "G", "D", "Am", "C", "G", "D", "Am", "C", "G", "D", "Am", "C", "G", "D", "Am", "C", "G", "D", "Am", "C", "G", "D", "Am", "C", "G", "D", "Am", "C", "G", "D", "Am", "C", "G", "D", "Am", "C", "G", "D", "Am", "C", "G", "D", "Am", "Cmaj7", "G", "D", "Am", "Cmaj7", "G", "D", "Am", "C", "G", "D", "Am", "C", "G", "D", "Am", "C", "G", "D", "Am", "C", "G", "D"],
+  "decade": "2010"
+},
+{
+  "name": "Just The Way You Are",
+  "artist": "Bruno Mars",
+  "capo": 3,
+  "tonality": "F",
+  "tuning": "E A D G B E",
+  "chords": ["D", "Bm", "G", "D", "D", "Bm", "G", "D", "D", "Bm", "G", "D", "D", "Bm", "G", "D", "D", "Bm", "G", "D", "D", "Bm", "G", "D", "D", "Bm", "G", "D", "D", "Bm", "G", "D", "D", "Bm", "G", "D", "D", "Bm", "G", "D", "D", "Bm", "G", "D", "D", "Bm", "G", "D"],
+  "decade": "2010"
+},
+{
+  "name": "Stay With Me",
+  "artist": "Sam Smith",
+  "tonality": "Am",
+  "tuning": "E A D G B E",
+  "chords": ["Am7", "F", "C", "Am7", "F", "C", "Am7", "F", "C", "Am7", "F", "C", "Am7", "F", "C", "Am7", "Gsus", "C", "Am", "F", "C", "Am", "F", "C", "G", "Am", "F", "C", "G#dim", "Am", "F", "C", "Am7", "F", "C", "Am7", "F", "C", "Am7", "F", "C", "Am7", "Gsus", "C", "Am", "F", "C", "Am", "F", "C", "G", "Am", "F", "C", "G#dim", "Am", "F", "C", "Am", "F", "C", "Am", "F", "C", "G", "Am", "F", "C", "G#dim", "Am", "F", "C", "Am", "F", "C", "Am", "F", "C", "G", "Am", "F", "C", "G#dim", "Am", "F", "C", "Am", "F", "C", "Am", "F", "C", "G", "Am", "F", "C", "G#dim", "Am", "F", "C"],
+  "decade": "2010"
+},
+{
+  "name": "Counting Stars",
+  "artist": "OneRepublic",
+  "capo": 4,
+  "tonality": "Am",
+  "tuning": "E A D G B E",
+  "chords": ["Am", "C", "G", "F", "Am", "C", "G", "F", "Am", "C", "G", "F", "Am", "C", "G", "F", "F", "Am", "C", "G", "F", "Am", "C", "G", "F", "Am", "C", "G", "F", "Am", "C", "G", "F", "F", "F", "Am", "C", "G", "F", "Am", "C", "G", "F", "Am", "C", "G", "F", "Am", "C", "G", "F", "Am", "C", "G", "F", "Am", "C", "G", "F", "Am", "C", "G", "F", "F", "F", "Am", "C", "G", "F", "Am", "C", "G", "F", "Am", "C", "G", "F", "Am", "C", "G", "F", "F", "Dm", "Am", "C", "G", "F", "Am", "C", "G", "F", "Am", "C", "G", "F", "Am", "C", "G", "F", "Am", "C", "G", "F", "Am", "C", "G", "F"],
+  "decade": "2010"
+},
+{
+  "name": "Jar Of Hearts",
+  "artist": "Christina Perri",
+  "capo": 1,
+  "tonality": "Cm",
+  "tuning": "E A D G B E",
+  "chords": ["Bm", "D", "A", "Em", "Bm", "D", "A", "G", "D/F#", "Em", "G", "Bm", "A", "Em", "G", "D5/A", "A", "D", "A", "Bm", "G", "Gm", "D", "D", "A", "Bm", "G", "Gm", "D", "A/C#", "Bm", "D", "A", "Em", "Bm", "D", "A", "G", "D/F#", "Em", "G", "Bm", "A", "Em", "G", "D5/A", "A", "D", "A", "Bm", "G", "Gm", "D", "D", "A", "Bm", "G", "Gm", "D", "Bm", "F#", "Bm7/A", "E/G#", "Bm", "F#", "Bm7/A", "E/G#", "Bm", "F#", "Bm7/A", "E/G#", "Bm", "F#", "Bm7/A", "E/G#", "G", "F#", "D", "A", "Bm", "G", "Gm", "D", "D", "A", "Bm", "G", "Gm", "D", "D", "A", "Bm", "G", "Gm", "D", "D", "A", "Bm", "G", "Gm", "D", "Gdim7", "D", "Gdim7", "D", "Gdim7", "D"],
+  "decade": "2010"
+},
+{
+  "name": "The A Team",
+  "artist": "Ed Sheeran",
+  "capo": 2,
+  "tonality": "A",
+  "tuning": "E A D G B E",
+  "chords": ["C", "G", "G", "G/F#", "Em", "Cadd9", "G", "G", "G/F#", "Em", "Cadd9", "G", "A7sus4", "G", "G/F#", "Em", "Cadd9", "G", "Am7", "C", "G", "D/F#", "Am7", "C", "G", "D/F#", "Em", "Cadd9", "G", "Em", "Cadd9", "G", "Em", "Cadd9", "G", "Em", "Cadd9", "G", "D/F#", "Em", "Cadd9", "G", "Em", "Cadd9", "G", "G/F#", "G", "G/F#", "Em", "Cadd9", "G", "A7sus4", "G", "G/F#", "Em", "Cadd9", "G", "Am7", "C", "G", "D/F#", "Am7", "C", "G", "D/F#", "Em", "Cadd9", "G", "Em", "Cadd9", "G", "Em", "Cadd9", "G", "Em", "Cadd9", "G", "D/F#", "Am7", "Am7", "C", "Em", "G/F#", "G", "Am7", "C", "Dadd4", "Em", "C", "G", "D/F#", "Em", "C", "G", "D/F#", "Am7", "C", "G", "D/F#", "Am7", "C", "G", "D/F#", "Em", "Cadd9", "G", "Em", "Cadd9", "G", "Em", "Cadd9", "G", "Em", "Cadd9", "G", "D/F#", "Em", "Cadd9", "G", "Em", "Cadd9", "G", "G/F#", "Em", "Cadd9", "G", "G/F#", "Em", "Cadd9", "G", "D/F#", "G"],
+  "decade": "2010"
+},
+{
+  "name": "Grenade",
+  "artist": "Bruno Mars",
+  "tonality": "Dm",
+  "tuning": "E A D G B E",
+  "chords": ["Dm", "Dm", "Am", "Am", "Dm", "Dm", "Am", "A7", "Dm", "Am", "Dm", "Bb", "A", "Dm", "Bb", "F", "C", "Dm", "Bb", "F", "C", "Dm", "Bb", "F", "C", "Dm", "Bb", "F", "C", "C", "Bb", "C", "F", "A", "Dm", "C", "C", "Bb", "A", "A", "Dm", "Dm", "Am", "Am", "Dm", "Am", "Dm", "Am", "A7", "Dm", "Am", "Dm", "Bb", "A", "Dm", "Bb", "F", "C", "Dm", "Bb", "F", "C", "Dm", "Bb", "F", "C", "Dm", "Bb", "F", "C", "C", "Bb", "C", "F", "A", "Dm", "C", "C", "Bb", "A", "A", "Gm", "Dm", "Gm", "A", "Dm", "Dm", "Bb", "A", "Dm", "Bb", "F", "C", "Dm", "Bb", "F", "C", "Dm", "Bb", "F", "C", "Dm", "Bb", "F", "C", "C", "Bb", "C", "F", "A", "Dm", "C", "C", "Bb", "A", "A", "Dm", "Dm", "Am", "Am", "Dm", "Dm", "Am", "Am"],
+  "decade": "2010"
+},
+{
+  "name": "Say Something",
+  "artist": "A Great Big World",
+  "tonality": "Bm",
+  "tuning": "E A D G B E",
+  "chords": ["Bm", "G", "D", "Asus4", "Bm", "G", "D", "Asus4", "Bm", "G", "D", "Asus4", "Bm", "G", "D", "Asus4", "D", "F#m", "Gsus2", "D", "Asus4", "D", "F#m", "Gsus2", "D", "Asus4", "Bm", "Gsus2", "D", "Asus4", "Bm", "Gsus2", "D", "Asus4", "Bm", "Gsus2", "D", "Asus4", "Bm", "Gsus2", "D", "Asus4", "D", "F#m", "Gsus2", "D", "Asus4", "Bm", "Gsus2", "D", "Asus4", "Bm", "Gsus2", "D", "Asus4", "Bm", "Gsus2", "D/A", "Asus4", "Bm", "Gsus2", "D", "Asus4", "Bm", "Gsus2", "D", "Asus4", "Bm", "Gsus2", "D"],
+  "decade": "2010"
+},
+{
+  "name": "Ho Hey",
+  "artist": "The Lumineers",
+  "tonality": "C",
+  "tuning": "E A D G B E",
+  "chords": ["F/C", "C", "F/C", "C", "F/C", "C", "C", "F/C", "C", "C", "F/C", "C", "C", "F/C", "C", "C", "F/C", "Am", "Am", "G", "F/C", "C", "F/C", "C", "C", "F/C", "C", "C", "F/C", "C", "C", "F/C", "C", "C", "Am", "Am", "G", "F/C", "C", "Am", "G", "C", "Am", "G", "F/C", "C", "F/C", "C", "F/C", "C", "F/C", "C", "F/C", "C", "F/C", "C", "C", "F/C", "C", "C", "F/C", "C", "C", "Am", "G", "F/C", "C", "Am", "G", "F/C", "C", "Am", "G", "C", "Am", "G", "C", "F/C", "C", "G", "C", "F/C", "C", "Gsus", "G", "F/C", "C", "G", "C", "Am", "G", "C", "Am", "G", "F/C", "C", "F/C", "C", "F/C", "C", "F/C", "C"],
+  "decade": "2010"
+},
+{
+  "name": "Pumped Up Kicks",
+  "artist": "Foster the People",
+  "tonality": "Fm",
+  "tuning": "E A D G B E",
+  "chords": ["Fm", "Ab", "Eb", "Bb", "Fm", "Ab", "Eb", "Bb", "Fm", "Ab", "Eb", "Bb", "Fm", "Ab", "Eb", "Bb", "Fm", "Ab", "Eb", "Bb", "Fm", "Ab", "Eb", "Bb", "Fm", "Ab", "Eb", "Bb", "Fm", "Ab", "Eb", "Bb", "Fm", "Ab", "Eb", "Bb", "Fm", "Ab", "Eb", "Bb", "Fm", "Ab", "Eb", "Bb", "Fm", "Ab", "Eb", "Bb", "Fm", "Ab", "Eb", "Bb", "Fm", "Ab", "Eb", "Bb", "Fm", "Ab", "Eb", "Bb", "Fm", "Ab", "Eb", "Bb", "Fm", "Ab", "Eb", "Bb", "Fm", "Ab", "Eb", "Bb", "Fm", "Ab", "Eb", "Bb", "Fm", "Ab", "Eb", "Bb", "Fm", "Ab", "Eb", "Bb", "Fm", "Ab", "Eb", "Bb", "Fm", "Ab", "Eb", "Bb", "Fm", "Ab", "Eb", "Bb", "Fm", "Ab", "Eb", "Bb", "Fm", "Ab", "Eb", "Bb", "Fm", "Ab", "Eb", "Bb", "Fm", "Ab", "Eb", "Bb", "Fm", "Ab", "Eb", "Bb", "Fm", "Ab", "Eb", "Bb", "Fm", "Ab", "Eb", "Bb", "Fm", "Ab", "Eb", "Bb"],
+  "decade": "2010"
+},
+{
+  "name": "Stay",
+  "artist": "Rihanna",
+  "tonality": "C",
+  "tuning": "E A D G B E",
+  "chords": ["C", "Dm", "Am", "Am7/G", "Am", "Am7/G", "Am", "Am7/G", "Am", "Am7/G", "C", "Dm", "Am", "Am7/G", "Am", "Am7/G", "Am", "Am7/G", "Am", "Am7/G", "C", "Dm", "Am", "Am7/G", "Am", "Am7/G", "Am", "Am7/G", "C", "Dm", "Am", "Am7/G", "Am", "Am7/G", "Am", "Am7/G", "C", "Dm", "Am", "Am7/G", "Am", "Am7/G", "Am", "Am7/G", "C", "Dm", "Am", "Am7/G", "Am", "Am7/G", "Am", "Am7/G", "F", "Dm", "Am", "F", "Dm", "G", "C", "Dm", "Am", "F", "C", "Dm", "Am", "F", "C", "Dm", "Am", "Am7/G", "Am", "Am7/G", "Am", "Am7/G", "C", "Dm", "Am", "Am7/G", "Am", "Am7/G", "Am", "Am7/G", "C", "Dm", "Am", "Am7/G", "Am", "Am7/G", "Am", "Am7/G", "F", "Dm", "Am", "Am7/G", "Am", "Am7/G", "F", "Dm", "G", "C", "Dm", "Am", "F", "C", "Dm", "Am", "F", "C", "Dm", "Am", "Am7/G", "Am", "Am7/G", "Am", "Am7/G", "F", "Am", "Dm", "Em", "F", "Am", "Dm", "Dm", "F", "Am", "Dm", "F", "G", "C", "Dm", "Am", "F", "C", "Dm", "Am", "F", "C", "Dm", "Am", "F", "C", "Dm", "Am", "F", "C", "Dm", "Am", "F"],
+  "decade": "2010"
+},
+{
+  "name": "Just Give Me A Reason",
+  "artist": "P!nk",
+  "tonality": "G",
+  "tuning": "E A D G B E",
+  "chords": ["Em", "A", "D", "G", "C", "G", "A5", "D", "G", "C", "Em", "C", "G", "G", "C", "Em", "C", "G", "Em", "A", "D", "G", "Em", "A", "D", "G", "Em", "A", "D", "G", "C", "G", "Dsus4", "D", "G", "D/F#", "Em", "Bm", "D", "G", "D/F#", "Em", "Bm", "D", "G", "G", "C", "Em", "C", "G", "G", "C", "Em", "C", "G", "Em", "A", "D", "G", "Em", "A", "D", "G", "Em", "A", "D", "G", "C", "G", "Am", "C", "G", "D", "G", "D/F#", "Em", "Bm", "D", "G", "D/F#", "Em", "Bm", "D", "Em", "Em", "Bm", "C", "D", "Em", "Bm", "C", "Am", "D", "G", "D/F#", "Em", "Bm", "D", "G", "D/F#", "Em", "Bm", "D", "G", "G", "D/F#", "Em", "Bm", "D", "G", "D/F#", "Em", "Em", "Bm", "D", "Em", "A", "D", "G", "C", "G", "Am", "D", "G"],
+  "decade": "2010"
+},
+{
+  "name": "Im Not The Only One",
+  "artist": "Sam Smith",
+  "tonality": "F",
+  "tuning": "E A D G B E",
+  "chords": ["F", "A", "Dm", "Bb", "F", "A", "Dm", "Bb", "F", "A", "Dm", "Bb", "F", "C", "F", "F", "A", "Dm", "Bb", "F", "A", "Dm", "Bb", "F", "A", "Dm", "Bb", "F", "C", "F", "F", "A", "Dm", "Bb", "F", "A", "Dm", "Bb", "F", "A", "Dm", "Bb", "F", "C", "F", "F", "A", "Dm", "Bb", "F", "A", "Dm", "Bb", "F", "A", "Dm", "Bb", "F", "C", "F", "F", "A", "Dm", "Bb", "F", "A", "Dm", "Bb", "F", "A", "Dm", "Bb", "F", "C", "F", "F", "A", "Dm", "Bb", "F", "A", "Dm", "Bb", "F", "A", "Dm", "Bb", "F", "C", "F", "Bb", "F", "A", "Dm", "Bb", "F", "Bb/C", "F", "A", "Dm", "Bb", "F", "A", "Dm", "Bb", "F", "A", "Dm", "Bb", "F", "C", "F"],
+  "decade": "2010"
+},
+{
+  "name": "All I Want",
+  "artist": "Kodaline",
+  "capo": 1,
+  "tonality": "C",
+  "tuning": "D# G# C# F# A# D#",
+  "chords": ["C", "F", "C", "G/B", "Am", "F", "C", "F", "C", "C", "F", "C", "G/B", "Am", "F", "C", "F", "C", "G/B", "Am", "F", "C", "G", "Am", "F", "C", "G", "C", "F", "C", "C", "G", "Am", "F", "C", "F", "C", "C", "F", "C", "G/B", "Am", "F", "C", "F", "C", "G/B", "Am", "F", "C", "G", "Am", "F", "C", "G", "Dm", "G", "Dm", "G", "G", "Am", "F", "C", "G", "Am", "F", "C", "G", "Am", "F", "C", "G", "Am", "F", "C", "G", "Am", "F", "C", "G", "Am", "F", "C", "G", "C", "F", "C"],
+  "decade": "2010"
+},
+{
+  "name": "Titanium",
+  "artist": "David Guetta",
+  "capo": 3,
+  "tonality": "F",
+  "tuning": "E A D G B E",
+  "chords": ["C", "G", "Am", "Am", "C", "G", "Am", "Am", "C", "G", "Am", "C", "G", "Am", "C", "G", "Am", "C", "G", "Am", "F", "G", "Em", "Am", "F", "G", "Em", "Am", "F", "G", "Em", "Am", "Asus2", "F", "G", "Em", "Am", "Asus2", "F", "F", "G", "Em", "Am", "F", "G", "Em", "Am", "C", "G", "Am", "C", "G", "Am", "C", "G", "Am", "C", "G", "Am", "F", "G", "Em", "Am", "F", "G", "Em", "Am", "F", "G", "Em", "Am", "Asus2", "F", "G", "Em", "Am", "Asus2", "F", "G", "Em", "Am", "Asus2", "F", "G", "Em", "Am", "Asus2", "F", "F", "G", "Em", "Am", "F", "G", "Am", "F", "G", "Em", "Am", "Asus2", "F", "G", "Em", "Am", "Asus2", "F", "G", "Em", "Am", "Asus2", "F", "G", "Em", "Am", "Asus2", "F", "F", "G", "Em", "Am", "F", "G", "Em", "Am", "Asus2", "F"],
+  "decade": "2010"
+},
+{
+  "name": "Somebody That I Used To Know",
+  "artist": "Gotye",
+  "capo": 5,
+  "tonality": "Dm",
+  "tuning": "E A D G B E",
+  "chords": ["Am", "G", "Am", "G", "Am", "G", "Am", "G", "Am", "G", "Am", "G", "Am", "G", "Am", "G", "Am", "G", "Am", "G", "Am", "G", "Am", "G", "Am", "G", "Am", "G", "Am", "G", "Am", "G", "Am", "G", "Am", "G", "Am", "G", "Am", "G", "Am", "G", "Am", "G", "Am", "G", "Am", "G", "Am", "G", "Am", "G", "Am", "G", "Am", "G", "Am", "G", "Am", "G", "Am", "G", "Am", "G", "Am", "G", "Am", "G", "Am", "G", "Am", "G", "Am", "G", "Am", "G", "Am", "G", "Am", "G", "Am", "G", "Am", "G", "Am", "G", "Am", "G", "Am", "G", "Am", "G", "Am", "G", "Am", "G", "Am", "G", "Am", "G", "Am", "G", "F", "G", "Am", "G", "F", "G", "Am", "G", "F", "G", "Am", "G", "F", "G", "Am", "G", "F", "G", "Am", "G", "F", "G", "Am", "G", "F", "G", "Am", "G", "F", "G", "Am", "G", "F", "G", "Am", "G", "F", "G", "Am", "G", "F", "G", "Am", "G", "F", "G", "Am", "G", "Am", "G", "Am", "G", "Am", "G", "Am", "G", "Am", "G", "Am", "G", "F", "G", "Am", "G", "Am", "G", "G", "G", "G", "G", "Am", "G", "F", "G", "Am", "G", "F", "G", "Am", "G", "F", "G", "Am", "G", "F", "G", "Am", "G", "F", "G", "Am", "G", "F", "G", "Am", "G", "F", "G", "Am", "G", "F", "G", "Am", "G", "F", "G", "Am", "G", "F", "G", "Am", "G", "F", "G", "Am", "G", "F", "G", "Am", "G", "F", "G", "Am", "G", "F", "G", "Am", "G", "F", "G", "Am", "G", "F", "G"],
+  "decade": "2010"
+},
+{
+  "name": "Little Talks",
+  "artist": "Of Monsters and Men",
+  "capo": 1,
+  "tonality": "Bbm",
+  "tuning": "E A D G B E",
+  "chords": ["Am", "Fmaj7", "C", "G", "Am", "Fmaj7", "C", "G", "Am", "Fmaj7", "C", "G", "Am", "Fmaj7", "C", "G", "Am", "Fmaj7", "C", "Am", "F", "C", "Am", "Fmaj7", "C", "Am", "F", "C", "Am", "Fmaj7", "C", "Am", "F", "C", "Am", "Fmaj7", "C", "G", "Am", "F", "C", "Am", "Fmaj7", "C", "G", "Am", "Fmaj7", "C", "G", "Am", "Fmaj7", "C", "G", "Am", "Fmaj7", "C", "G", "Am", "Fmaj7", "C", "Am", "Fmaj7", "C", "Am", "Fmaj7", "C", "Am", "Fmaj7", "C", "Am", "Fmaj7", "C", "Am", "Fmaj7", "C", "Am", "Fmaj7", "C", "G", "Am", "Fmaj7", "C", "G", "Am", "Fmaj7", "C", "G", "Am", "Fmaj7", "C", "G", "Am", "Fmaj7", "C", "G", "Am", "Fmaj7", "C", "G", "Am", "Fmaj7", "C", "G", "Am", "Fmaj7", "C", "G", "Am", "Fmaj7", "C", "G", "Am", "Fmaj7", "C", "Am", "Am", "Am", "Am", "Am", "Am", "Fmaj7", "C", "Am", "Fmaj7", "C", "G", "Am", "Fmaj7", "C", "G", "Am", "Fmaj7", "C", "G", "Am", "Fmaj7", "C", "G", "Am", "Fmaj7", "C", "G", "Am", "Fmaj7", "C", "G", "Am", "Fmaj7", "C", "G", "Am", "Fmaj7", "C", "G", "Am", "Fmaj7", "C", "G", "Am", "Fmaj7", "C", "G", "Am", "F", "C", "Am", "Fmaj7", "C", "G", "Am", "F", "C"],
+  "decade": "2010"
+}]
