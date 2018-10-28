@@ -37,11 +37,13 @@ function simplifyChords(chords) {
     }
 
     switch (suffix) {
-      case '': return note;
-      case 'm': return note + 'm';
+      case '':
+        return note;
+      case 'm':
+        return note + 'm';
       default:
-        if (suffix.substring(0,3) === 'dim') return note + 'm';
-        if (suffix.substring(0,3) === 'maj') return note;
+        if (suffix.substring(0, 3) === 'dim') return note + 'm';
+        if (suffix.substring(0, 3) === 'maj') return note;
         if (suffix[0] === 'm') return note + 'm';
         return note;
     }
@@ -53,15 +55,18 @@ function simplifyChords(chords) {
  * @param  {String} url
  * @param  {String} filePath
  */
-function writeUrlList (url, filePath){
-  const requestOptions = {url: url, followRedirect: false};
+function writeUrlList(url, filePath) {
+  const requestOptions = {
+    url: url,
+    followRedirect: false
+  };
   const varName = 'window.UGAPP.store.page';
 
   request.get(requestOptions, (err, response, html) => {
     let $ = cheerio.load(html);
-    
+
     // look for a script with the varName
-    let script = $('script').toArray().find(script => 
+    let script = $('script').toArray().find(script =>
       $(script).html().indexOf(varName) !== -1
     );
 
@@ -69,39 +74,67 @@ function writeUrlList (url, filePath){
     let json = JSON.parse(raw.substring(raw.indexOf('{'), raw.indexOf(';')));
     json.data.data.tabs.forEach((tab, index, array) => {
       fs.appendFileSync(filePath, tab.tab_url);
-      if (index !== array.length-1) fs.appendFileSync('\n');
+      if (index !== array.length - 1) fs.appendFileSync(filePath, '\n');
     });
   });
 }
 
 /**
- * Parses a url list in the form of txt and returns an array of promises
- * that resolve the song information
- * @param  {String[]} filePath - urls separated by \n
- * @param  {Set} songSet - set of songs that have been previously parsed
+ * Parses a url list in the form of txt and returns a promise
+ * that resolves to an updated version of the parsedSongs object
+ * @param  {String} filePath
+ * @param  {Object[]} parsedSongs
  * @param  {Object} info - extra information (e.g. decade)
- * @return {Promise[]} songs as promises, use with Promise.all()
+ * @return {Promise} resolves to updated parsedSongs
  */
-function parseUrlList(filePath, songSet, info) {
+function parseUrlList(filePath, parsedSongs, info) {
   let songs = [];
   info = info || {};
 
-  let urls = fs.readFileSync(filePath, 'utf8').split('\n');
+  let songMap = {};
+  parsedSongs.forEach((song, index) => {
+    songMap[song.songName] = index;
+  });
+
+  let urls = fs.readFileSync(filePath, 'utf8')
+    .split('\n')
+    .filter(line => line.indexOf('http') === 0); // allows us to put other comments without breaking parser
   urls.forEach((url) => {
     let songPromise = new Promise((resolve, reject) => {
       ugs.get(url, (err, tab) => {
-        if (err) reject(err);
+        if (err) { // should probably reject here, figure out how to handle later
+          if (debug) console.log('ugs get error: ' + url + ', ' + err)
+          resolve(null); 
+        }
 
-        if (songSet.has(tab.name)) {
-          if (debug) console.log('Skipping ' + tab.name + ', song name already parsed.');
+        else if (tab === null) { // Sometimes tab is null. Don't know why. Just skip it.
+          if (debug) console.log('tab is null for ' + url);
+          resolve(null); 
+        }
+
+        else if (tab.name in songMap && songMap[tab.name] !== null) {
+          if (debug) console.log(tab.name + ' previously parsed.  Just updating info.');
+
+          let song = parsedSongs[songMap[tab.name]];
+          if (info.decade !== undefined) song.decade = info.decade;
+          if (info.genre !== undefined) song.genre = info.genre;
+
           resolve(null);
-        } else {
+        }
+
+        else if (tab.name in songMap) {
+          if (debug) console.log('Skipping ' + tab.name + '.  Repeated in this url list.');
+
+          resolve(null);
+        }
+
+        else {
           if (debug) console.log('Parsing ' + tab.name + '...');
 
           let song = {};
 
           // basic song info
-          song.name = tab.name;
+          song.songName = tab.name;
           song.artist = tab.artist;
           song.capo = tab.capo;
           song.tonality = tab.tonality;
@@ -113,7 +146,7 @@ function parseUrlList(filePath, songSet, info) {
           song.decade = info.decade;
           song.genre = info.genre;
 
-          songSet.add(song.name);
+          songMap[tab.name] = null; // not sure of index until promises resolve
           resolve(song);
         }
 
@@ -121,7 +154,12 @@ function parseUrlList(filePath, songSet, info) {
     });
     songs.push(songPromise);
   });
-  return songs;
+
+  return Promise.all(songs).then(songs => {
+    parsedSongs.push(...songs.filter(x => x !== null));
+    return parsedSongs;
+  });
+
 }
 
 module.exports = {
