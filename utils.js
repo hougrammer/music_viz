@@ -12,9 +12,8 @@ const debug = true;
  * @return {String[]} raw chords
  */
 function extractRawChords(text) {
-  return text
-    .match(/\[ch\].*?\[\/ch\]/g) // grab all the chords
-    .map(x => x.substring(4, x.length - 5)); // throw out the [ch] and [/ch]
+  let match = text.match(/\[ch\].*?\[\/ch\]/g);
+  return match === null ? [] : match.map(x => x.substring(4, x.length - 5));
 }
 
 /**
@@ -24,15 +23,22 @@ function extractRawChords(text) {
  * @return {String[]} array of simplified chords
  */
 function simplifyChords(chords) {
+  const notes = 'ABCDEFG';
   return chords.map(c => {
     let note = c[0];
     if (c.length === 1) return note;
 
     let suffix = c.substring(1, c.length);
 
-    // take care sharps and flats
-    if (c[1] === '#' || c[1] === 'b') {
-      note += c[1];
+    // convert sharps and flats to one note
+    if (c[1] === 'b') {
+      let low = note === 'A' ? 'G' : notes[notes.indexOf(note)-1]; // G#/Ab
+      note = low + '#/' + note + 'b'; // e.g. C#/Db
+      suffix = c.substring(2, c.length);
+    }
+    else if (c[1] === '#') {
+      let high = note === 'G' ? 'A' : notes[notes.indexOf(note)+1]; // G#/Ab
+      note = note + '#/' + high + 'b'; // e.g. C#/Db
       suffix = c.substring(2, c.length);
     }
 
@@ -40,12 +46,12 @@ function simplifyChords(chords) {
       case '':
         return note;
       case 'm':
-        return note + 'm';
+        return note + ' minor';
       default:
-        if (suffix.substring(0, 3) === 'dim') return note + 'm';
-        if (suffix.substring(0, 3) === 'maj') return note;
-        if (suffix[0] === 'm') return note + 'm';
-        return note;
+        if (suffix.substring(0, 3) === 'dim') return note + ' minor'; // Adim
+        if (suffix.substring(0, 3) === 'maj') return note; // Amaj
+        if (suffix[0] === 'm') return note + ' minor'; // Am7
+        return note; // Asus, A7, etc
     }
   });
 }
@@ -80,6 +86,38 @@ function writeUrlList(url, filePath) {
 }
 
 /**
+ * Helper function to aggregate chords in a song object
+ * @param  {Object} song
+ */
+function aggregateChords(song) {
+  const chords = [
+    'A', 'A minor',
+    'A#/Bb', 'A#/Bb minor',
+    'B', 'B minor',
+    'C', 'C minor',
+    'C#/Db', 'C#/Db minor',
+    'D', 'D minor',
+    'D#/Eb', 'D#/Eb minor',
+    'E', 'E minor',
+    'F', 'F minor',
+    'F#/Gb', 'F#/Gb minor',
+    'G', 'G minor',
+    'G#/Ab', 'G#/Ab minor'
+  ];
+  chords.forEach(chord => {
+    song[chord] = 0;
+  });
+
+  let set = new Set();
+  song.simplifiedChords.forEach(chord => {
+    song[chord] += 1;
+    set.add(chord);
+  });
+  song.uniqueChords = set.size;
+  song.totalChords = song.simplifiedChords.length;
+}
+
+/**
  * Parses a url list in the form of txt and returns a promise
  * that resolves to an updated version of the parsedSongs object
  * @param  {String} filePath
@@ -88,6 +126,7 @@ function writeUrlList(url, filePath) {
  * @return {Promise} resolves to updated parsedSongs
  */
 function parseUrlList(filePath, parsedSongs, info) {
+  if (debug) console.log('\n\nURL path: ' + filePath);
   let songs = [];
   info = info || {};
 
@@ -104,15 +143,17 @@ function parseUrlList(filePath, parsedSongs, info) {
       ugs.get(url, (err, tab) => {
         if (err) { // should probably reject here, figure out how to handle later
           if (debug) console.log('ugs get error: ' + url + ', ' + err)
-          resolve(null); 
+          resolve(null);
         }
 
         else if (tab === null) { // Sometimes tab is null. Don't know why. Just skip it.
           if (debug) console.log('tab is null for ' + url);
-          resolve(null); 
+          resolve(null);
         }
 
-        else if (tab.name in songMap && songMap[tab.name] !== null) {
+        else if (tab.name in songMap &&
+          songMap[tab.name] !== null &&
+          parsedSongs[songMap[tab.name]].artist === tab.artist) {
           if (debug) console.log(tab.name + ' previously parsed.  Just updating info.');
 
           let song = parsedSongs[songMap[tab.name]];
@@ -140,7 +181,8 @@ function parseUrlList(filePath, parsedSongs, info) {
           song.tonality = tab.tonality;
           song.tuning = tab.tuning;
           song.rawChords = extractRawChords(tab.content.text);
-          song.simplifedChords = simplifyChords(song.rawChords);
+          song.simplifiedChords = simplifyChords(song.rawChords);
+          aggregateChords(song);
 
           // any additional info
           song.decade = info.decade;
