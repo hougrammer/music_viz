@@ -60,8 +60,9 @@ function simplifyChords(chords) {
  * Grabs all the tab urls off a page and writes it to a text file.
  * @param  {String} url
  * @param  {String} filePath
+ * @param  {String} header - first line in the list, use for descriptive text
  */
-function writeUrlList(url, filePath) {
+function writeUrlList(url, filePath, header) {
   const requestOptions = {
     url: url,
     followRedirect: false
@@ -78,10 +79,20 @@ function writeUrlList(url, filePath) {
 
     let raw = script.children[0].data;
     let json = JSON.parse(raw.substring(raw.indexOf('{'), raw.indexOf(';')));
-    json.data.data.tabs.forEach((tab, index, array) => {
-      fs.appendFileSync(filePath, tab.tab_url);
-      if (index !== array.length - 1) fs.appendFileSync(filePath, '\n');
-    });
+
+    let output = [];
+    try {
+      console.log(filePath + ' already exists. Appending...')
+      output = fs.readFileSync(filePath, 'utf8').split('\n');
+      output[0] = header;
+    }
+    catch (err) {
+      console.log('Creating ' + filePath + '...');
+      output.push(header);
+    }
+
+    json.data.data.tabs.forEach((tab) => { output.push(tab.tab_url); });
+    fs.writeFileSync(filePath, output.join('\n'));
   });
 }
 
@@ -123,9 +134,10 @@ function aggregateChords(song) {
  * @param  {String} filePath
  * @param  {Object[]} parsedSongs
  * @param  {Object} info - extra information (e.g. decade)
+ * @param  {Integer} maxTimeout - maximum timeout in between queries (ms)
  * @return {Promise} resolves to updated parsedSongs
  */
-function parseUrlList(filePath, parsedSongs, info) {
+function parseUrlList(filePath, parsedSongs, info, maxTimeout=100) {
   if (debug) console.log('\n\nURL path: ' + filePath);
   let songs = [];
   info = info || {};
@@ -139,6 +151,10 @@ function parseUrlList(filePath, parsedSongs, info) {
     .split('\n')
     .filter(line => line.indexOf('http') === 0); // allows us to put other comments without breaking parser
   urls.forEach((url) => {
+    // set a random timeout the so the scraping doesn't look suspicious
+    let timeout = Math.random()*maxTimeout;
+    setTimeout(() => {}, timeout);
+
     let songPromise = new Promise((resolve, reject) => {
       ugs.get(url, (err, tab) => {
         if (err) { // should probably reject here, figure out how to handle later
@@ -159,6 +175,7 @@ function parseUrlList(filePath, parsedSongs, info) {
           let song = parsedSongs[songMap[tab.name]];
           if (info.decade !== undefined) song.decade = info.decade;
           if (info.genre !== undefined) song.genre = info.genre;
+          if (info.tonality !== undefined) song.tonality = info.tonality;
 
           resolve(null);
         }
@@ -178,8 +195,10 @@ function parseUrlList(filePath, parsedSongs, info) {
           song.songName = tab.name;
           song.artist = tab.artist;
           song.capo = tab.capo;
-          song.tonality = tab.tonality;
           song.tuning = tab.tuning;
+
+          song.tonality = info.tonality || tab.tonality; // info tonality trumps tab tonality
+
           song.rawChords = extractRawChords(tab.content.text);
           song.simplifiedChords = simplifyChords(song.rawChords);
           aggregateChords(song);

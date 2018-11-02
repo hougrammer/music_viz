@@ -1,0 +1,25 @@
+This is just a reference text for URL patterns on UG tab explorer.  It's not meant to be used for getting data.
+
+Decade
+https://www.ultimate-guitar.com/explore?decade[]=2010&order=hitstotal_desc&page=1&type[]=Chords
+
+Rock
+https://www.ultimate-guitar.com/explore?genres[]=4&order=hitstotal_desc&page=1&type[]=Chords
+
+Folk
+https://www.ultimate-guitar.com/explore?genres[]=666&order=hitstotal_desc&page=1&type[]=Chords
+
+Pop
+https://www.ultimate-guitar.com/explore?genres[]=14&order=hitstotal_desc&page=1&type[]=Chords
+
+Country
+https://www.ultimate-guitar.com/explore?genres[]=49&order=hitstotal_desc&page=1&type[]=Chords
+
+Electronic
+https://www.ultimate-guitar.com/explore?genres[]=16&order=hitstotal_desc&page=1&type[]=Chords
+
+Rhythm and Blues
+https://www.ultimate-guitar.com/explore?genres[]=70&order=hitstotal_desc&page=1&type[]=Chords
+
+Metal
+https://www.ultimate-guitar.com/explore?genres[]=8&order=hitstotal_desc&page=1&type[]=Chords

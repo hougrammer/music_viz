@@ -9,7 +9,7 @@ const fs = require('fs');
 let parsedSongs = JSON.parse(fs.readFileSync('data/parsedSongs.json', 'utf8'));
 
 (new Promise(resolve => {resolve(parsedSongs);})) // dummy just so I can comment out the first parse easily
-  // .then(parsedSongs => utils.parseUrlList('data/urlList2010.txt', parsedSongs, {'decade': '2010'}))
+  .then(parsedSongs => utils.parseUrlList('data/urlList2010.txt', parsedSongs, {'decade': '2010'}))
   .then(parsedSongs => utils.parseUrlList('data/urlList2000.txt', parsedSongs, {'decade': '2000'}))
   .then(parsedSongs => utils.parseUrlList('data/urlList1990.txt', parsedSongs, {'decade': '1990'}))
   .then(parsedSongs => utils.parseUrlList('data/urlList1980.txt', parsedSongs, {'decade': '1980'}))
@@ -23,4 +23,5 @@ let parsedSongs = JSON.parse(fs.readFileSync('data/parsedSongs.json', 'utf8'));
   .then(parsedSongs => utils.parseUrlList('data/urlListPop.txt', parsedSongs, {'genre': 'Pop'}))
   .then(parsedSongs => utils.parseUrlList('data/urlListRhythmAndBlues.txt', parsedSongs, {'genre': 'RhythmAndBlues'}))
   .then(parsedSongs => utils.parseUrlList('data/urlListRock.txt', parsedSongs, {'genre': 'Rock'}))
+  //.then(parsedSongs => utils.parseUrlList('data/urlListKeyC.txt', parsedSongs, {'tonality': 'C'}))
   .then(parsedSongs => { fs.writeFileSync('data/parsedSongs.json', JSON.stringify(parsedSongs), 'utf8'); });
