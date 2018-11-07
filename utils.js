@@ -6,6 +6,21 @@ const cheerio = require('cheerio');
 
 const debug = true;
 
+const noteToIndex = {
+  'A': 1,
+  'A#': 2, 'Bb': 2,
+  'B': 3,
+  'C': 4,
+  'C#': 5 , 'Db': 5,
+  'D': 6,
+  'D#': 7, 'Eb': 7,
+  'E': 8,
+  'F': 9,
+  'F#': 10, 'Gb': 10,
+  'G': 11,
+  'G#': 12, 'Ab': 12
+};
+
 /**
  * Extracts raw chords from 
  * @param  {String} text - text of tab.content
@@ -129,6 +144,45 @@ function aggregateChords(song) {
 }
 
 /**
+ * Get the progression of a certain key based on the first 4 chords.  
+ * This is a super simplified way to get chord progressions but we don't have a great way w/o machine learning.
+ * Returns two different progressions, a simplified number based one and the traditional roman numeral one.
+ * For simplicity I'm just treating the minor keys as the parallel major key.
+ * E.g. getChordProgression('C', ['C', 'G', 'Am', 'F', ...]) returns  '0-7-9-5', 'I-V-vi-IV' ]
+ * E.g. getChordProgression('Am', ['C', 'G', 'Am', 'F', ...]) returns  '0-7-9-5', 'I-V-vi-IV' ]
+ * @param  {String} tonality 
+ * @param  {String[]} chords   
+ * @return {String}          
+ */
+function getChordProgression(tonality, chords) {
+  if (tonality === undefined || chords.length < 4) return [null, null];
+  // C ? Dm ? Em F ? G ? Am ? Bdim
+  const romans = ['I', 'bII', 'II', 'bIII', 'III', 'IV', 'bV', 'V', 'bVI', 'VI', 'bVII', 'VII'];
+
+  let I = noteToIndex[tonality[0]]; // I chord
+
+  // switch from minor to major
+  if (tonality[1] === 'm') {
+    I += 3; // Am -> C
+    if (I > 11) I -= 12;
+  }
+
+  let simplified = '';
+  let strict = '';
+  for (let i = 0; i < 4; i++) {
+    let c = noteToIndex[chords[i][0]] - I;
+    if (c < 0) c += 12;
+    simplified += c;
+    strict += chords[i].length === 1 ? romans[c] : romans[c].toLowerCase();
+    if (i !== 3) {
+      simplified += '-';
+      strict += '-';
+    }
+  }
+  return [simplified, strict];
+}
+
+/**
  * Parses a url list in the form of txt and returns a promise
  * that resolves to an updated version of the parsedSongs object
  * @param  {String} filePath
@@ -197,11 +251,15 @@ function parseUrlList(filePath, parsedSongs, info, maxTimeout=100) {
           song.capo = tab.capo;
           song.tuning = tab.tuning;
 
-          song.tonality = info.tonality || tab.tonality; // info tonality trumps tab tonality
+          song.tonality = tab.tonality;
 
           song.rawChords = extractRawChords(tab.content.text);
           song.simplifiedChords = simplifyChords(song.rawChords);
           aggregateChords(song);
+
+          let progressions = getChordProgression(song.tonality, song.simplifiedChords);
+          song.simpleProgression = progressions[0];
+          song.traditionalProgression = progressions[1];
 
           // any additional info
           song.decade = info.decade;
@@ -224,8 +282,10 @@ function parseUrlList(filePath, parsedSongs, info, maxTimeout=100) {
 }
 
 module.exports = {
+  noteToIndex,
   extractRawChords,
   simplifyChords,
+  getChordProgression,
   writeUrlList,
   parseUrlList
 };
