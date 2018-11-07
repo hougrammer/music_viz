@@ -191,7 +191,7 @@ function getChordProgression(tonality, chords) {
  * @param  {Integer} maxTimeout - maximum timeout in between queries (ms)
  * @return {Promise} resolves to updated parsedSongs
  */
-function parseUrlList(filePath, parsedSongs, info, maxTimeout=100) {
+function parseUrlList(filePath, parsedSongs, info, maxTimeout=500) {
   if (debug) console.log('\n\nURL path: ' + filePath);
   let songs = [];
   info = info || {};
