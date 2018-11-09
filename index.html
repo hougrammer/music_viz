@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Music Exploration</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/piano_style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <script src="http://www.verovio.org/javascript/latest/verovio-toolkit-light.js" type="text/javascript"></script>
+  <script src="js/piano.js"></script>
+  <script src="js/renderPiano.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <h1>An Exploration of Trends in Music</h1>
+    <p>Welcome to our music exploration!  We"re hoping to show you some interesting trends in songs and sprinkle in some music theory along the way.  Don"t worry if you didn"t know that bass was anything but a fish.  We"ll go slow.</p>
+
+    <h2>A Crash Course on Music Theory</h2>
+    <p>Here"s a simple piano keyboard to play around with.  Press some keys and see how notes are represented on the musical scale.  Notice that the notes go up in a predicatable manner as you move left to right on the keyboard.  The weird looking symbols at the top left are called clefs and the fractions control the duration of the note if we were to actually play the notes.  For our purposes, we can ignore them.</p>
+    <div id="keyboardContainer"></div>
+    <div id="svgNotesContainer"></div>
+    <button id="backspaceButton" class="btn">Delete Note</button>
+
+    <h3>Note Names</h3>
+    <p>Each of the notes on the keyboard has a name.  The white keys are simply called A, B, C, D, E, F, and G.  There is no H.  After G, we start at A again.  Here is picture of the labeled keyboard.</p>
+    <img src="img/piano.png">
+    <p>What about the symbols on the black keys?  The "b" is called a flat and the "#" is called a sharp.  You can think of these as modifiers to the natural notes (the white keys).  Flats bring pitch of a note a little bit down; sharps bring them a little bit up.  Moreover, for white keys that have black keys in between them, the black key is half way in between the two white keys and has two names.  E.g. C# and Db are the same note!  As an aside for programmers, you know how C++ is a joke in that it is C + 1?  C# is also a joke in that it is a step above C.  Well, technically, it's half a step above C, but we'll get to that.</p>
+
+    <h3>Chords</h3>
+    <p>Go to this <a href="https://www.onlinepianist.com/virtual-piano">website</a> and try playing some notes (be sure to have your sound on).  You can click the keys with your mouse or use your keyboard.  The astute reader will soon realize that the latter option allows us to play multiple notes at once.  Now we're in the realm of chords!  These are simply groups of notes that are played simultaneously together.  Not all groups of notes sound good together.  The vast majority of them don't, but try going back to that website and try pressing these keys together: </p>
+    <ul>
+      <li>Q-E-T</li>
+      <li>Q-3-T</li>
+    </ul>
+    <p>The first chord consisted of the notes C-E-G and is called C major.  The second chord differs by only one note; it's C-Eb-G (remember the "b" means flat) and is called C minor.  If you're like most people the major chord sounds happy or optimistic to you; the minor chord, sad or pessimistic.  It's amazing how music can evoke different emotions with tiny differences.</p>
+
+    <h3>Chord Progressions</h3>
+    <p>We're almost to the point where we can actually play some songs!  A "chord progression" is just a fancy way of saying a sequence of chords.  Try going back to the keyboard and try pressing these keys in order:</p>
+    <ol>
+      <li>Q-E-T (C major)</li>
+      <li>T-U-I (G major)</li>
+      <li>Y-I-P (A minor)</li>
+      <li>R-Y-I (F major)</li>
+    </ol>
+    <p>Once muscle memory kicks in, try playing those 4 chords in a loop.  If you listen to any pop music things might start sounding familiar.  Or maybe try playing Am-F-C-G and see if that sounds like anything you know.  These four chords are the ones in a very popular chord progression called "I-V-vi-IV" in the key of C.  Those are just roman numerals corresponding to 1-5-6-4.  If you go back to keyboard and mentally assign the note C to the number 1, you should find that G is number 5 (4 white keys away from C), A is number 6 (5 white keys away from C), and F is number 4 (3 white keys from C).  This specific sequence of chords is extremely popular.  Check out this <a href="https://www.youtube.com/watch?v=oOlDewpCfZQ">video</a>.</p>
+  </div>
+
+</body>
+
+</html>
