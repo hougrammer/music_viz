@@ -1,0 +1,1500 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20182.18.1009.2120                               -->
+<workbook source-build='2018.2.3 (20182.18.1009.2120)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <SortTagCleanup />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='parsedSongs' inline='true' name='federated.102ayud09l8vix11e846g1oo8ogh' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='parsedSongs' name='semistructpassivestore-direct.07xc4ox1re9z851bnb5a51k9ojjl'>
+            <connection class='semistructpassivestore-direct' directory='C:/Users/David/Desktop/music_viz/data' filename='parsedSongs.json' password='' server=''>
+              <semistruct-schemas>
+                <semistruct-schema table='[parsedSongs.json]'>
+                  <map key='rawChords' value='false' />
+                  <map key='simplifiedChords' value='false' />
+                  <map key='{root}' value='true' />
+                </semistruct-schema>
+              </semistruct-schemas>
+            </connection>
+          </named-connection>
+        </named-connections>
+        <relation connection='semistructpassivestore-direct.07xc4ox1re9z851bnb5a51k9ojjl' name='parsedSongs.json' table='[parsedSongs.json]' type='table' />
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>Document Index (generated)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Document Index (generated)]</local-name>
+            <parent-name>[parsedSongs.json]</parent-name>
+            <remote-alias>Document Index (generated)</remote-alias>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>A</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[A]</local-name>
+            <parent-name>[parsedSongs.json]</parent-name>
+            <remote-alias>A</remote-alias>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>A minor</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[A minor]</local-name>
+            <parent-name>[parsedSongs.json]</parent-name>
+            <remote-alias>A minor</remote-alias>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>A#/Bb</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[A#/Bb]</local-name>
+            <parent-name>[parsedSongs.json]</parent-name>
+            <remote-alias>A#/Bb</remote-alias>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>A#/Bb minor</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[A#/Bb minor]</local-name>
+            <parent-name>[parsedSongs.json]</parent-name>
+            <remote-alias>A#/Bb minor</remote-alias>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>B</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[B]</local-name>
+            <parent-name>[parsedSongs.json]</parent-name>
+            <remote-alias>B</remote-alias>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>B minor</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[B minor]</local-name>
+            <parent-name>[parsedSongs.json]</parent-name>
+            <remote-alias>B minor</remote-alias>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>C</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[C]</local-name>
+            <parent-name>[parsedSongs.json]</parent-name>
+            <remote-alias>C</remote-alias>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>C minor</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[C minor]</local-name>
+            <parent-name>[parsedSongs.json]</parent-name>
+            <remote-alias>C minor</remote-alias>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>C#/Db</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[C#/Db]</local-name>
+            <parent-name>[parsedSongs.json]</parent-name>
+            <remote-alias>C#/Db</remote-alias>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>C#/Db minor</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[C#/Db minor]</local-name>
+            <parent-name>[parsedSongs.json]</parent-name>
+            <remote-alias>C#/Db minor</remote-alias>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>D</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[D]</local-name>
+            <parent-name>[parsedSongs.json]</parent-name>
+            <remote-alias>D</remote-alias>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>D minor</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[D minor]</local-name>
+            <parent-name>[parsedSongs.json]</parent-name>
+            <remote-alias>D minor</remote-alias>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>D#/Eb</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[D#/Eb]</local-name>
+            <parent-name>[parsedSongs.json]</parent-name>
+            <remote-alias>D#/Eb</remote-alias>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>D#/Eb minor</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[D#/Eb minor]</local-name>
+            <parent-name>[parsedSongs.json]</parent-name>
+            <remote-alias>D#/Eb minor</remote-alias>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>E</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[E]</local-name>
+            <parent-name>[parsedSongs.json]</parent-name>
+            <remote-alias>E</remote-alias>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>E minor</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[E minor]</local-name>
+            <parent-name>[parsedSongs.json]</parent-name>
+            <remote-alias>E minor</remote-alias>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[F]</local-name>
+            <parent-name>[parsedSongs.json]</parent-name>
+            <remote-alias>F</remote-alias>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F minor</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[F minor]</local-name>
+            <parent-name>[parsedSongs.json]</parent-name>
+            <remote-alias>F minor</remote-alias>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F#/Gb</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[F#/Gb]</local-name>
+            <parent-name>[parsedSongs.json]</parent-name>
+            <remote-alias>F#/Gb</remote-alias>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F#/Gb minor</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[F#/Gb minor]</local-name>
+            <parent-name>[parsedSongs.json]</parent-name>
+            <remote-alias>F#/Gb minor</remote-alias>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>G</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[G]</local-name>
+            <parent-name>[parsedSongs.json]</parent-name>
+            <remote-alias>G</remote-alias>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>G minor</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[G minor]</local-name>
+            <parent-name>[parsedSongs.json]</parent-name>
+            <remote-alias>G minor</remote-alias>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>G#/Ab</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[G#/Ab]</local-name>
+            <parent-name>[parsedSongs.json]</parent-name>
+            <remote-alias>G#/Ab</remote-alias>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>G#/Ab minor</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[G#/Ab minor]</local-name>
+            <parent-name>[parsedSongs.json]</parent-name>
+            <remote-alias>G#/Ab minor</remote-alias>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>artist</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[artist]</local-name>
+            <parent-name>[parsedSongs.json]</parent-name>
+            <remote-alias>artist</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>capo</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[capo]</local-name>
+            <parent-name>[parsedSongs.json]</parent-name>
+            <remote-alias>capo</remote-alias>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>decade</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[decade]</local-name>
+            <parent-name>[parsedSongs.json]</parent-name>
+            <remote-alias>decade</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>genre</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[genre]</local-name>
+            <parent-name>[parsedSongs.json]</parent-name>
+            <remote-alias>genre</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>simpleProgression</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[simpleProgression]</local-name>
+            <parent-name>[parsedSongs.json]</parent-name>
+            <remote-alias>simpleProgression</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>songName</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[songName]</local-name>
+            <parent-name>[parsedSongs.json]</parent-name>
+            <remote-alias>songName</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>tonality</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[tonality]</local-name>
+            <parent-name>[parsedSongs.json]</parent-name>
+            <remote-alias>tonality</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>totalChords</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[totalChords]</local-name>
+            <parent-name>[parsedSongs.json]</parent-name>
+            <remote-alias>totalChords</remote-alias>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>traditionalProgression</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[traditionalProgression]</local-name>
+            <parent-name>[parsedSongs.json]</parent-name>
+            <remote-alias>traditionalProgression</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>tuning</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[tuning]</local-name>
+            <parent-name>[parsedSongs.json]</parent-name>
+            <remote-alias>tuning</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>uniqueChords</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[uniqueChords]</local-name>
+            <parent-name>[parsedSongs.json]</parent-name>
+            <remote-alias>uniqueChords</remote-alias>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='real' is-auto-gen-lod-field='true' name='[A minor per Document]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='{ FIXED [Document Index (generated)] : MAX([A minor]) }' />
+        <desc>
+          <formatted-text>
+            <run>A calculated measure that is at Document level of detail</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column datatype='real' name='[A minor]' role='measure' type='quantitative'>
+        <desc>
+          <formatted-text>
+            <run>A minor</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column datatype='real' is-auto-gen-lod-field='true' name='[A per Document]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='{ FIXED [Document Index (generated)] : MAX([A]) }' />
+        <desc>
+          <formatted-text>
+            <run>A calculated measure that is at Document level of detail</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column datatype='real' is-auto-gen-lod-field='true' name='[A#/Bb minor per Document]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='{ FIXED [Document Index (generated)] : MAX([A#/Bb minor]) }' />
+        <desc>
+          <formatted-text>
+            <run>A calculated measure that is at Document level of detail</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column datatype='real' name='[A#/Bb minor]' role='measure' type='quantitative'>
+        <desc>
+          <formatted-text>
+            <run>A#/Bb minor</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column datatype='real' is-auto-gen-lod-field='true' name='[A#/Bb per Document]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='{ FIXED [Document Index (generated)] : MAX([A#/Bb]) }' />
+        <desc>
+          <formatted-text>
+            <run>A calculated measure that is at Document level of detail</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column datatype='real' name='[A#/Bb]' role='measure' type='quantitative'>
+        <desc>
+          <formatted-text>
+            <run>A#/Bb</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column datatype='real' name='[A]' role='measure' type='quantitative'>
+        <desc>
+          <formatted-text>
+            <run>A</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column datatype='real' is-auto-gen-lod-field='true' name='[B minor per Document]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='{ FIXED [Document Index (generated)] : MAX([B minor]) }' />
+        <desc>
+          <formatted-text>
+            <run>A calculated measure that is at Document level of detail</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column datatype='real' name='[B minor]' role='measure' type='quantitative'>
+        <desc>
+          <formatted-text>
+            <run>B minor</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column datatype='real' is-auto-gen-lod-field='true' name='[B per Document]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='{ FIXED [Document Index (generated)] : MAX([B]) }' />
+        <desc>
+          <formatted-text>
+            <run>A calculated measure that is at Document level of detail</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column datatype='real' name='[B]' role='measure' type='quantitative'>
+        <desc>
+          <formatted-text>
+            <run>B</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column datatype='real' is-auto-gen-lod-field='true' name='[C minor per Document]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='{ FIXED [Document Index (generated)] : MAX([C minor]) }' />
+        <desc>
+          <formatted-text>
+            <run>A calculated measure that is at Document level of detail</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column datatype='real' name='[C minor]' role='measure' type='quantitative'>
+        <desc>
+          <formatted-text>
+            <run>C minor</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column datatype='real' is-auto-gen-lod-field='true' name='[C per Document]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='{ FIXED [Document Index (generated)] : MAX([C]) }' />
+        <desc>
+          <formatted-text>
+            <run>A calculated measure that is at Document level of detail</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column datatype='real' is-auto-gen-lod-field='true' name='[C#/Db minor per Document]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='{ FIXED [Document Index (generated)] : MAX([C#/Db minor]) }' />
+        <desc>
+          <formatted-text>
+            <run>A calculated measure that is at Document level of detail</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column datatype='real' name='[C#/Db minor]' role='measure' type='quantitative'>
+        <desc>
+          <formatted-text>
+            <run>C#/Db minor</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column datatype='real' is-auto-gen-lod-field='true' name='[C#/Db per Document]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='{ FIXED [Document Index (generated)] : MAX([C#/Db]) }' />
+        <desc>
+          <formatted-text>
+            <run>A calculated measure that is at Document level of detail</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column datatype='real' name='[C#/Db]' role='measure' type='quantitative'>
+        <desc>
+          <formatted-text>
+            <run>C#/Db</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column datatype='real' name='[C]' role='measure' type='quantitative'>
+        <desc>
+          <formatted-text>
+            <run>C</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column caption='Unique to Total Ratio' datatype='real' name='[Calculation_3431180026776731648]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='[uniqueChords]/[totalChords]' />
+      </column>
+      <column datatype='real' is-auto-gen-lod-field='true' name='[Capo per Document]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='{ FIXED [Document Index (generated)] : MAX([capo]) }' />
+        <desc>
+          <formatted-text>
+            <run>A calculated measure that is at Document level of detail</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column datatype='real' is-auto-gen-lod-field='true' name='[D minor per Document]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='{ FIXED [Document Index (generated)] : MAX([D minor]) }' />
+        <desc>
+          <formatted-text>
+            <run>A calculated measure that is at Document level of detail</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column datatype='real' name='[D minor]' role='measure' type='quantitative'>
+        <desc>
+          <formatted-text>
+            <run>D minor</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column datatype='real' is-auto-gen-lod-field='true' name='[D per Document]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='{ FIXED [Document Index (generated)] : MAX([D]) }' />
+        <desc>
+          <formatted-text>
+            <run>A calculated measure that is at Document level of detail</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column datatype='real' is-auto-gen-lod-field='true' name='[D#/Eb minor per Document]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='{ FIXED [Document Index (generated)] : MAX([D#/Eb minor]) }' />
+        <desc>
+          <formatted-text>
+            <run>A calculated measure that is at Document level of detail</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column datatype='real' name='[D#/Eb minor]' role='measure' type='quantitative'>
+        <desc>
+          <formatted-text>
+            <run>D#/Eb minor</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column datatype='real' is-auto-gen-lod-field='true' name='[D#/Eb per Document]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='{ FIXED [Document Index (generated)] : MAX([D#/Eb]) }' />
+        <desc>
+          <formatted-text>
+            <run>A calculated measure that is at Document level of detail</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column datatype='real' name='[D#/Eb]' role='measure' type='quantitative'>
+        <desc>
+          <formatted-text>
+            <run>D#/Eb</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column datatype='real' name='[D]' role='measure' type='quantitative'>
+        <desc>
+          <formatted-text>
+            <run>D</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column aggregation='Sum' datatype='integer' name='[Document Index (generated)]' role='dimension' type='ordinal'>
+        <desc>
+          <formatted-text>
+            <run>Document Index (generated)</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column datatype='real' is-auto-gen-lod-field='true' name='[E minor per Document]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='{ FIXED [Document Index (generated)] : MAX([E minor]) }' />
+        <desc>
+          <formatted-text>
+            <run>A calculated measure that is at Document level of detail</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column datatype='real' name='[E minor]' role='measure' type='quantitative'>
+        <desc>
+          <formatted-text>
+            <run>E minor</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column datatype='real' is-auto-gen-lod-field='true' name='[E per Document]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='{ FIXED [Document Index (generated)] : MAX([E]) }' />
+        <desc>
+          <formatted-text>
+            <run>A calculated measure that is at Document level of detail</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column datatype='real' name='[E]' role='measure' type='quantitative'>
+        <desc>
+          <formatted-text>
+            <run>E</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column datatype='real' is-auto-gen-lod-field='true' name='[F minor per Document]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='{ FIXED [Document Index (generated)] : MAX([F minor]) }' />
+        <desc>
+          <formatted-text>
+            <run>A calculated measure that is at Document level of detail</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column datatype='real' name='[F minor]' role='measure' type='quantitative'>
+        <desc>
+          <formatted-text>
+            <run>F minor</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column datatype='real' is-auto-gen-lod-field='true' name='[F per Document]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='{ FIXED [Document Index (generated)] : MAX([F]) }' />
+        <desc>
+          <formatted-text>
+            <run>A calculated measure that is at Document level of detail</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column datatype='real' is-auto-gen-lod-field='true' name='[F#/Gb minor per Document]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='{ FIXED [Document Index (generated)] : MAX([F#/Gb minor]) }' />
+        <desc>
+          <formatted-text>
+            <run>A calculated measure that is at Document level of detail</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column datatype='real' name='[F#/Gb minor]' role='measure' type='quantitative'>
+        <desc>
+          <formatted-text>
+            <run>F#/Gb minor</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column datatype='real' is-auto-gen-lod-field='true' name='[F#/Gb per Document]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='{ FIXED [Document Index (generated)] : MAX([F#/Gb]) }' />
+        <desc>
+          <formatted-text>
+            <run>A calculated measure that is at Document level of detail</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column datatype='real' name='[F#/Gb]' role='measure' type='quantitative'>
+        <desc>
+          <formatted-text>
+            <run>F#/Gb</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column datatype='real' name='[F]' role='measure' type='quantitative'>
+        <desc>
+          <formatted-text>
+            <run>F</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column datatype='real' is-auto-gen-lod-field='true' name='[G minor per Document]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='{ FIXED [Document Index (generated)] : MAX([G minor]) }' />
+        <desc>
+          <formatted-text>
+            <run>A calculated measure that is at Document level of detail</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column datatype='real' name='[G minor]' role='measure' type='quantitative'>
+        <desc>
+          <formatted-text>
+            <run>G minor</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column datatype='real' is-auto-gen-lod-field='true' name='[G per Document]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='{ FIXED [Document Index (generated)] : MAX([G]) }' />
+        <desc>
+          <formatted-text>
+            <run>A calculated measure that is at Document level of detail</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column datatype='real' is-auto-gen-lod-field='true' name='[G#/Ab minor per Document]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='{ FIXED [Document Index (generated)] : MAX([G#/Ab minor]) }' />
+        <desc>
+          <formatted-text>
+            <run>A calculated measure that is at Document level of detail</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column datatype='real' name='[G#/Ab minor]' role='measure' type='quantitative'>
+        <desc>
+          <formatted-text>
+            <run>G#/Ab minor</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column datatype='real' is-auto-gen-lod-field='true' name='[G#/Ab per Document]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='{ FIXED [Document Index (generated)] : MAX([G#/Ab]) }' />
+        <desc>
+          <formatted-text>
+            <run>A calculated measure that is at Document level of detail</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column datatype='real' name='[G#/Ab]' role='measure' type='quantitative'>
+        <desc>
+          <formatted-text>
+            <run>G#/Ab</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column datatype='real' name='[G]' role='measure' type='quantitative'>
+        <desc>
+          <formatted-text>
+            <run>G</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column datatype='integer' is-auto-gen-lod-field='true' name='[Number of Records per parsedSongs.json]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='COUNTD([Document Index (generated)])' />
+        <desc>
+          <formatted-text>
+            <run>A calculated measure that is at parsedSongs.json level of detail</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column datatype='real' is-auto-gen-lod-field='true' name='[Total Chords per Document]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='{ FIXED [Document Index (generated)] : MAX([totalChords]) }' />
+        <desc>
+          <formatted-text>
+            <run>A calculated measure that is at Document level of detail</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column datatype='real' is-auto-gen-lod-field='true' name='[Unique Chords per Document]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='{ FIXED [Document Index (generated)] : MAX([uniqueChords]) }' />
+        <desc>
+          <formatted-text>
+            <run>A calculated measure that is at Document level of detail</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column caption='Artist' datatype='string' name='[artist]' role='dimension' type='nominal'>
+        <desc>
+          <formatted-text>
+            <run>artist</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column caption='Capo' datatype='real' name='[capo]' role='measure' type='quantitative'>
+        <desc>
+          <formatted-text>
+            <run>capo</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column caption='Decade' datatype='string' name='[decade]' role='dimension' type='nominal'>
+        <desc>
+          <formatted-text>
+            <run>decade</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column caption='Genre' datatype='string' name='[genre]' role='dimension' type='nominal'>
+        <desc>
+          <formatted-text>
+            <run>genre</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column caption='Simple Progression' datatype='string' name='[simpleProgression]' role='dimension' type='nominal'>
+        <desc>
+          <formatted-text>
+            <run>simpleProgression</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column caption='Song Name' datatype='string' name='[songName]' role='dimension' type='nominal'>
+        <desc>
+          <formatted-text>
+            <run>songName</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column caption='Tonality' datatype='string' name='[tonality]' role='dimension' type='nominal'>
+        <desc>
+          <formatted-text>
+            <run>tonality</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column caption='Total Chords' datatype='real' name='[totalChords]' role='measure' type='quantitative'>
+        <desc>
+          <formatted-text>
+            <run>totalChords</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column caption='Traditional Progression' datatype='string' name='[traditionalProgression]' role='dimension' type='nominal'>
+        <desc>
+          <formatted-text>
+            <run>traditionalProgression</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column caption='Tuning' datatype='string' name='[tuning]' role='dimension' type='nominal'>
+        <desc>
+          <formatted-text>
+            <run>tuning</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column caption='Unique Chords' datatype='real' name='[uniqueChords]' role='measure' type='quantitative'>
+        <desc>
+          <formatted-text>
+            <run>uniqueChords</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column-instance column='[genre]' derivation='None' name='[none:genre:nk]' pivot='key' type='nominal' />
+      <column-instance column='[songName]' derivation='None' name='[none:songName:nk]' pivot='key' type='nominal' />
+      <group hidden='true' name='[Exclusions (Genre,Song Name)]' name-style='unqualified' user:auto-column='exclude'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[none:genre:nk]' />
+          <groupfilter function='level-members' level='[none:songName:nk]' />
+        </groupfilter>
+      </group>
+      <folder name='Parsed Songs' role='dimensions'>
+        <folder-item name='[Document Index (generated)]' type='field' />
+        <folder-item name='[artist]' type='field' />
+        <folder-item name='[decade]' type='field' />
+        <folder-item name='[genre]' type='field' />
+        <folder-item name='[simpleProgression]' type='field' />
+        <folder-item name='[songName]' type='field' />
+        <folder-item name='[tonality]' type='field' />
+        <folder-item name='[traditionalProgression]' type='field' />
+        <folder-item name='[tuning]' type='field' />
+      </folder>
+      <folder name='Source Measures' role='measures'>
+        <folder-item name='[A minor]' type='field' />
+        <folder-item name='[A#/Bb minor]' type='field' />
+        <folder-item name='[A#/Bb]' type='field' />
+        <folder-item name='[A]' type='field' />
+        <folder-item name='[B minor]' type='field' />
+        <folder-item name='[B]' type='field' />
+        <folder-item name='[C minor]' type='field' />
+        <folder-item name='[C#/Db minor]' type='field' />
+        <folder-item name='[C#/Db]' type='field' />
+        <folder-item name='[C]' type='field' />
+        <folder-item name='[Calculation_3431180026776731648]' type='field' />
+        <folder-item name='[D minor]' type='field' />
+        <folder-item name='[D#/Eb minor]' type='field' />
+        <folder-item name='[D#/Eb]' type='field' />
+        <folder-item name='[D]' type='field' />
+        <folder-item name='[E minor]' type='field' />
+        <folder-item name='[E]' type='field' />
+        <folder-item name='[F minor]' type='field' />
+        <folder-item name='[F#/Gb minor]' type='field' />
+        <folder-item name='[F#/Gb]' type='field' />
+        <folder-item name='[F]' type='field' />
+        <folder-item name='[G minor]' type='field' />
+        <folder-item name='[G#/Ab minor]' type='field' />
+        <folder-item name='[G#/Ab]' type='field' />
+        <folder-item name='[G]' type='field' />
+        <folder-item name='[capo]' type='field' />
+        <folder-item name='[totalChords]' type='field' />
+        <folder-item name='[uniqueChords]' type='field' />
+      </folder>
+      <layout dim-ordering='alphabetic' dim-percentage='0.290932' measure-ordering='alphabetic' measure-percentage='0.709068' show-structure='false' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:genre:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>%null%</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Metal&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;Folk&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;RhythmAndBlues&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Electronic&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;Pop&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Country&quot;</bucket>
+            </map>
+            <map to='#ff9da7'>
+              <bucket>&quot;Rock&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Decade vs Unique'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='parsedSongs' name='federated.102ayud09l8vix11e846g1oo8ogh' />
+          </datasources>
+          <datasource-dependencies datasource='federated.102ayud09l8vix11e846g1oo8ogh'>
+            <column-instance column='[uniqueChords]' derivation='Avg' name='[avg:uniqueChords:qk]' pivot='key' type='quantitative' />
+            <column caption='Decade' datatype='string' name='[decade]' role='dimension' type='nominal'>
+              <desc>
+                <formatted-text>
+                  <run>decade</run>
+                </formatted-text>
+              </desc>
+            </column>
+            <column-instance column='[decade]' derivation='None' name='[none:decade:nk]' pivot='key' type='nominal' />
+            <column caption='Unique Chords' datatype='real' name='[uniqueChords]' role='measure' type='quantitative'>
+              <desc>
+                <formatted-text>
+                  <run>uniqueChords</run>
+                </formatted-text>
+              </desc>
+            </column>
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.102ayud09l8vix11e846g1oo8ogh].[none:decade:nk]'>
+            <groupfilter from='&quot;1950&quot;' function='range' level='[none:decade:nk]' to='&quot;2010&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.102ayud09l8vix11e846g1oo8ogh].[none:decade:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.102ayud09l8vix11e846g1oo8ogh].[avg:uniqueChords:qk]</rows>
+        <cols>[federated.102ayud09l8vix11e846g1oo8ogh].[none:decade:nk]</cols>
+      </table>
+    </worksheet>
+    <worksheet name='Genre vs Unique'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='parsedSongs' name='federated.102ayud09l8vix11e846g1oo8ogh' />
+          </datasources>
+          <datasource-dependencies datasource='federated.102ayud09l8vix11e846g1oo8ogh'>
+            <column-instance column='[uniqueChords]' derivation='Avg' name='[avg:uniqueChords:qk]' pivot='key' type='quantitative' />
+            <column caption='Genre' datatype='string' name='[genre]' role='dimension' type='nominal'>
+              <desc>
+                <formatted-text>
+                  <run>genre</run>
+                </formatted-text>
+              </desc>
+            </column>
+            <column-instance column='[genre]' derivation='None' name='[none:genre:nk]' pivot='key' type='nominal' />
+            <column caption='Unique Chords' datatype='real' name='[uniqueChords]' role='measure' type='quantitative'>
+              <desc>
+                <formatted-text>
+                  <run>uniqueChords</run>
+                </formatted-text>
+              </desc>
+            </column>
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.102ayud09l8vix11e846g1oo8ogh].[none:genre:nk]'>
+            <groupfilter from='&quot;Country&quot;' function='range' level='[none:genre:nk]' to='&quot;Rock&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.102ayud09l8vix11e846g1oo8ogh].[none:genre:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.102ayud09l8vix11e846g1oo8ogh].[avg:uniqueChords:qk]</rows>
+        <cols>[federated.102ayud09l8vix11e846g1oo8ogh].[none:genre:nk]</cols>
+      </table>
+    </worksheet>
+    <worksheet name='Ratio Vs Genre'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='parsedSongs' name='federated.102ayud09l8vix11e846g1oo8ogh' />
+          </datasources>
+          <datasource-dependencies datasource='federated.102ayud09l8vix11e846g1oo8ogh'>
+            <column caption='Unique to Total Ratio' datatype='real' name='[Calculation_3431180026776731648]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='[uniqueChords]/[totalChords]' />
+            </column>
+            <column-instance column='[Calculation_3431180026776731648]' derivation='Avg' name='[avg:Calculation_3431180026776731648:qk]' pivot='key' type='quantitative' />
+            <column caption='Genre' datatype='string' name='[genre]' role='dimension' type='nominal'>
+              <desc>
+                <formatted-text>
+                  <run>genre</run>
+                </formatted-text>
+              </desc>
+            </column>
+            <column-instance column='[genre]' derivation='None' name='[none:genre:nk]' pivot='key' type='nominal' />
+            <column caption='Total Chords' datatype='real' name='[totalChords]' role='measure' type='quantitative'>
+              <desc>
+                <formatted-text>
+                  <run>totalChords</run>
+                </formatted-text>
+              </desc>
+            </column>
+            <column caption='Unique Chords' datatype='real' name='[uniqueChords]' role='measure' type='quantitative'>
+              <desc>
+                <formatted-text>
+                  <run>uniqueChords</run>
+                </formatted-text>
+              </desc>
+            </column>
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.102ayud09l8vix11e846g1oo8ogh].[none:genre:nk]'>
+            <groupfilter from='&quot;Country&quot;' function='range' level='[none:genre:nk]' to='&quot;Rock&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.102ayud09l8vix11e846g1oo8ogh].[none:genre:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.102ayud09l8vix11e846g1oo8ogh].[avg:Calculation_3431180026776731648:qk]</rows>
+        <cols>[federated.102ayud09l8vix11e846g1oo8ogh].[none:genre:nk]</cols>
+      </table>
+    </worksheet>
+    <worksheet name='Sheet 10'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='parsedSongs' name='federated.102ayud09l8vix11e846g1oo8ogh' />
+          </datasources>
+          <datasource-dependencies datasource='federated.102ayud09l8vix11e846g1oo8ogh'>
+            <column-instance column='[totalChords]' derivation='Avg' name='[avg:totalChords:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[uniqueChords]' derivation='Avg' name='[avg:uniqueChords:qk]' pivot='key' type='quantitative' />
+            <column caption='Genre' datatype='string' name='[genre]' role='dimension' type='nominal'>
+              <desc>
+                <formatted-text>
+                  <run>genre</run>
+                </formatted-text>
+              </desc>
+            </column>
+            <column-instance column='[genre]' derivation='None' name='[none:genre:nk]' pivot='key' type='nominal' />
+            <column-instance column='[songName]' derivation='None' name='[none:songName:nk]' pivot='key' type='nominal' />
+            <column caption='Song Name' datatype='string' name='[songName]' role='dimension' type='nominal'>
+              <desc>
+                <formatted-text>
+                  <run>songName</run>
+                </formatted-text>
+              </desc>
+            </column>
+            <column caption='Total Chords' datatype='real' name='[totalChords]' role='measure' type='quantitative'>
+              <desc>
+                <formatted-text>
+                  <run>totalChords</run>
+                </formatted-text>
+              </desc>
+            </column>
+            <column caption='Unique Chords' datatype='real' name='[uniqueChords]' role='measure' type='quantitative'>
+              <desc>
+                <formatted-text>
+                  <run>uniqueChords</run>
+                </formatted-text>
+              </desc>
+            </column>
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.102ayud09l8vix11e846g1oo8ogh].[Exclusions (Genre,Song Name)]'>
+            <groupfilter function='except' user:ui-domain='database' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+              <groupfilter function='crossjoin'>
+                <groupfilter function='level-members' level='[none:genre:nk]' />
+                <groupfilter function='level-members' level='[none:songName:nk]' />
+              </groupfilter>
+              <groupfilter function='crossjoin'>
+                <groupfilter function='member' level='[none:genre:nk]' member='&quot;Pop&quot;' />
+                <groupfilter function='member' level='[none:songName:nk]' member='&quot;Red&quot;' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.102ayud09l8vix11e846g1oo8ogh].[none:genre:nk]'>
+            <groupfilter from='&quot;Country&quot;' function='range' level='[none:genre:nk]' to='&quot;Rock&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.102ayud09l8vix11e846g1oo8ogh].[none:genre:nk]</column>
+            <column>[federated.102ayud09l8vix11e846g1oo8ogh].[Exclusions (Genre,Song Name)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='size-bar' field='[federated.102ayud09l8vix11e846g1oo8ogh].[avg:totalChords:qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='stroke-color' id='refline0' value='#000000' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <lod column='[federated.102ayud09l8vix11e846g1oo8ogh].[none:songName:nk]' />
+              <lod column='[federated.102ayud09l8vix11e846g1oo8ogh].[avg:uniqueChords:qk]' />
+            </encodings>
+            <reference-line axis-column='[federated.102ayud09l8vix11e846g1oo8ogh].[avg:totalChords:qk]' boxplot-mark-exclusion='false' boxplot-whisker-type='standard' enable-instant-analytics='true' formula='average' id='refline0' label-type='automatic' probability='95' scope='per-cell' symmetric='false' value-column='[federated.102ayud09l8vix11e846g1oo8ogh].[avg:totalChords:qk]' z-order='1' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.25' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.102ayud09l8vix11e846g1oo8ogh].[avg:totalChords:qk]</rows>
+        <cols>[federated.102ayud09l8vix11e846g1oo8ogh].[none:genre:nk]</cols>
+      </table>
+    </worksheet>
+    <worksheet name='Sheet 8'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='parsedSongs' name='federated.102ayud09l8vix11e846g1oo8ogh' />
+          </datasources>
+          <datasource-dependencies datasource='federated.102ayud09l8vix11e846g1oo8ogh'>
+            <column-instance column='[traditionalProgression]' derivation='Count' name='[cnt:traditionalProgression:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[traditionalProgression]' derivation='None' name='[none:traditionalProgression:nk]' pivot='key' type='nominal' />
+            <column caption='Traditional Progression' datatype='string' name='[traditionalProgression]' role='dimension' type='nominal'>
+              <desc>
+                <formatted-text>
+                  <run>traditionalProgression</run>
+                </formatted-text>
+              </desc>
+            </column>
+          </datasource-dependencies>
+          <computed-sort column='[federated.102ayud09l8vix11e846g1oo8ogh].[none:traditionalProgression:nk]' direction='DESC' using='[federated.102ayud09l8vix11e846g1oo8ogh].[cnt:traditionalProgression:qk]' />
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.102ayud09l8vix11e846g1oo8ogh].[none:traditionalProgression:nk]</rows>
+        <cols>[federated.102ayud09l8vix11e846g1oo8ogh].[cnt:traditionalProgression:qk]</cols>
+      </table>
+    </worksheet>
+    <worksheet name='Sheet 9'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='parsedSongs' name='federated.102ayud09l8vix11e846g1oo8ogh' />
+          </datasources>
+          <datasource-dependencies datasource='federated.102ayud09l8vix11e846g1oo8ogh'>
+            <column caption='Unique to Total Ratio' datatype='real' name='[Calculation_3431180026776731648]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='[uniqueChords]/[totalChords]' />
+            </column>
+            <column caption='Artist' datatype='string' name='[artist]' role='dimension' type='nominal'>
+              <desc>
+                <formatted-text>
+                  <run>artist</run>
+                </formatted-text>
+              </desc>
+            </column>
+            <column-instance column='[artist]' derivation='Attribute' name='[attr:artist:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_3431180026776731648]' derivation='Avg' name='[avg:Calculation_3431180026776731648:qk]' pivot='key' type='quantitative' />
+            <column caption='Genre' datatype='string' name='[genre]' role='dimension' type='nominal'>
+              <desc>
+                <formatted-text>
+                  <run>genre</run>
+                </formatted-text>
+              </desc>
+            </column>
+            <column-instance column='[genre]' derivation='None' name='[none:genre:nk]' pivot='key' type='nominal' />
+            <column-instance column='[songName]' derivation='None' name='[none:songName:nk]' pivot='key' type='nominal' />
+            <column-instance column='[totalChords]' derivation='None' name='[none:totalChords:qk]' pivot='key' type='quantitative' />
+            <column caption='Song Name' datatype='string' name='[songName]' role='dimension' type='nominal'>
+              <desc>
+                <formatted-text>
+                  <run>songName</run>
+                </formatted-text>
+              </desc>
+            </column>
+            <column caption='Total Chords' datatype='real' name='[totalChords]' role='measure' type='quantitative'>
+              <desc>
+                <formatted-text>
+                  <run>totalChords</run>
+                </formatted-text>
+              </desc>
+            </column>
+            <column caption='Unique Chords' datatype='real' name='[uniqueChords]' role='measure' type='quantitative'>
+              <desc>
+                <formatted-text>
+                  <run>uniqueChords</run>
+                </formatted-text>
+              </desc>
+            </column>
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.102ayud09l8vix11e846g1oo8ogh].[none:genre:nk]'>
+            <groupfilter from='&quot;Country&quot;' function='range' level='[none:genre:nk]' to='&quot;Rock&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='quantitative' column='[federated.102ayud09l8vix11e846g1oo8ogh].[none:totalChords:qk]' included-values='in-range'>
+            <min>5.0</min>
+            <max>100.0</max>
+          </filter>
+          <slices>
+            <column>[federated.102ayud09l8vix11e846g1oo8ogh].[none:genre:nk]</column>
+            <column>[federated.102ayud09l8vix11e846g1oo8ogh].[none:totalChords:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='on' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <size column='[federated.102ayud09l8vix11e846g1oo8ogh].[avg:Calculation_3431180026776731648:qk]' />
+              <color column='[federated.102ayud09l8vix11e846g1oo8ogh].[avg:Calculation_3431180026776731648:qk]' />
+              <tooltip column='[federated.102ayud09l8vix11e846g1oo8ogh].[attr:artist:nk]' />
+              <text column='[federated.102ayud09l8vix11e846g1oo8ogh].[none:genre:nk]' />
+              <text column='[federated.102ayud09l8vix11e846g1oo8ogh].[none:songName:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' name='Sheet 8'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+    </window>
+    <window class='worksheet' name='Sheet 9'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.102ayud09l8vix11e846g1oo8ogh].[none:totalChords:qk]' show-domain='false' show-null-ctrls='false' type='filter' />
+            <card param='[federated.102ayud09l8vix11e846g1oo8ogh].[none:genre:nk]' type='filter' />
+            <card pane-specification-id='0' param='[federated.102ayud09l8vix11e846g1oo8ogh].[avg:Calculation_3431180026776731648:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <floating-toolbar-visibility value='1' />
+      </viewpoint>
+    </window>
+    <window class='worksheet' name='Ratio Vs Genre'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.102ayud09l8vix11e846g1oo8ogh].[none:genre:nk]' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+    </window>
+    <window class='worksheet' name='Genre vs Unique'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.102ayud09l8vix11e846g1oo8ogh].[none:genre:nk]' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+    </window>
+    <window class='worksheet' name='Decade vs Unique'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.102ayud09l8vix11e846g1oo8ogh].[none:decade:nk]' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+    </window>
+    <window class='worksheet' maximized='true' name='Sheet 10'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.102ayud09l8vix11e846g1oo8ogh].[none:genre:nk]' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+    </window>
+  </windows>
+</workbook>
