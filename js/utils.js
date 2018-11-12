@@ -184,14 +184,17 @@ function getChordProgression(tonality, chords) {
 
 /**
  * Parses a url list in the form of txt and returns a promise
- * that resolves to an updated version of the parsedSongs object
+ * that resolves to an updated version of the parsedSongs object.
+ * Note that promises will try resolve as fast possible and look from the website.
+ * maxTimeout will distribute the scrapes over some amount of time.
+ * e.g. maxTimeout=60000 will distribute execution of the entire url list over 10 seconds.
  * @param  {String} filePath
  * @param  {Object[]} parsedSongs
  * @param  {Object} info - extra information (e.g. decade)
- * @param  {Integer} maxTimeout - maximum timeout in between queries (ms)
+ * @param  {Integer} maxTimeout
  * @return {Promise} resolves to updated parsedSongs
  */
-function parseUrlList(filePath, parsedSongs, info, maxTimeout=500) {
+function parseUrlList(filePath, parsedSongs, info, maxTimeout=10000) {
   if (debug) console.log('\n\nURL path: ' + filePath);
   let songs = [];
   info = info || {};
@@ -205,73 +208,77 @@ function parseUrlList(filePath, parsedSongs, info, maxTimeout=500) {
     .split('\n')
     .filter(line => line.indexOf('http') === 0); // allows us to put other comments without breaking parser
   urls.forEach((url) => {
-    // set a random timeout the so the scraping doesn't look suspicious
-    let timeout = Math.random()*maxTimeout;
-    setTimeout(() => {}, timeout);
+    (new Promise(resolve => { // set a random timeout the so the scraping doesn't look suspicious
+      let t = Math.random()*maxTimeout;
+      setTimeout(() => {
+        console.log('Random timeout: ' + t);
+        resolve();
+      }, t);
+    })).then(() => { // do the actual scrape
+      let songPromise = new Promise((resolve, reject) => {
+        ugs.get(url, (err, tab) => {
+          if (err) { // should probably reject here, figure out how to handle later
+            if (debug) console.log('ugs get error: ' + url + ', ' + err)
+            resolve(null);
+          }
 
-    let songPromise = new Promise((resolve, reject) => {
-      ugs.get(url, (err, tab) => {
-        if (err) { // should probably reject here, figure out how to handle later
-          if (debug) console.log('ugs get error: ' + url + ', ' + err)
-          resolve(null);
-        }
+          else if (tab === null) { // Sometimes tab is null. Don't know why. Just skip it.
+            if (debug) console.log('tab is null for ' + url);
+            resolve(null);
+          }
 
-        else if (tab === null) { // Sometimes tab is null. Don't know why. Just skip it.
-          if (debug) console.log('tab is null for ' + url);
-          resolve(null);
-        }
+          else if (tab.name in songMap &&
+            songMap[tab.name] !== null &&
+            parsedSongs[songMap[tab.name]].artist === tab.artist) {
+            if (debug) console.log(tab.name + ' previously parsed.  Just updating info.');
 
-        else if (tab.name in songMap &&
-          songMap[tab.name] !== null &&
-          parsedSongs[songMap[tab.name]].artist === tab.artist) {
-          if (debug) console.log(tab.name + ' previously parsed.  Just updating info.');
+            let song = parsedSongs[songMap[tab.name]];
+            if (info.decade !== undefined) song.decade = info.decade;
+            if (info.genre !== undefined) song.genre = info.genre;
+            if (info.tonality !== undefined) song.tonality = info.tonality;
 
-          let song = parsedSongs[songMap[tab.name]];
-          if (info.decade !== undefined) song.decade = info.decade;
-          if (info.genre !== undefined) song.genre = info.genre;
-          if (info.tonality !== undefined) song.tonality = info.tonality;
+            resolve(null);
+          }
 
-          resolve(null);
-        }
+          else if (tab.name in songMap) {
+            if (debug) console.log('Skipping ' + tab.name + '.  Repeated in this url list.');
 
-        else if (tab.name in songMap) {
-          if (debug) console.log('Skipping ' + tab.name + '.  Repeated in this url list.');
+            resolve(null);
+          }
 
-          resolve(null);
-        }
+          else {
+            if (debug) console.log('Parsing ' + tab.name + '...');
 
-        else {
-          if (debug) console.log('Parsing ' + tab.name + '...');
+            let song = {};
 
-          let song = {};
+            // basic song info
+            song.songName = tab.name;
+            song.artist = tab.artist;
+            song.capo = tab.capo;
+            song.tuning = tab.tuning;
 
-          // basic song info
-          song.songName = tab.name;
-          song.artist = tab.artist;
-          song.capo = tab.capo;
-          song.tuning = tab.tuning;
+            song.tonality = info.tonality || tab.tonality;
 
-          song.tonality = tab.tonality;
+            song.rawChords = extractRawChords(tab.content.text);
+            song.simplifiedChords = simplifyChords(song.rawChords);
+            aggregateChords(song);
 
-          song.rawChords = extractRawChords(tab.content.text);
-          song.simplifiedChords = simplifyChords(song.rawChords);
-          aggregateChords(song);
+            let progressions = getChordProgression(song.tonality, song.simplifiedChords);
+            song.simpleProgression = progressions[0];
+            song.traditionalProgression = progressions[1];
 
-          let progressions = getChordProgression(song.tonality, song.simplifiedChords);
-          song.simpleProgression = progressions[0];
-          song.traditionalProgression = progressions[1];
+            // any additional info
+            song.decade = info.decade;
+            song.genre = info.genre;
 
-          // any additional info
-          song.decade = info.decade;
-          song.genre = info.genre;
+            songMap[tab.name] = null; // not sure of index until promises resolve
+            resolve(song);
+          }
 
-          songMap[tab.name] = null; // not sure of index until promises resolve
-          resolve(song);
-        }
-
+        });
       });
+      songs.push(songPromise);
     });
-    songs.push(songPromise);
   });
 
   return Promise.all(songs).then(songs => {

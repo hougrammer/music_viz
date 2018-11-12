@@ -8,6 +8,9 @@
   <link rel="stylesheet" href="css/piano_style.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
   <script src="http://www.verovio.org/javascript/latest/verovio-toolkit-light.js" type="text/javascript"></script>
+<!--   <script src="https://cdn.jsdelivr.net/npm/vega@4.3.0"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-lite@3.0.0-rc8"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-embed@3.20.0"></script> -->
   <script src="js/piano.js"></script>
   <script src="js/renderPiano.js"></script>
 </head>
@@ -15,38 +18,54 @@
 <body>
   <div class="container">
     <h1>An Exploration of Trends in Music</h1>
-    <p>Welcome to our music exploration!  We"re hoping to show you some interesting trends in songs and sprinkle in some music theory along the way.  Don"t worry if you didn"t know that bass was anything but a fish.  We"ll go slow.</p>
-
+    <p>Welcome to our music exploration! We"re hoping to show you some interesting trends in songs and sprinkle in some music theory along the way. Don"t worry if you didn"t know that bass was anything but a fish. We"ll go slow.</p>
     <h2>A Crash Course on Music Theory</h2>
-    <p>Here"s a simple piano keyboard to play around with.  Press some keys and see how notes are represented on the musical scale.  Notice that the notes go up in a predicatable manner as you move left to right on the keyboard.  The weird looking symbols at the top left are called clefs and the fractions control the duration of the note if we were to actually play the notes.  For our purposes, we can ignore them.</p>
+    <p>Here"s a simple piano keyboard to play around with. Press some keys and see how notes are represented on the musical scale. Notice that the notes go up in a predicatable manner as you move left to right on the keyboard. The weird looking symbols at the top left are called clefs and the fractions control the duration of the note if we were to actually play the notes. For our purposes, we can ignore them.</p>
     <div id="keyboardContainer"></div>
     <div id="svgNotesContainer"></div>
     <button id="backspaceButton" class="btn">Delete Note</button>
-
     <h3>Note Names</h3>
-    <p>Each of the notes on the keyboard has a name.  The white keys are simply called A, B, C, D, E, F, and G.  There is no H.  After G, we start at A again.  Here is picture of the labeled keyboard.</p>
+    <p>Each of the notes on the keyboard has a name. The white keys are simply called A, B, C, D, E, F, and G. There is no H. After G, we start at A again. Here is picture of the labeled keyboard.</p>
     <img src="img/piano.png">
-    <p>What about the symbols on the black keys?  The "b" is called a flat and the "#" is called a sharp.  You can think of these as modifiers to the natural notes (the white keys).  Flats bring pitch of a note a little bit down; sharps bring them a little bit up.  Moreover, for white keys that have black keys in between them, the black key is half way in between the two white keys and has two names.  E.g. C# and Db are the same note!  As an aside for programmers, you know how C++ is a joke in that it is C + 1?  C# is also a joke in that it is a step above C.  Well, technically, it's half a step above C, but we'll get to that.</p>
-
+    <p>What about the symbols on the black keys? The "b" is called a flat and the "#" is called a sharp. You can think of these as modifiers to the natural notes (the white keys). Flats bring pitch of a note a little bit down; sharps bring them a little bit up. Moreover, for white keys that have black keys in between them, the black key is half way in between the two white keys and has two names. E.g. C# and Db are the same note! As an aside for programmers, you know how C++ is a joke in that it is C + 1? C# is also a joke in that it is a step above C. Well, technically, it's half a step above C, but we'll get to that.</p>
     <h3>Chords</h3>
-    <p>Go to this <a href="https://www.onlinepianist.com/virtual-piano">website</a> and try playing some notes (be sure to have your sound on).  You can click the keys with your mouse or use your keyboard.  The astute reader will soon realize that the latter option allows us to play multiple notes at once.  Now we're in the realm of chords!  These are simply groups of notes that are played simultaneously together.  Not all groups of notes sound good together.  The vast majority of them don't, but try going back to that website and try pressing these keys together: </p>
+    <p>Go to this <a href="https://www.onlinepianist.com/virtual-piano">website</a> and try playing some notes (be sure to have your sound on). You can click the keys with your mouse or use your keyboard. The astute reader will soon realize that the latter option allows us to play multiple notes at once. Now we're in the realm of chords! These are simply groups of notes that are played simultaneously together. Not all groups of notes sound good together. The vast majority of them don't, but try going back to that website and try pressing these keys together: </p>
     <ul>
       <li>Q-E-T</li>
       <li>Q-3-T</li>
     </ul>
-    <p>The first chord consisted of the notes C-E-G and is called C major.  The second chord differs by only one note; it's C-Eb-G (remember the "b" means flat) and is called C minor.  If you're like most people the major chord sounds happy or optimistic to you; the minor chord, sad or pessimistic.  It's amazing how music can evoke different emotions with tiny differences.</p>
-
+    <p>The first chord consisted of the notes C-E-G and is called C major. The second chord differs by only one note; it's C-Eb-G (remember the "b" means flat) and is called C minor. If you're like most people the major chord sounds happy or optimistic to you; the minor chord, sad or pessimistic. It's amazing how music can evoke different emotions with tiny differences.</p>
     <h3>Chord Progressions</h3>
-    <p>We're almost to the point where we can actually play some songs!  A "chord progression" is just a fancy way of saying a sequence of chords.  Try going back to the keyboard and try pressing these keys in order:</p>
+    <p>We're almost to the point where we can actually play some songs! A "chord progression" is just a fancy way of saying a sequence of chords. Try going back to the keyboard and try pressing these keys in order:</p>
     <ol>
       <li>Q-E-T (C major)</li>
       <li>T-U-I (G major)</li>
       <li>Y-I-P (A minor)</li>
       <li>R-Y-I (F major)</li>
     </ol>
-    <p>Once muscle memory kicks in, try playing those 4 chords in a loop.  If you listen to any pop music things might start sounding familiar.  Or maybe try playing Am-F-C-G and see if that sounds like anything you know.  These four chords are the ones in a very popular chord progression called "I-V-vi-IV" in the key of C.  Those are just roman numerals corresponding to 1-5-6-4.  If you go back to keyboard and mentally assign the note C to the number 1, you should find that G is number 5 (4 white keys away from C), A is number 6 (5 white keys away from C), and F is number 4 (3 white keys from C).  This specific sequence of chords is extremely popular.  Check out this <a href="https://www.youtube.com/watch?v=oOlDewpCfZQ">video</a>.  Congratulations, you now know how to play piano!</p>
-  </div>
+    <p>Once muscle memory kicks in, try playing those 4 chords in a loop. If you listen to any pop music things might start sounding familiar. Or maybe try playing Am-F-C-G and see if that sounds like anything you know. These four chords are the ones in a very popular chord progression called "I-V-vi-IV" in the key of C. Those are just roman numerals corresponding to 1-5-6-4. If you go back to keyboard and mentally assign the note C to the number 1, you should find that G is number 5 (4 white keys away from C), A is number 6 (5 white keys away from C), and F is number 4 (3 white keys from C). This specific sequence of chords is extremely popular. Check out this <a href="https://www.youtube.com/watch?v=oOlDewpCfZQ">video</a>.</p>
+    <h3>Keys</h3>
+    <p>Remember that the C major chord has the notes C-E-G.  Looking at the piano keyboard, you can see that you're pressing all white keys and there is a skipped white key between each one that you're pressing.  In fact all the chords we've played so far follow that patter (G major is G-B-D, A minor is A-C-E, F major is F-A-C).  Now, let's say we now want to play the I-V-vi-IV progression, but starting with D major as the first chord.  We go to the keyboard and press D-F-A, following the same pattern as before (go ahead and try this), but something sounds off.  This chord sounds more like a minor chord than a major one...and that's because it is.  The D major chord actually consists of D-F#-A!</p>
+    <p>To see why, we need to talk about the concept of a <a href="https://en.wikipedia.org/wiki/Key_signature">key</a>.  The key of a song determines which of the notes get flats or sharps.  In the key of C, none of the notes get sharps or flats.  In the key of D, every F that you play should actually be an F# and every C that you play should actually be a C#.  The reason for this is starting to get pretty technical, but here is a hand-wavey explanation:</p>
+    <ol>
+      <li>Take a look at the note C</li>
+      <li>Count the number of notes (both white and black) between C and E.  Explicity, between C and E are C#, D, and D#.</li>
+      <li>Take a look at the note D</li>
+      <li>Count the number of notes (both white and black) between D and F#.  Explicity, between D and F# are D#, E, and F.</li>
+    </ol>
+    <p>The number of notes between first and second note of a major chord has to be three.  Since there is no black note between E and F, we end up having to move to F# for the second note of D major.  I won't go into much more detail, but it suffices to say that the I-V-vi-IV chords in each key are different but all produce the same "feel" in the music when played.  Keys, like chords, can be both major or minor.  In addition, major keys sound happy and minor keys sound sad.</p>
+    <h2>Back to the Data</h2>
+    <p>Now that you're a piano virtuoso, it's time to change instruments and go to guitar.  The majorty of the data on this website is from a website called <a href="https://www.ultimate-guitar.com/">ultimate-guitar</a>.  Guitar is a very popular instrument in modern music and chord transcriptions of many songs are available, even if the songs aren't actually played on guitar in real life.  Note however, that the information on ultimate-guitar is crowdsourced from its users.  The only checks for accuracy and veracity are done by the community itself.  The data on this website uses the most popular submissions to ultimate-guitar, meaning they should be decent in quality, but there is still no guarantee.</p>
+    <h3>Revisiting Keys</h3>
+    <p>Before exploring the chord structures of songs, let's take a look at the most popular keys on the website: </p>
+    <!-- keyCounts Bar Chart-->
+    <div class='tableauPlaceholder' id='viz1541977466965' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ke&#47;KeyCounts&#47;Dashboard1&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='KeyCounts&#47;Dashboard1' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ke&#47;KeyCounts&#47;Dashboard1&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1541977466965');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
 
+    <p>Notice I'm not the only one who likes C major.  The key's simplicity makes a popular choice for music in general.  C major has no sharps or flats in its key signature, while F# major (the least popular key on the website) has 6 sharps.  Remember that there are only 7 named notes so having 6 sharps is quite a lot!  The key with 7 sharps is C# major and that one is the second least popular on the website.</p>
+    <p>A minor is the most the popular minor key.  Without delving back into music theory, I'll just say that C major and A minor both have zero sharps or flats in their key signature.  Put another way, A minor is approximately equivalent in simplicity to C major.  You can read more about parallel majors/minors <a href="https://en.wikipedia.org/wiki/Parallel_key">here</a>.</p>
+    <h2>Song Complexity</h2>
+
+  </div>
 </body>
 
 </html>
