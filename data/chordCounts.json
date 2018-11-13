@@ -1,0 +1,61 @@
+[
+{
+    "note": "A",
+    "major": 24911,
+    "minor": 21464
+},
+{
+    "note": "A#/Bb",
+    "major": 5353,
+    "minor": 705
+},
+{
+    "note": "B",
+    "major": 7637,
+    "minor": 8876
+},
+{
+    "note": "C",
+    "major": 42665,
+    "minor": 1545
+},
+{
+    "note": "C#/Db",
+    "major": 1706,
+    "minor": 3046
+},
+{
+    "note": "D",
+    "major": 38708,
+    "minor": 7733
+},
+{
+    "note": "D#/Eb",
+    "major": 2140,
+    "minor": 649
+},
+{
+    "note": "E",
+    "major": 16325,
+    "minor": 20819
+},
+{
+    "note": "F",
+    "major": 21382,
+    "minor": 1072
+},
+{
+    "note": "F#/Gb",
+    "major": 3229,
+    "minor": 4199
+},
+{
+    "note": "G",
+    "major": 50292,
+    "minor": 2388
+},
+{
+    "note": "G#/Ab",
+    "major": 2075,
+    "minor": 1311
+}]

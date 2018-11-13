@@ -194,7 +194,7 @@ function getChordProgression(tonality, chords) {
  * @param  {Integer} maxTimeout
  * @return {Promise} resolves to updated parsedSongs
  */
-function parseUrlList(filePath, parsedSongs, info, maxTimeout=10000) {
+function parseUrlList(filePath, parsedSongs, info, maxTimeout=60000) {
   if (debug) console.log('\n\nURL path: ' + filePath);
   let songs = [];
   info = info || {};
@@ -257,7 +257,7 @@ function parseUrlList(filePath, parsedSongs, info, maxTimeout=10000) {
             song.capo = tab.capo;
             song.tuning = tab.tuning;
 
-            song.tonality = info.tonality || tab.tonality;
+            song.tonality = info.tonality !== undefined ? info.tonality : tab.tonality;
 
             song.rawChords = extractRawChords(tab.content.text);
             song.simplifiedChords = simplifyChords(song.rawChords);
@@ -288,11 +288,61 @@ function parseUrlList(filePath, parsedSongs, info, maxTimeout=10000) {
 
 }
 
+/**
+ * Returns capitalized string
+ * @param  {String} string 
+ * @return {String} capitalized string
+ */
+function capitalize(string) {
+  return string.charAt(0).toUpperCase() + string.slice(1);
+}
+
+/**
+ * Updates info of songs based url paths only.  
+ * Makes no requests to ultimate-guitar.
+ * @param  {Object[]} parsedSongs
+ * @param  {String} urlPath     
+ * @param  {Object} info, e.g. {tonality: 'A'}
+ * @return {Object[]} updated parsedSongs
+ */
+function updateInfo(parsedSongs, urlPath, info) {
+  let songMap = {};
+  parsedSongs.forEach((song, index) => {
+    songMap[song.songName] = index;
+  });
+
+  let urls = fs.readFileSync(urlPath, 'utf-8').split('\n');
+
+  urls.forEach((line) => {
+    let l = line.split('/');
+    if (l.length === 6) {
+      let artist = l[4].split('_');
+      artist = artist.map(capitalize).join(' ');
+      let name = l[5].split('_');
+      name = name.slice(0, name.length - 2).map(capitalize).join(' ');
+
+      if (name in songMap && parsedSongs[songMap[name]].artist === artist) {
+        let song = parsedSongs[songMap[name]];
+        if (info.decade !== undefined) song.decade = info.decade;
+        if (info.genre !== undefined) song.genre = info.genre;
+        if (info.tonality !== undefined) {
+          song.tonality = info.tonality;
+          let progressions = getChordProgression(song.tonality, song.simplifiedChords);
+          song.simpleProgression = progressions[0];
+          song.traditionalProgression = progressions[1];
+        }
+      }
+    }
+  });
+  return parsedSongs;
+}
+
 module.exports = {
   noteToIndex,
   extractRawChords,
   simplifyChords,
   getChordProgression,
   writeUrlList,
-  parseUrlList
+  parseUrlList,
+  updateInfo
 };
