@@ -33,7 +33,7 @@ function extractRawChords(text) {
 
 /**
  * Simplifies raw chords.  For our purposes everything is a major chord
- * except for minor and diminished.  We're ignoring 7 chords and stuff like that.
+ * except for minor and diminished.  We're ignoring 7th chords and stuff like that.
  * @param  {String[]} chords - array of raw chords
  * @return {String[]} array of simplified chords
  */
