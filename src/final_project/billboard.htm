@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://bootswatch.com/4/flatly/bootstrap.min.css" >
+
+    <title>Billboard Hot 100</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/vega@4.3.0/build/vega.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@3.0.0-rc8/build/vega-lite.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@3.20.0/build/vega-embed.js"></script>
+    <style media="screen">
+            /* Add space between Vega-Embed links  */
+            .vega-actions a {
+              margin-right: 5px;
+            }
+          </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <a class="navbar-brand" href="">W209 - Final Project | Fall 2018</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+    </nav>
+
+        <div class="container">
+            <div class="row">
+                <img src="./assets/images/bh100.png" />
+            </div>
+        </div>
+        <div id="vis"></div>
+        <div id="vis2"></div>
+        <div id="vis3"></div>
+        <div id="vis4"></div>
+        <div id="vis5"></div>
+
+
+
+
+
+
+
+        <script>
+
+
+                var genres = ['rap', 'country', 'rock', 'pop']
+
+                // Assign the specification to a local variable vlSpec.
+                /*var vlSpec = {
+                  "$schema": "https://vega.github.io/schema/vega-lite/v3.json",
+                  "data": { "url": "./datasets/billboard_2000_2018_spotify.csv"             },
+                  "mark": "bar",
+                  "encoding": {
+                    "y": {"field": "a", "type": "nominal"},
+                    "x": {
+                      "aggregate": "average", "field": "b", "type": "quantitative",
+                      "axis": {
+                        "title": "Average of b"
+                      }
+                    }
+                  }
+                };
+                */    
+                
+                // Assign the specification to a local variable vlSpec.
+                var vlSpec = {
+                    "$schema": "https://vega.github.io/schema/vega-lite/v3.json",
+                    "data": { "url": "./datasets/billboard_2000_2018_spotify.csv" },
+                    "width" : 500, "height" : 300,
+                    "mark": "area",
+                    "transform": [{"filter": { "field": "broad_genre", "oneOf" : ["rap","country", "unknown", "r&b", "rock", "edm"] }}],
+                    "encoding": 
+                    {
+                        "x": {
+                            "timeUnit": "yearmonth", "field": "year", "type": "temporal"
+                            },
+                          "y": {
+                            "field" : "weeks",
+                            "aggregate": "sum",
+                            "type": "quantitative"
+                          },
+                          "color": {
+                            "field": "broad_genre",
+                            "type": "nominal",
+                            "scale": {"scheme": "category20b"}
+                          }                    
+                    }
+                  };
+  
+
+
+                // Assign the specification to a local variable vlSpec.
+                var vlSpec2 = {
+                    "$schema": "https://vega.github.io/schema/vega-lite/v3.json",
+                    "data": { "url": "./datasets/billboard_2000_2018_spotify.csv" },
+                    "width" : 500, "height" : 300,
+                    "mark": "point",
+                    "encoding": 
+                    {
+                        "x": {
+                            "timeUnit": "yearmonth", "field": "year", "type": "temporal"
+                            },
+                          "y": {
+                            "field" : "title",
+                            "aggregate": "count",
+                            "type": "nominal"
+                          }                 
+                    }
+                  };
+
+
+
+                                  // Assign the specification to a local variable vlSpec.
+                var vlSpec3 = {
+                    "$schema": "https://vega.github.io/schema/vega-lite/v3.json",
+                    "data": { "url": "./datasets/billboard_2000_2018_spotify.csv" },
+                    "selection": {
+                        "genre": {
+                          "type": "single",
+                          "fields": ["broad_genre"],
+                          "bind": {"input": "select", "name": "Genre", "options": genres}
+                        }
+                    },
+                    "transform": [{"filter": { "selection": "genre"}}],
+                    "width" : 300, "height" : 200,
+                    "mark": "line",
+                    "encoding": 
+                    {
+                        "x": {
+                            "timeUnit": "year", "field": "year", "type": "temporal"
+                            },
+                          "y": {
+                            "field" : "weeks",
+                            "aggregate": "sum",
+                            "type": "quantitative"
+                          },
+                          "color": {
+                            "field": "broad_genre",
+                            "type": "nominal",
+                            "scale": {"scheme": "category20b"}
+                          }                    
+                    
+                    }
+                  };
+
+
+var vlSpec4 =     {
+
+        "$schema": "https://vega.github.io/schema/vega-lite/v3.json",
+        "data": { "url": "./datasets/billboard_2000_2018_spotify.csv" },
+        "transform": [{"filter": { "selection": "genre"}}],
+        "hconcat": [{
+        "mark": "circle",
+        "selection": {
+            "genre": {
+              "type": "single",
+              "fields": ["broad_genre"],
+              "bind": {"input": "select", "name": "Genre", "options": genres}
+            }
+        },
+        "encoding": {
+          "y": {
+            "field": "year",
+            "type": "ordinal",
+            "timeUnit": "year"
+          },
+          "x": {
+            "bin": {"step" : 1.75},
+            "field": "loudness",
+            "type": "quantitative"
+          },
+          "size": {
+            "field": "weeks",
+            "type": "quantitative",
+            "aggregate": "sum"
+          }
+        }
+      },
+      {
+        "mark": "circle",
+        "encoding": {
+          "y": {
+            "field": "year",
+            "type": "ordinal",
+            "timeUnit": "year"
+          },
+          "x": {
+            "bin": {"step" : 0.05},
+            "field": "liveness",
+            "type": "quantitative"
+          },
+          "size": {
+            "field": "weeks",
+            "type": "quantitative",
+            "aggregate": "sum"
+          }
+        }
+      }]
+    }
+
+
+
+
+                // Embed the visualization in the container with id `vis`
+                vegaEmbed("#vis", vlSpec);
+                vegaEmbed("#vis2", vlSpec2);
+                vegaEmbed("#vis3", vlSpec3);
+                vegaEmbed("#vis4", vlSpec4);
+                </script>    
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </body>
+</html>
