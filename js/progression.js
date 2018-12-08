@@ -19,7 +19,7 @@ function plot(data, height, width) {
       .attr('class', 'root')
       .attr('stroke', 'black')
       .attr('fill', colorScale(maxPercent))
-      .attr('r', 20)
+      .attr('r', 30)
       .transition()
       .duration(1000)
       .attr('cx', xScale(.5))
@@ -44,6 +44,8 @@ function plot(data, height, width) {
       .attr('stroke', 'black')
       .attr('fill', d => colorScale(d[1]))
       .attr('r', 20)
+      .attr('cx', xScale(.5))
+      .attr('cy', yScale(.1))
       .on('mouseover', onCircleMouseOver)
       .on('mousemove', onCircleMouseMove)
       .on('mouseout', onCircleMouseOut)
@@ -53,15 +55,16 @@ function plot(data, height, width) {
       .attr('cx', d => circleX[d[0]])
       .attr('cy', d => d[0].indexOf('#') === -1 ? keyboardY + whiteHeight - 30: keyboardY + blackHeight - 30);
 
-    svg.selectAll('text.leaf')
+    let text = svg.selectAll('text.leaf')
       .data(percents)
       .enter()
       .append('text')
       .attr('class', 'leaf')
-      .text(d => d[0])
       .style('text-anchor', 'middle')
       .style('font-size', 10)
-      .style('fill', d => colorScale(maxPercent - d[1]))
+      .style('fill', d => d[1] > .5*maxPercent ? 'white': 'black')
+      .attr('x', xScale(.5))
+      .attr('y', yScale(.1))
       .on('mouseover', onCircleMouseOver)
       .on('mousemove', onCircleMouseMove)
       .on('mouseout', onCircleMouseOut)
@@ -70,6 +73,24 @@ function plot(data, height, width) {
       .duration(1000)
       .attr('x', d => circleX[d[0]])
       .attr('y', d => d[0].indexOf('#') === -1 ? keyboardY + whiteHeight - 30: keyboardY + blackHeight - 30);
+
+
+    text.each(function(d) {
+      let t = d[0].split(' ');
+      let that = d3.select(this);
+      if (t.length === 2) {
+        if (t[0].length === 1) {
+          that.append('tspan').text(t[0]).attr('dx', 5).attr('text-anchor', 'middle');
+          that.append('tspan').text(t[1]).attr('dx', -15).attr('dy', 10).attr('text-anchor', 'middle');
+        } 
+        else {
+          that.append('tspan').text(t[0]).attr('dx', 0).attr('text-anchor', 'middle');
+          that.append('tspan').text(t[1]).attr('dx', -25).attr('dy', 10).attr('text-anchor', 'middle');
+        }
+      }
+      else
+        that.text(d[0]);
+    });
       
   };
   // event handlers
@@ -95,17 +116,37 @@ function plot(data, height, width) {
       .style('left', (event.pageX + 15) + 'px');
   };
   var onCircleMouseOut = function() {
-    // d3.select(this).transition()
-    //   .duration(200)
-    //   .attr('r', 20);
-
     tooltip.transition()
       .duration(500)
       .style('visibility', 'hidden');
   };
   var onCircleClick = function(d) {
     tooltip.style('visibility', 'hidden');
-    plotCircles(d[0]);
+    let duration = 250;
+    d3.selectAll('circle.leaf')
+      .transition()
+      .duration(duration)
+      .attr('cy', yScale(2));
+    d3.selectAll('text.leaf')
+      .transition()
+      .duration(duration)
+      .attr('y', yScale(2));
+    d3.select('circle.root')
+      .transition()
+      .duration(duration)
+      .attr('cy', yScale(-1))
+      .transition()
+      .duration(duration)
+      .attr('cy', yScale(.1));
+    d3.select('text.root')
+      .transition()
+      .duration(duration)
+      .attr('y', yScale(-1))
+      .transition()
+      .duration(duration)
+      .text(d[0])
+      .attr('y', yScale(.1))
+      .on('end', () => plotCircles(d[0]));  
   };
 
   // margins, height, and width
