@@ -6,6 +6,7 @@
   <title>Music Exploration</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" href="css/piano_style.css">
+  <link rel="stylesheet" href="css/main.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
   <script src="http://www.verovio.org/javascript/latest/verovio-toolkit-light.js" type="text/javascript"></script>
   <script src="https://d3js.org/d3.v5.min.js"></script>
@@ -16,15 +17,17 @@
   <script src="js/piano.js"></script>
   <script src="js/renderPiano.js"></script>
   <script src="https://d3js.org/d3.v5.min.js"></script>
-  <script src='progression.js'></script>
 </head>
 
 <body>
+<!--   <div class="sidenav">
+    <img src="img/piano.png" alt="">
+  </div> -->
   <div class="container">
     <h1>An Exploration of Trends in Music</h1>
     <p>Welcome to our music exploration! We"re hoping to show you some interesting trends in songs and sprinkle in some music theory along the way. Don"t worry if you didn"t know that bass was anything but a fish. We"ll go slow.</p>
     <h2>A Crash Course on Music Theory</h2>
-    <p>Here"s a simple piano keyboard to play around with. Press some keys and see how notes are represented on the musical scale. Notice that the notes go up in a predicatable manner as you move left to right on the keyboard. The weird looking symbols at the top left are called clefs and the fractions control the duration of the note if we were to actually play the notes. For our purposes, we can ignore them.</p>
+    <p>Here's a simple piano keyboard to play around with. Press some keys and see how notes are represented on the musical scale. Notice that the notes go up in a predicatable manner as you move left to right on the keyboard. The weird looking symbols at the top left are called clefs and the fractions control the duration of the note if we were to actually play the notes. For our purposes, we can ignore them.</p>
     <div id="keyboardContainer"></div>
     <div id="svgNotesContainer"></div>
     <button id="backspaceButton" class="btn">Delete Note</button>
@@ -32,22 +35,42 @@
     <p>Each of the notes on the keyboard has a name. The white keys are simply called A, B, C, D, E, F, and G. There is no H. After G, we start at A again. Here is picture of the labeled keyboard.</p>
     <img src="img/piano.png">
     <p>What about the symbols on the black keys? The "b" is called a flat and the "#" is called a sharp. You can think of these as modifiers to the natural notes (the white keys). Flats bring pitch of a note a little bit down; sharps bring them a little bit up. Moreover, for white keys that have black keys in between them, the black key is half way in between the two white keys and has two names. E.g. C# and Db are the same note! As an aside for programmers, you know how C++ is a joke in that it is C + 1? C# is also a joke in that it is a step above C. Well, technically, it's half a step above C, but we'll get to that.</p>
+
     <h3>Chords</h3>
-    <p>Go to this <a href="https://www.onlinepianist.com/virtual-piano">website</a> and try playing some notes (be sure to have your sound on). You can click the keys with your mouse or use your keyboard. The astute reader will soon realize that the latter option allows us to play multiple notes at once. Now we're in the realm of chords! These are simply groups of notes that are played simultaneously together. Not all groups of notes sound good together. The vast majority of them don't, but try going back to that website and try pressing these keys together: </p>
+    <p>I encourage you to go <a href="https://www.onlinepianist.com/virtual-piano">here</a> and try playing some notes. It is difficult to learn music without hearing it.  You can click the keys with your mouse or use your keyboard. The latter option allows us to play multiple notes at once. Now we're in the realm of chords! These are simply groups of notes that are played simultaneously together. The vast majority of notes don't sound good together, but try going back to that website and try pressing these keys together: </p>
     <ul>
       <li>Q-E-T</li>
       <li>Q-3-T</li>
     </ul>
-    <p>The first chord consisted of the notes C-E-G and is called C major. The second chord differs by only one note; it's C-Eb-G (remember the "b" means flat) and is called C minor. If you're like most people the major chord sounds happy or optimistic to you; the minor chord, sad or pessimistic. It's amazing how music can evoke different emotions with tiny differences.</p>
+    <p>The first chord consisted of the notes C-E-G and is called C major. The second chord differs by only one note; it's C-Eb-G (remember the "b" means flat) and is called C minor. If you're like most people the major chord sounds happy or optimistic to you; the minor chord, sad or pessimistic.  Little changes can make a large difference in the feel of a song.  If you really dislike being redirected to other websites, the visualization below allows you to click a note and see its major or minor chord.</p>
+
+    <div id="chordsViz" style="display: inline-block;"></div>
+    <div style="display: inline-block; vertical-align: top;">
+      <form id="form">
+        <input type="radio" name="stack" class="chordsRadio" value="Major" checked="checked">Major
+        <input type="radio" name="stack" class="chordsRadio" value="Minor">Minor
+      </form>
+      <div>Chord:<br> <span id="chordSpan">C Major</span></div>
+      <div>Notes:<br> <span id="noteSpan">[C, E, G]</span></div>
+    </div>
+    <script src="js/chords.js"></script>
+    <p>Notice how toggling between major and minor changes only the middle note of each chord.  Also, some chords use black notes and some do not.  We'll come back to this in a bit.</p>
+    
     <h3>Chord Progressions</h3>
-    <p>We're almost to the point where we can actually play some songs! A "chord progression" is just a fancy way of saying a sequence of chords. Try going back to the keyboard and try pressing these keys in order:</p>
+    <p>A "chord progression" is just a fancy way of saying a sequence of chords. Try going back to the keyboard and try pressing these keys in order:</p>
     <ol>
       <li>Q-E-T (C major)</li>
       <li>T-U-I (G major)</li>
       <li>Y-I-P (A minor)</li>
       <li>R-Y-I (F major)</li>
     </ol>
-    <p>Once muscle memory kicks in, try playing those 4 chords in a loop. If you listen to any pop music things might start sounding familiar. Or maybe try playing Am-F-C-G and see if that sounds like anything you know. These four chords are the ones in a very popular chord progression called "I-V-vi-IV" in the key of C. Those are just roman numerals corresponding to 1-5-6-4. If you go back to keyboard and mentally assign the note C to the number 1, you should find that G is number 5 (4 white keys away from C), A is number 6 (5 white keys away from C), and F is number 4 (3 white keys from C). This specific sequence of chords is extremely popular. Check out this <a href="https://www.youtube.com/watch?v=oOlDewpCfZQ">video</a>.</p>
+    <p>Once muscle memory kicks in, try playing those 4 chords in a loop. If you listen to any pop music, things might start sounding familiar. Or maybe try playing Am-F-C-G and see if that sounds like anything you know. These four chords are the ones in a very popular chord progression called "I-V-vi-IV" (pronounced "1 5 6 4") in the key of C.  If you go back to keyboard and mentally assign the note C to the number 1, you should find that G is number 5 (4 white keys away from C), A is number 6 (5 white keys away from C), and F is number 4 (3 white keys from C).</p>
+    <p>This specific sequence of chords is extremely popular. Check out this video.</p>
+
+    <iframe id="ytplayer" type="text/html" width="640" height="360"
+  src="https://www.youtube.com/embed/oOlDewpCfZQ?autoplay=0"
+  frameborder="0"></iframe>
+
     <h3>Keys</h3>
     <p>Remember that the C major chord has the notes C-E-G.  Looking at the piano keyboard, you can see that you're pressing all white keys and there is a skipped white key between each one that you're pressing.  In fact all the chords we've played so far follow that patter (G major is G-B-D, A minor is A-C-E, F major is F-A-C).  Now, let's say we now want to play the I-V-vi-IV progression, but starting with D major as the first chord.  We go to the keyboard and press D-F-A, following the same pattern as before (go ahead and try this), but something sounds off.  This chord sounds more like a minor chord than a major one...and that's because it is.  The D major chord actually consists of D-F#-A!</p>
     <p>To see why, we need to talk about the concept of a <a href="https://en.wikipedia.org/wiki/Key_signature">key</a>.  The key of a song determines which of the notes get flats or sharps.  In the key of C, none of the notes get sharps or flats.  In the key of D, every F that you play should actually be an F# and every C that you play should actually be a C#.  The reason for this is starting to get pretty technical, but here is a hand-wavey explanation:</p>
@@ -75,14 +98,30 @@
     <p>Let's start with C major because we're familiar with that.  We see that the most popular are C, G, and D.  F and A minor are also popular (recall that I-V-vi-IV is C-G-Am-F in C major).  If we switch to the key of G, we see even more dominance by the I-V-vi-IV chords.  However, close inspection of these plots actually bring up some questions about the integrity of this dataset.  Put simply some these keys should definitely not have some of the chords that are shown.  If you're more musically inclined, see the below section.</p>
     <h4>Some Analysis for the Musicians and Guitarists</h4>
     <p>We see the prominance of the D major chord in the C major key.  If you're familiar with more music theory than we've talked about so far, you'll know that D minor should be in the key of C not D major.  This leads me to think that many of the songs in this dataset are mislabeled in terms of key.  Indeed, the fact that G-D-Em-C is I-V-vi-IV in the key of G reinforces this belief.  Guitarists will know that perhaps the easiest key(s) to play in are G major and E minor, since I-V-vi-IV consist of all open chords (where as F is usually a barre chord).  Thus, the theory is that people are sticking the CAGED chords into whatever key they feel like.  Also examination of less popular keys, like Db, also show a huge proportion of G chords.  It's hard to believe that so many songs are using out of key chords, providing further evidence that key data may not be reliable from this website.</p>
+
     <h3>Chord Progressions</h3>
     <p>The below visualization shows the probabilities of which chords follow one another.  The top circle shows the first chord and the bottom circles show the probable next chords (with deeper colored circles representing higher probabilities).  You can click on the circles to switch the root chord.</p>
     <div id="progressionPlot"></div>
-    <script src="js/progression.js"></script>
-    <h3>Let's Just Look at Some Songs</h3>
+    <script src='js/progression.js'></script>
+    <p><strong>Insight: </strong>Here is another example of the prevalence of the I-V-vi-IV progression.</p>
+    <ol>
+      <li>Probablility of going from C to G: 35.3%</li>
+      <li>Probablility of going from G to Am: 12.1%</li>
+      <li>Probablility of going from C to G: 24.3%</li>
+      <li>Probablility of going from F to C: 35.6%</li>
+    </ol>
+    <p>Keep in mind that there are 7 chords in each key.  If one were to randomly pick one of the 7 every time, the probability would only be 1/7 or 14.2%.  The transition probability from G to Am is relatively low, but the other ones are much higher than if we just picked at random.</p>
+
+    <h3>Unique Chords</h3>
+    <p>The number of unique chords in a song can be treated as some measure of song variety.  That is, if a song uses a wide variety of chords, it will have a wide variety of sounds.  This is obviously oversimplifying things, as songs can also use things like tempo and dynamics, but the below visualization shows the average number of unique chords by genre and by decade.</p>
+    <div class='tableauPlaceholder' id='viz1544424578833' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Av&#47;AverageUniqueChords&#47;AverageUniqueChordsbyGenreandDecade&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='AverageUniqueChords&#47;AverageUniqueChordsbyGenreandDecade' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Av&#47;AverageUniqueChords&#47;AverageUniqueChordsbyGenreandDecade&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1544424578833');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='1000px';vizElement.style.height='827px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+    <p><strong>Insight: </strong> Metal is the genre with the highest chord variety; electronic, the lowest.  Chord variety has also been decreasing over the last two decades.  This is in line with the sentiment that music is becoming more repetitive over time.</p>
+<!-- Removed unless I can figure out a good way to remake this -->
+<!--     <h3>Let's Just Look at Some Songs</h3>
+
     <p>Regardless of the inaccuracies of the website, ultimate-guitar is a great resource for just finding out how to play a song on guitar.  We scraped about 3000 popular songs.  Here's a dashboard to play around with.  There are zoom controls if you hover over the scatterplot.  You can use this or the filters on the right to help pare down the heatmap into something readable.</p>
-    <!-- Song Dashboard -->
-    <div class='tableauPlaceholder' id='viz1542256260272' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;So&#47;SongDashboard&#47;SongDashboard&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='SongDashboard&#47;SongDashboard' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;So&#47;SongDashboard&#47;SongDashboard&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1542256260272');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+
+    <div class='tableauPlaceholder' id='viz1542256260272' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;So&#47;SongDashboard&#47;SongDashboard&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='SongDashboard&#47;SongDashboard' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;So&#47;SongDashboard&#47;SongDashboard&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1542256260272');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script> -->
   </div>
 </body>
 
