@@ -1,23 +1,9 @@
 var artistTrackAggregateSpec = {
     "$schema": "https://vega.github.io/schema/vega-lite/v3.json",
     "data": { "name": "music-billboard-data" },
-
     "hconcat": [
       {
         "width" : 350, "height" : 200,
-        "selection": {
-          "artists": {
-            "type": "single",
-            "fields": ["artist"],
-            "bind": {"input": "select", "name": "Artist", "options": artists}
-          }
-      },
-
-        "transform": [
-          // {"filter": { "field": "artist", "equal" : "drake"}},
-          {"filter": { "selection": "artists"}},
-          {"sample": 30},
-        ],
             "mark": "bar",
             "encoding": {
                 "y": {
@@ -31,13 +17,15 @@ var artistTrackAggregateSpec = {
                 "axis": {"title": "weeks on chart"}
               }
             },
-            "selection": {"click": {"encodings": ["y"], "type": "multi"}}
+            "selection": {"click": {"encodings": ["y"], "type": "multi"}},
+            "transform": [
+              {"filter": { "selection": "artists"}},
+              {"sample": 30},
+            ]
         },
         {
           "width" : 350, "height" : 200,
           "transform": [
-            {"filter": { "field": "artist", "equal" : "drake"}},
-            {"sample": 30},
             {"filter": {"selection": "click"}}
           ],
           "mark": "circle",
@@ -56,8 +44,15 @@ var artistTrackAggregateSpec = {
               "type": "quantitative",
               "aggregate": "sum"
             }
+          },
+          "selection": {
+            "artists": {
+              "type": "single",
+              "fields": ["artist"],
+              "bind": {"input": "select", "name": "Artists", "options": artists}
+            }
           }
-        }
+        },
     ]
   }
   
