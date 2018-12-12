@@ -15,7 +15,13 @@ var genreBoxAllYearSpec =
           "field": "peak_pos",
           "type": "quantitative",
           "axis": {"title": "peak"}
-        }
+        },
+        "color": {
+            "field": "broad_genre",
+            "type": "nominal",
+            "scale": {"scheme": "category20b"}
+          }                    
+
       }
     },
     {
@@ -30,8 +36,13 @@ var genreBoxAllYearSpec =
           "field": "rank",
           "type": "quantitative",
           "axis": {"title": "rank"}
-        }
-      }
+        },
+        "color": {
+            "field": "broad_genre",
+            "type": "nominal",
+            "scale": {"scheme": "category20b"}
+          }                    
+    }
     }]
 }
 
