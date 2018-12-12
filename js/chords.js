@@ -21,7 +21,7 @@ function plotChordsViz() {
 
     notes.sort((a,b) => a.i - b.i);
     d3.select('#chordSpan').html(notes[0].note + (major ? ' Major' : ' Minor'));
-    d3.select('#noteSpan').html(notes[0].note + ', ' + notes[1].note + ', ' + notes[2].note);
+    d3.select('#noteSpan').html(notes[0].note + '  |  ' + notes[1].note + '  |  ' + notes[2].note);
     
   }
 

@@ -13,7 +13,7 @@ function songScatter(data) {
     let text = '<b>Artist: </b>' + d.artist + '<br>' +
       '<b>Song: </b>' + d.songName + '<br>' +
       (d.genre !== undefined ? '<b>Genre: </b>' + d.genre + '<br>' : '') +
-      (d.decade !== undefined ? '<b>Decade: </b>' + d.decade + 's<br>' : '') +
+      (d.decade !== undefined ? '<b>Decade: </b>' + d.decade + '<br>' : '') +
       '<b>Total Chords: </b>' + d.totalChords + '<br>' +
       '<b>Unique Chords: </b>' + d.uniqueChords;
     tooltip.html(text)
