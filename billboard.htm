@@ -7,7 +7,7 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://bootswatch.com/4/flatly/bootstrap.min.css" >
-    <link rel="stylesheet" href="./css/site.css">
+    <link rel="stylesheet" href="./css/billboard.css">
 
     <title>Billboard Hot 100</title>
     <script src="https://d3js.org/d3.v4.min.js"></script>
@@ -16,11 +16,14 @@
     <script src="https://cdn.jsdelivr.net/npm/vega-embed@3.20.0/build/vega-embed.js"></script>
     <script>
       // hacky - but set some globals
+      var artists = ['drake', 'Drake'];
       var genres = ['rap', 'country', 'rock', 'pop', 'r&b', 'edm', 'unknown'];
+
 
     </script>
     <script src="js/genre_specs.js"></script>
     <script src="js/charteristic_specs.js"></script>
+    <script src="js/artist_specs.js"></script>
     <style media="screen">
             /* Add space between Vega-Embed links  */
             .vega-actions a {
@@ -176,7 +179,15 @@
             <div class="row push-down-lg offset-md-1">
                 <h3>Identity crisis over...</h3>
             </div>
-  
+
+            
+            <div class="row push-down-md">
+                <div class="col-md-9 offset-md-1">
+                    <h5> Ok, so now you are feeling better, or worse, about the trends you can see through genres.  </h5>
+                </div>
+            </div>
+      
+
             <div class="row push-down-md">
                 <div class="col-md-9 offset-md-1">
                     <div id="musicChars1"></div>
@@ -185,11 +196,41 @@
   
         </div>  
 
+        <div class="container">
+            <div class="row push-down-lg offset-md-1">
+                <h3>Copycat</h3>
+            </div>
+
+            <div class="row push-down-md">
+                    <div class="col-md-9 offset-md-1">
+                        <h5>Before we jump into the details we also wanted to discusss the measure we using to determine success. Naturally when discussing charts, the first instinct is to think in terms of a position or rank. As you can see in the chart below, we mapped the average peak position and rank for each genre across in our dataset against the overall averages.</h5>
+                    </div>
+                </div>
+      
 
 
+                <div class="row push-down-md">
+                        <div class="col-md-9 offset-md-1">
+                            <div id="artistChart"></div>
+                        </div>  
+                    </div>
+        
 
+        </div>    
+
+        <div class="container">
+            <div class="row push-down-xl">
+
+            </div>
+        </div>
 
         <script>
+
+
+            d3.csv('./data/artists.csv', function(adata) {
+
+                //artists = adata;
+
                 d3.csv('./data/billboard_2000_2018_spotify.csv', function(data) {
 
                   vegaEmbed("#genreWeeksArea", totalGenreWeeksAreaSpec)
@@ -225,7 +266,16 @@
               });
 
 
-                });
+
+                    vegaEmbed("#artistChart", artistTrackAggregateSpec)
+                    .then(result => {
+                        result.view.insert('music-billboard-data', data).run();
+                        return result;
+                    });
+
+
+                })
+            });
 
                 </script>    
 
