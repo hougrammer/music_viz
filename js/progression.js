@@ -194,6 +194,15 @@ function plot(data, height, width) {
     .style('background', 'rgba(255, 255, 255, .8)')
     .style('font-size', 12);
 
+  // create legend
+  let legend = d3.legendColor()
+    .orient('vertical')
+    .scale(colorScale)
+    .title('Percent');
+  svg.append('g')
+    .call(legend)
+    .attr('transform', 'translate(' + (w + 10) + ',' + 0 + ')')
+
   //create keyboard
   let whiteX = d3.range(0, w, w/7);
   let blackX = [];

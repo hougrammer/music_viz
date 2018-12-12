@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Chords</title>
+</head>
+
+<body>
+  <div id="chordsViz" style="display: inline-block;"></div>
+  <div style="display: inline-block; vertical-align: top;">
+    <form id="form">
+      <input type="radio" name="stack" class="chordsRadio" value="Major" checked="checked">Major
+      <input type="radio" name="stack" class="chordsRadio" value="Minor">Minor
+    </form>
+    <div>Chord:<br> <span id="chordSpan">C Major</span></div>
+    <div>Notes:<br> <span id="noteSpan">[C, E, G]</span></div>
+  </div>
+  <script src="https://d3js.org/d3.v5.min.js"></script>
+  <script src="js/chords.js"></script>
+</body>
+
+</html>
