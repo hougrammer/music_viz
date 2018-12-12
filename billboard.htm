@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://bootswatch.com/4/flatly/bootstrap.min.css" >
+    <link rel="stylesheet" href="./css/site.css">
+
+    <title>Billboard Hot 100</title>
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega@4.3.0/build/vega.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@3.0.0-rc8/build/vega-lite.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@3.20.0/build/vega-embed.js"></script>
+    <script>
+      // hacky - but set some globals
+      var genres = ['rap', 'country', 'rock', 'pop', 'r&b', 'edm', 'unknown'];
+
+    </script>
+    <script src="js/genre_specs.js"></script>
+    <script src="js/charteristic_specs.js"></script>
+    <style media="screen">
+            /* Add space between Vega-Embed links  */
+            .vega-actions a {
+              display: none;
+              margin-right: 5px;
+            }
+
+            .vega-bind-name {
+              font-size: 16pt;
+              padding-right: 40px;
+            }
+
+          </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="./">Mechanics of Music</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+    </nav>
+    <div class="jumbotron">
+        <div class="container push-down-md">
+            <div class="row">
+                <div class="col-md-5">
+                    <h1 class="push-down-lg"><b>Big data, big deal.</b></h1>
+                    <h3 class="push-down-md">How artists and record labels can leverage data to produce their next hit track.</h3>
+                </div>
+                <div class="col-md-6 offset-md-1">
+                  <img class="card-img-top" src="./assets/images/bdm.png" alt="Card image cap">
+              </div>
+            </div>
+            
+          </div>
+        </div>
+
+
+
+      <div class="container">
+
+            <div class="row push-down-lg">
+              <div class="col-md-9 offset-md-1">
+                  <h5>One of the initials hopes that digital music would bring, was a more accurate way for everyone in the food chain to get paid. Though many will argue if that has actually been the case, we all can agree that the music industry is constantly changing. </h5>
+              </div>
+            </div>
+
+            <div class="row push-down-md">
+                <div class="col-md-6 offset-md-1">
+                    <h5>Disregarding the recent spike in vinyl adoption, the way we consume songs has rapidly evolved, with portable devices replacing compact discs and AI informed playlists replacing your significant other’s homemade mix tapes. We won’t tell them that AI is doing a better job at it. </h5>
+                </div>
+                <div class="col-md-3">
+                    <img class="card-img-top" src="./assets/images/timeline2.gif" alt="Music Mediums">
+                </div>
+            </div>
+
+            <div class="row push-down-md">
+              <div class="col-md-9 offset-md-1">
+                  <h5>Independently, something else that’s also revolutionizing the way we handle <b>all</b> business is the incorporation of big data. When you combine it with the media industry, big data is kind of a big deal for music. From an artist’s perspective over the past decade, to who and how one markets and releases music, has significantly evolved in lock step with the industry. </h5>
+              </div>
+            </div>
+    
+            <div class="row push-down-md">
+              <div class="col-md-9 offset-md-1">
+                  <h5>From a logistical or sales perspective, sure, big data can offer a wealth of statistical information for an artist or record label. However, when you have the capabilities to characterize songs and pair it with how well a song tracks with the general public or even better, a particular population, the ability to see trends in musical composition expands rapidly.</h5>
+              </div>
+            </div>
+
+            <div class="row push-down-md">
+                <div class="col-md-2  offset-md-1">
+                    <img class="card-img-top" src="./assets/images/bh100.png" alt="Billboard Top 100">
+                </div>
+                <div class="col-md-7">
+                    <h5>Luckily for us, we were able to get our hands on some data that has those exact characteristics. The folks at Spotify <small>(shhhh, the ones who replaced those homemade mix tapes) </small> have already been thinking about this stuff a little bit. The data we were able to leverage characterizes all the songs that made it onto the Billboard Top 100 from 2000 through 2018. </h5>
+                </div>
+            </div>
+
+            <div class="row push-down-md">
+              <div class="col-md-9 offset-md-1">
+                  <h5>However, instead of using this data to match existing songs with listeners like Spotify, we wanted to flip it over for the music business. How could this data help the industry make better informed decisions around music production and artist growth? Now, it is possible some might consider this selling out. However, if music is your livelihood, and you have the information to help influence how you create your next hit song or what you should be looking for in the next band you sign to your label, wouldn't you want to take a look at it? </h5>
+              </div>
+            </div> 
+        </div>
+
+        <div class="container">
+          <div class="row push-down-lg offset-md-1">
+              <h3>Putting a label on it...</h3>
+          </div>
+          <div class="row push-down-md">
+              <div class="col-md-9 offset-md-1">
+                  <h5>As most know, music genre refers to styles of music. "Rock" is a music genre, as is country, pop, rap and many others. When talking about genre in the music industry, it is helpful to think in terms of top-level genres and sub-genres. In the end, a genre is the key to unlocking avenues for music industry success, so musicians should resist the urge to shrug it off as a meaningless label because it really is an important piece of communicating your music to the masses. For that reason, we are going to bin our data through the classification of top-level genres.</h5>
+              </div>
+          </div>
+          <div class="row push-down-md">
+              <div class="col-md-9 offset-md-1">
+                  <h5>Before we jump into the details we also wanted to discusss the measure we using to determine success. Naturally when discussing charts, the first instinct is to think in terms of a position or rank. As you can see in the chart below, we mapped the average peak position and rank for each genre across in our dataset against the overall averages.</h5>
+              </div>
+          </div>
+          <div class="row push-down-md offset-md-1">
+              <div class="col-md-12">
+                  <div id="genreBoxAllYear"></div>
+              </div>
+          </div>
+          <div class="row push-down-md">
+              <div class="col-md-9 offset-md-1">
+                  <h5>Before we jump into the details we also wanted to discusss the measure we using to determine success. Naturally when discussing charts, the first instinct is to think in terms of a position or rank. As you can see in the chart below, we mapped the average peak position and rank for each genre across in our dataset against the overall averages.</h5>
+              </div>
+          </div>
+          <div class="row push-down-md offset-md-1">
+              <div class="col-md-12">
+                  <div id="genreLinePerYear"></div>
+                </div>
+          </div>
+          <div class="row push-down-md">
+              <div class="col-md-9 offset-md-1">
+                  <h5>What is interesting here, is that no genre really seems to stand out significantly against the averages when you look in terms of position or ranking. 
+                      Everyone would love to sit into the top 25, but there are some things to consider here. When you think about how to measure the strenght of a song against the fluxuations in 
+                      ranking over time, each song will eventually drift down that chart and fall out. Therefore, we felt the best signal to measure is the overall time a song has spent on the actual charts. </h5>
+              </div>
+          </div>
+
+          <div class="row push-down-md">
+              <div class="col-md-9 offset-md-1">
+                  <div id="genreWeeksArea"></div>
+              </div>  
+          </div>
+
+          <div class="row push-down-md">
+              <div class="col-md-9 offset-md-1">
+                  <h5>What is interesting here, is that no genre really seems to stand out significantly against the averages when you look in terms of position or ranking. 
+                      Everyone would love to sit into the top 25, but there are some things to consider here. When you think about how to measure the strenght of a song against the fluxuations in 
+                      ranking over time, each song will eventually drift down that chart and fall out. Therefore, we felt the best signal to measure is the overall time a song has spent on the actual charts. </h5>
+              </div>
+          </div>
+
+ 
+          <div class="row push-down-md">
+              <div class="col-md-9 offset-md-1">
+                  <div id="genreWeeksBubble"></div>
+              </div>  
+          </div>
+
+          <div class="row push-down-md">
+              <div class="col-md-9 offset-md-1">
+                  <h5>Before we jump into the details we also wanted to discusss the measure we using to determine success. Naturally when discussing charts, the first instinct is to think in terms of a position or rank. As you can see in the chart below, we mapped the average peak position and rank for each genre across in our dataset against the overall averages.</h5>
+              </div>
+          </div>
+
+ 
+        </div>
+
+
+        <div class="container">
+            <div class="row push-down-lg offset-md-1">
+                <h3>Identity crisis over...</h3>
+            </div>
+  
+            <div class="row push-down-md">
+                <div class="col-md-9 offset-md-1">
+                    <div id="musicChars1"></div>
+                </div>  
+            </div>
+  
+        </div>  
+
+
+
+
+
+        <script>
+                d3.csv('./data/billboard_2000_2018_spotify.csv', function(data) {
+
+                  vegaEmbed("#genreWeeksArea", totalGenreWeeksAreaSpec)
+                    .then(result => {
+                      result.view.insert('music-billboard-data', data).run();
+                      return result;
+                  });
+                  
+                  vegaEmbed("#genreLinePerYear", genreLinePerYearSpec)
+                    .then(result => {
+                      result.view.insert('music-billboard-data', data).run();
+                      return result;
+                  });
+
+                  vegaEmbed("#genreBoxAllYear", genreBoxAllYearSpec)
+                  .then(result => {
+                    result.view.insert('music-billboard-data', data).run();
+                    return result;
+                });
+
+
+                  vegaEmbed("#musicChars1", musicChars1Spec)
+                  .then(result => {
+                    result.view.insert('music-billboard-data', data).run();
+                    return result;
+                });
+
+
+                vegaEmbed("#genreWeeksBubble", genreWeeksBubbleSpec)
+                .then(result => {
+                  result.view.insert('music-billboard-data', data).run();
+                  return result;
+              });
+
+
+                });
+
+                </script>    
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </body>
+</html>
