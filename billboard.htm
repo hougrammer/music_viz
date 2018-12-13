@@ -140,7 +140,7 @@
           </div>
           <div class="row push-down-md">
               <div class="col-md-9 offset-md-1">
-                  <h5>Before we jump into the details we also wanted to discusss the measure we using to determine success. Naturally when discussing charts, the first instinct is to think in terms of a position or rank. As you can see in the chart below, we mapped the average peak position and rank for each genre across in our dataset against the overall averages.</h5>
+                  <h5>This chart above shows shows most genres sit fairly close with each other if you attempt to average out the peak position or ranking across all the years we have data for. The graphs below allow you to see the trend lines a bit more clearly, which is helpful, but it still doesn’t provide much insight into overall real estate held by a genre on the top 100.  </h5>
               </div>
           </div>
           <div class="row push-down-md offset-md-1">
@@ -150,9 +150,7 @@
           </div>
           <div class="row push-down-md">
               <div class="col-md-9 offset-md-1">
-                  <h5>What is interesting here, is that no genre really seems to stand out significantly against the averages when you look in terms of position or ranking. 
-                      Everyone would love to sit into the top 25, but there are some things to consider here. When you think about how to measure the strenght of a song against the fluxuations in 
-                      ranking over time, each song will eventually drift down that chart and fall out. Therefore, we felt the best signal to measure is the overall time a song has spent on the actual charts. </h5>
+                  <h5>Again, even looking at the  genre trend lines, nothing  really seems to stand out significantly against the averages when you look in terms of position or ranking. Everyone would love to sit into the top 25, but there are some things to consider here. When you think about how to measure the strength of a song against the fluxuations in ranking over time, each song will eventually drift down that chart and fall out. Therefore, we felt a better signal might be to measure the overall time songs have spent on the actual charts and the number of songs from a genre has made the charts.</h5>
               </div>
           </div>
 
@@ -164,9 +162,10 @@
 
           <div class="row push-down-md">
               <div class="col-md-9 offset-md-1">
-                  <h5>What is interesting here, is that no genre really seems to stand out significantly against the averages when you look in terms of position or ranking. 
-                      Everyone would love to sit into the top 25, but there are some things to consider here. When you think about how to measure the strenght of a song against the fluxuations in 
-                      ranking over time, each song will eventually drift down that chart and fall out. Therefore, we felt the best signal to measure is the overall time a song has spent on the actual charts. </h5>
+                  <h5>Looking at the charts above, either weeks spent, or tracks contributed, we start to see some actual separation with the genres. A first glance, you see some different spikes, but, stay with me for a minute. If you look closely, you can see that the trends are pretty much in sync across the years across both data points for each genre, which signals some level of correlation.</h5>
+
+                  <h5>The chart below, helps identify the trends a little more clearly. Country music has been steady eddie over the years, rap is continuing to climb, EDM is on the come up and rock is losing its roll. 
+                        </h5>
               </div>
           </div>
 
@@ -177,13 +176,6 @@
               </div>  
           </div>
 
-          <div class="row push-down-md">
-              <div class="col-md-9 offset-md-1">
-                  <h5>Before we jump into the details we also wanted to discusss the measure we using to determine success. Naturally when discussing charts, the first instinct is to think in terms of a position or rank. As you can see in the chart below, we mapped the average peak position and rank for each genre across in our dataset against the overall averages.</h5>
-              </div>
-          </div>
-
- 
         </div>
 
 
@@ -195,7 +187,11 @@
             
             <div class="row push-down-md">
                 <div class="col-md-9 offset-md-1">
-                    <h5> Ok, so now you are feeling better, or worse, about the trends you can see through genres.  </h5>
+                    <h5> Ok, so now that you are feeling better, or potential worse, after looking at the general trends through genre identification, let’s discuss what the folks at Spotify are betting on. They are hoping that fixed musical genres will fade away. In its new version rolling out to iPhone users, the company has expanded its effort to program for moods and activities rather than merely certain kinds of musical tastes.
+                    </h5>
+                    <h5>
+                    How are they doing that? Through a lot of machine learning done against their music catalog. If you look at their API, you can see some interesting attributes tied to each of the songs. We’ve picked a handful to look at.
+                    </h5>
                 </div>
             </div>
       
@@ -203,31 +199,31 @@
                     <div class="col-md-9 offset-md-1">
                         <div class="row">
                             <div class="col-md-4">
-                                    <div class="card text-white bg-primary mb-3" style="max-width: 20rem;">
+                                    <div class="card text-white bg-primary mb-3" style="max-width: 20rem; min-height:20rem;">
                                             <div class="card-header">Attribute 1</div>
                                             <div class="card-body">
                                               <h4 class="card-title">Energy</h4>
-                                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                              <p class="card-text">Energy is a measure from 0.0 to 1.0 and represents a perceptual measure of intensity and activity. Typically, energetic tracks feel fast, loud, and noisy. For example, death metal has high energy, while a Bach prelude scores low on the scale. </p>
                                             </div>
                                           </div>
                 
                             </div>
                             <div class="col-md-4">
-                                    <div class="card text-white bg-primary mb-3" style="max-width: 20rem;">
+                                    <div class="card text-white bg-primary mb-3" style="max-width: 20rem; min-height:20rem;">
                                             <div class="card-header">Attribute 2</div>
                                             <div class="card-body">
                                               <h4 class="card-title">Tempo</h4>
-                                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                              <p class="card-text">The overall estimated tempo of a track in beats per minute (BPM). In musical terminology, tempo is the speed or pace of a given piece and derives directly from the average beat duration.</p>
                                             </div>
                                           </div>
                 
                             </div>
                             <div class="col-md-4">
-                                    <div class="card text-white bg-primary mb-3" style="max-width: 20rem;">
+                                    <div class="card text-white bg-primary mb-3" style="max-width: 20rem; min-height:20rem;">
                                             <div class="card-header">Attribute 3</div>
                                             <div class="card-body">
                                               <h4 class="card-title">Danceability</h4>
-                                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                              <p class="card-text">Danceability describes how suitable a track is for dancing based on a combination of musical elements including tempo, rhythm stability, beat strength, and overall regularity. A value of 0.0 is least danceable and 1.0 is most danceable.</p>
                                             </div>
                                           </div>
                 
@@ -241,31 +237,31 @@
                         <div class="col-md-9 offset-md-1">
                             <div class="row">
                                 <div class="col-md-4">
-                                        <div class="card text-white bg-primary mb-3" style="max-width: 20rem;">
+                                        <div class="card text-white bg-primary mb-3" style="max-width: 20rem; min-height:20rem;">
                                                 <div class="card-header">Attribute 4</div>
                                                 <div class="card-body">
                                                   <h4 class="card-title">Liveness</h4>
-                                                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                                  <p class="card-text">Detects the presence of an audience in the recording. Higher liveness values represent an increased probability that the track was performed live. A value above 0.8 provides strong likelihood that the track is live. </p>
                                                 </div>
                                               </div>
                     
                                 </div>
                                 <div class="col-md-4">
-                                        <div class="card text-white bg-primary mb-3" style="max-width: 20rem;">
+                                        <div class="card text-white bg-primary mb-3" style="max-width: 20rem; min-height:20rem;">
                                                 <div class="card-header">Attribute 5</div>
                                                 <div class="card-body">
                                                   <h4 class="card-title">Key</h4>
-                                                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                                  <p class="card-text">The estimated overall key of the track. Integers map to pitches using standard <a href="https://en.wikipedia.org/wiki/Pitch_class">Pitch Class notation</a></p>
                                                 </div>
                                               </div>
                     
                                 </div>
                                 <div class="col-md-4">
-                                        <div class="card text-white bg-primary mb-3" style="max-width: 20rem;">
+                                        <div class="card text-white bg-primary mb-3" style="max-width: 20rem; min-height:20rem;">
                                                 <div class="card-header">Attribute 6</div>
                                                 <div class="card-body">
                                                   <h4 class="card-title">Valence</h4>
-                                                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                                  <p class="card-text">A measure from 0.0 to 1.0 describing the musical positiveness conveyed by a track. Tracks with high valence sound more positive (e.g. happy, cheerful, euphoric), while tracks with low valence sound more negative (e.g. sad, angry). </p>
                                                 </div>
                                               </div>
                     
@@ -276,29 +272,33 @@
                     </div>
     
 
-            <div class="row push-down-md">
-                <div class="col-md-9 offset-md-1">
-                    <div id="musicChars1"></div>
-                </div>  
-            </div>
-
-            <div class="row push-down-md">
+            <div class="row push-down-lg">
                     <div class="col-md-9 offset-md-1">
                         <div id="heatMapChar1"></div>
                     </div>  
                 </div>
-    
+
+                <div class="row push-down-md">
+                        <div class="col-md-9 offset-md-1">
+                            <h5>If you play around with the genre selection above, you can see some patterns across the heat maps for each of the attributes. Some are across all genres, some are specific to the genre.  For example, regardless of the genre, it seems people go for tracks lower on the liveness scale. If you look at r&b, you’ll see an energy cluster in the 0.5 to  0.8 range, while rock is in the 0.8 to 1.0. Now take a peak at tempo for edm vs rap. The tempo range is shifted. Personally for me, I see where Spotify wants to go, and that may work fo the general listener, but I don’t want to be listening to rap and shift to country because they data points have some overlap. I believe these are the attributes that make a genre a genre. </h5>
+                        </div>
+                    </div>
+          
 
         </div>  
 
         <div class="container">
             <div class="row push-down-lg offset-md-1">
-                <h3>Copycat</h3>
+                <h3>New form of plagirism?</h3>
             </div>
 
             <div class="row push-down-md">
                     <div class="col-md-9 offset-md-1">
-                        <h5>Before we jump into the details we also wanted to discusss the measure we using to determine success. Naturally when discussing charts, the first instinct is to think in terms of a position or rank. As you can see in the chart below, we mapped the average peak position and rank for each genre across in our dataset against the overall averages.</h5>
+                        <h5>Finally, let’s take those same characteristics and map them out for each artist. What you see below are the top tracks for an artist mapped out against our attribute matrix in a slightly different form.  The matrix below weighs the attribute by the number of weeks on the chart, placed with the peak position on the song. This allows you to see how well these attributes have been leveraged by a particular song or collection of songs for an artist.  
+                        </h5>
+                        <h5>        
+                        Before you start selecting artists, it is worth noting that when all the data is loaded, there are some interesting distributions across the characteristics when you put everyone together. We like to dance, just not when is sounds like other people are around.
+                        </h5>
                     </div>
                 </div>
       
