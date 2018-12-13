@@ -40,8 +40,7 @@ var genreHeatMapSpec =
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v3.json",
   "data": { "name": "music-billboard-data" },
-
-
+  "title" : "Musical attributes by genre aggregated by number of songs",
   "vconcat" : [{
 
     "hconcat" : [{
@@ -59,8 +58,9 @@ var genreHeatMapSpec =
       "height": 200,
       "encoding": {
         "x": {
-          "bin": {"step" : .125},
+          "bin": {"step" : .25},
           "field": "energy",
+          "axis": {"title": "Energy", "minExtent": 20},
           "type": "quantitative"
         },
         "y": {
@@ -92,6 +92,7 @@ var genreHeatMapSpec =
         "x": {
           "bin": {"step" : 25},
           "field": "tempo",
+          "axis": {"title": "Tempo", "minExtent": 20},
           "type": "quantitative"
         },
         "y": {
@@ -121,8 +122,9 @@ var genreHeatMapSpec =
         "height": 200,
         "encoding": {
           "x": {
-            "bin": {"step" : .125},
+            "bin": {"step" : .25},
             "field": "danceability",
+            "axis": {"title": "Danceability", "minExtent": 20},
             "type": "quantitative"
           },
           "y": {
@@ -155,8 +157,9 @@ var genreHeatMapSpec =
     "height": 200,
     "encoding": {
       "x": {
-        "bin": {"step" : .125},
-        "field": "energy",
+        "bin": {"step" : .25},
+        "field": "liveness",
+        "axis": {"title": "Liveness", "minExtent": 20},
         "type": "quantitative"
       },
       "y": {
@@ -186,8 +189,9 @@ var genreHeatMapSpec =
     "height": 200,
     "encoding": {
       "x": {
-        "bin": {"step" : 25},
-        "field": "tempo",
+        "bin": {"step" : 2},
+        "axis": {"title": "Key", "minExtent": 20},
+        "field": "key",
         "type": "quantitative"
       },
       "y": {
@@ -217,8 +221,9 @@ var genreHeatMapSpec =
       "height": 200,
       "encoding": {
         "x": {
-          "bin": {"step" : .125},
-          "field": "danceability",
+          "bin": {"step" : .25},
+          "field": "valence",
+          "axis": {"title": "Valence", "minExtent": 20},
           "type": "quantitative"
         },
         "y": {

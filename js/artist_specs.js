@@ -5,38 +5,43 @@ var artistTrackAggregateSpec = {
     "data": { "name": "music-billboard-data" },
     "vconcat": [
       {
+        "title" : "Artist songs sorted by weeks on the charts",
+        "bounds" : "full",
         "width" : 700, "height" : 300,
             "mark": "bar",
             "encoding": {
                 "y": {
                 "field": "title", 
                 "type": "nominal",
-                "sort": {"field" : "weeks", "op": "sum", "order": "descending"}
+                "sort": {"field" : "weeks", "op": "sum", "order": "descending"},
+                "axis": {"title": null, "minExtent": 50, "maxExtent": 100},
               },
               "x": {
                 "field": "weeks", 
                 "type": "quantitative",
-                "axis": {"title": "weeks on chart"}
+                "scale": {"domain": [0,60]},
+                "axis": {"title": null, "minExtent": 70},
               },
               "color": {
                 "condition": {
                   "selection": "click",
-                  "value": "red"
+                  "value": "#2C3E50"
                 },
-                "value": "grey"
+                "value": "#18BC9C"
               }
             },
             "selection": {"click": {"encodings": ["y"], "type": "multi", "empty": "all"}},
             "transform": [
               {"filter": { "field": "artist", "oneOf" : artists }},
               {"filter": { "selection": "artists"}},
-              {"sample": 30},
+              {"sample": 20},
             ]
         },
         {          
           "hconcat": [
           {
-            "width" : 200, "height" : 150,
+            "title" : "Musical attributes sized by weeks on chart.",
+            "width" : 250, "height" : 200,
             "transform": [
               {"filter": { "field": "artist", "oneOf" : artists }},
               {"filter": { "selection": "artists"}},
@@ -44,16 +49,19 @@ var artistTrackAggregateSpec = {
             ],
             "mark": "circle",
             "encoding": {
+              "color": {"value": "#2C3E50"},
               "y": {
                 "field": "peak_pos",
                 "sort" : "descending",
+                "axis": {"title": "Peak Position"},
                 "type": "quantitative",
                 "scale": {"domain": [0,100]}
               },
               "x": {
-                "bin": {"step" : .5},
+                "bin": {"step" : .25},
                 "field": "energy",
                 "type": "quantitative",
+                "axis": {"title": "Energy", "minExtent": 20},
               },
               "size": {
                 "field": "weeks",
@@ -63,7 +71,7 @@ var artistTrackAggregateSpec = {
             },
           },
           {
-            "width" : 200, "height" : 150,
+            "width" : 250, "height" : 200,
             "transform": [
               {"filter": { "field": "artist", "oneOf" : artists }},
               {"filter": { "selection": "artists"}},
@@ -71,15 +79,18 @@ var artistTrackAggregateSpec = {
             ],
             "mark": "circle",
             "encoding": {
+              "color": {"value": "#2C3E50"},
               "y": {
                 "field": "peak_pos",
                 "sort" : "descending",
+                "axis": {"title": null},
                 "type": "quantitative",
                 "scale": {"domain": [0,100]}
               },
               "x": {
-                "bin": {"step" : .5},
+                "bin": {"step" : 25},
                 "field": "tempo",
+                "axis": {"title": "Tempo", "minExtent": 20},
                 "type": "quantitative",
               },
               "size": {
@@ -90,7 +101,7 @@ var artistTrackAggregateSpec = {
             },
           },  
           {
-          "width" : 200, "height" : 150,
+          "width" : 250, "height" : 200,
           "transform": [
             {"filter": { "field": "artist", "oneOf" : artists }},
             {"filter": { "selection": "artists"}},
@@ -98,16 +109,18 @@ var artistTrackAggregateSpec = {
           ],
           "mark": "circle",
           "encoding": {
+            "color": {"value": "#2C3E50"},
             "y": {
               "field": "peak_pos",
               "sort" : "descending",
               "type": "quantitative",
-              "axis": {"title": "Peak Position"},
+              "axis": {"title": null},
               "scale": {"domain": [0,100]}
             },
             "x": {
-              "bin": {"step" : 5},
-              "field": "loudness",
+              "bin": {"step" : .25},
+              "field": "danceability",
+              "axis": {"title": "Danceability", "minExtent": 20},
               "type": "quantitative",
             },
             "size": {
@@ -130,7 +143,7 @@ var artistTrackAggregateSpec = {
     {          
       "hconcat": [
       {
-        "width" : 200, "height" : 150,
+        "width" : 250, "height" : 200,
         "transform": [
           {"filter": { "field": "artist", "oneOf" : artists }},
           {"filter": { "selection": "artists"}},
@@ -138,16 +151,19 @@ var artistTrackAggregateSpec = {
         ],
         "mark": "circle",
         "encoding": {
+          "color": {"value": "#2C3E50"},
           "y": {
             "field": "peak_pos",
             "sort" : "descending",
             "type": "quantitative",
+            "axis": {"title": "Peak Position"},
             "scale": {"domain": [0,100]}
           },
           "x": {
-            "bin": {"step" : .5},
-            "field": "danceability",
+            "bin": {"step" : .25},
+            "field": "liveness",
             "type": "quantitative",
+            "axis": {"title": "Liveness", "minExtent": 20}
           },
           "size": {
             "field": "weeks",
@@ -157,7 +173,7 @@ var artistTrackAggregateSpec = {
         },
       },
       {
-        "width" : 200, "height" : 150,
+        "width" : 250, "height" : 200,
         "transform": [
           {"filter": { "field": "artist", "oneOf" : artists }},
           {"filter": { "selection": "artists"}},
@@ -165,17 +181,18 @@ var artistTrackAggregateSpec = {
         ],
         "mark": "circle",
         "encoding": {
+          "color": {"value": "#2C3E50"},
           "y": {
             "field": "peak_pos",
             "sort" : "descending",
             "type": "quantitative",
+            "axis": {"title": null},
             "scale": {"domain": [0,100]}
           },
           "x": {
-            "bin": {"step" : .5},
-            "field": "speechiness",
+            "field": "key",
             "type": "quantitative",
-            "axis": {"maxExtent": 5},
+            "axis": {"title": "Key", "minExtent": 20}
           },
           "size": {
             "field": "weeks",
@@ -185,7 +202,7 @@ var artistTrackAggregateSpec = {
         },
       },  
       {
-      "width" : 200, "height" : 150,
+      "width" : 250, "height" : 200,
       "transform": [
         {"filter": { "field": "artist", "oneOf" : artists }},
         {"filter": { "selection": "artists"}},
@@ -193,18 +210,19 @@ var artistTrackAggregateSpec = {
       ],
       "mark": "circle",
       "encoding": {
+        "color": {"value": "#2C3E50"},
         "y": {
           "field": "peak_pos",
           "sort" : "descending",
           "type": "quantitative",
-          "axis": {"title": "Peak Position"},
+          "axis": {"title": null},
           "scale": {"domain": [0,100]}
         },
         "x": {
-          "bin": {"step" : 5},
-          "field": "instrumentalness",
+          "bin": {"step" : .125},
+          "field": "valence",
+          "axis": {"title": "Valence", "minExtent": 20},
           "type": "quantitative",
-          "axis": {"maxExtent": 5},
         },
         "size": {
           "field": "weeks",
@@ -222,95 +240,7 @@ var artistTrackAggregateSpec = {
 
     }
   ]
-  },
-  {          
-    "hconcat": [
-    {
-      "width" : 200, "height" : 150,
-      "transform": [
-        {"filter": { "field": "artist", "oneOf" : artists }},
-        {"filter": { "selection": "artists"}},
-        {"filter": {"selection": "click"}}
-      ],
-      "mark": "circle",
-      "encoding": {
-        "y": {
-          "field": "peak_pos",
-          "sort" : "descending",
-          "type": "quantitative",
-          "scale": {"domain": [0,100]}
-        },
-        "x": {
-          "bin": {"step" : 1},
-          "field": "key",
-          "type": "quantitative",
-        },
-        "size": {
-          "field": "weeks",
-          "type": "quantitative",
-          "aggregate": "sum"
-        }
-      },
-    },
-    {
-      "width" : 200, "height" : 150,
-      "transform": [
-        {"filter": { "field": "artist", "oneOf" : artists }},
-        {"filter": { "selection": "artists"}},
-        {"filter": {"selection": "click"}}
-      ],
-      "mark": "circle",
-      "encoding": {
-        "y": {
-          "field": "peak_pos",
-          "sort" : "descending",
-          "type": "quantitative",
-          "scale": {"domain": [0,100]}
-        },
-        "x": {
-          "bin": {"step" : .5},
-          "field": "valence",
-          "type": "quantitative",
-          "axis": {"maxExtent": 5},
-        },
-        "size": {
-          "field": "weeks",
-          "type": "quantitative",
-          "aggregate": "sum"
-        }
-      },
-    },  
-    {
-    "width" : 200, "height" : 150,
-    "transform": [
-      {"filter": { "field": "artist", "oneOf" : artists }},
-      {"filter": { "selection": "artists"}},
-      {"filter": {"selection": "click"}}
-    ],
-    "mark": "circle",
-    "encoding": {
-      "y": {
-        "field": "peak_pos",
-        "sort" : "descending",
-        "type": "quantitative",
-        "axis": {"title": "Peak Position"},
-        "scale": {"domain": [0,100]}
-      },
-      "x": {
-        "bin": {"step" : 5},
-        "field": "time_signature",
-        "type": "quantitative",
-        "axis": {"maxExtent": 5},
-      },
-      "size": {
-        "field": "weeks",
-        "type": "quantitative",
-        "aggregate": "sum"
-      }
-    }
   }
-]
-}
 ]
 }
   
