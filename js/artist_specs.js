@@ -5,7 +5,7 @@ var artistTrackAggregateSpec = {
     "data": { "name": "music-billboard-data" },
     "vconcat": [
       {
-        "title" : "Artist songs sorted by weeks on the charts",
+        "title" : "Artist songs sorted by weeks on the charts (shift + click to select)",
         "bounds" : "full",
         "width" : 700, "height" : 300,
             "mark": "bar",
