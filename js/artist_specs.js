@@ -19,6 +19,7 @@ var artistTrackAggregateSpec = {
               "x": {
                 "field": "weeks", 
                 "type": "quantitative",
+                "scale": {"domain": [0,60]},
                 "axis": {"title": null, "minExtent": 70},
               },
               "color": {
