@@ -16,7 +16,7 @@
     <script src="https://cdn.jsdelivr.net/npm/vega-embed@3.20.0/build/vega-embed.js"></script>
     <script>
       // hacky - but set some globals
-      var artists = ['drake', 'Drake'];
+      var artists = ['none', 'drake', 'Drake'];
       var genres = ['rap', 'country', 'rock', 'pop', 'r&b', 'edm', 'unknown'];
 
 
@@ -187,13 +187,96 @@
                 </div>
             </div>
       
+            <div class="row push-down-md">
+                    <div class="col-md-9 offset-md-1">
+                        <div class="row">
+                            <div class="col-md-4">
+                                    <div class="card text-white bg-primary mb-3" style="max-width: 20rem;">
+                                            <div class="card-header">Attribute 1</div>
+                                            <div class="card-body">
+                                              <h4 class="card-title">Energy</h4>
+                                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                            </div>
+                                          </div>
+                
+                            </div>
+                            <div class="col-md-4">
+                                    <div class="card text-white bg-primary mb-3" style="max-width: 20rem;">
+                                            <div class="card-header">Attribute 2</div>
+                                            <div class="card-body">
+                                              <h4 class="card-title">Tempo</h4>
+                                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                            </div>
+                                          </div>
+                
+                            </div>
+                            <div class="col-md-4">
+                                    <div class="card text-white bg-primary mb-3" style="max-width: 20rem;">
+                                            <div class="card-header">Attribute 3</div>
+                                            <div class="card-body">
+                                              <h4 class="card-title">Danceability</h4>
+                                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                            </div>
+                                          </div>
+                
+                            </div>
+
+                        </div>
+                    </div>  
+                </div>
+
+                <div class="row push-down-md">
+                        <div class="col-md-9 offset-md-1">
+                            <div class="row">
+                                <div class="col-md-4">
+                                        <div class="card text-white bg-primary mb-3" style="max-width: 20rem;">
+                                                <div class="card-header">Attribute 4</div>
+                                                <div class="card-body">
+                                                  <h4 class="card-title">Instrumentalness</h4>
+                                                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                                </div>
+                                              </div>
+                    
+                                </div>
+                                <div class="col-md-4">
+                                        <div class="card text-white bg-primary mb-3" style="max-width: 20rem;">
+                                                <div class="card-header">Attribute 5</div>
+                                                <div class="card-body">
+                                                  <h4 class="card-title">Key</h4>
+                                                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                                </div>
+                                              </div>
+                    
+                                </div>
+                                <div class="col-md-4">
+                                        <div class="card text-white bg-primary mb-3" style="max-width: 20rem;">
+                                                <div class="card-header">Attribute 6</div>
+                                                <div class="card-body">
+                                                  <h4 class="card-title">Valence</h4>
+                                                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                                </div>
+                                              </div>
+                    
+                                </div>
+    
+                            </div>
+                        </div>  
+                    </div>
+    
 
             <div class="row push-down-md">
                 <div class="col-md-9 offset-md-1">
                     <div id="musicChars1"></div>
                 </div>  
             </div>
-  
+
+            <div class="row push-down-md">
+                    <div class="col-md-9 offset-md-1">
+                        <div id="heatMapChar1"></div>
+                    </div>  
+                </div>
+    
+
         </div>  
 
         <div class="container">
@@ -252,11 +335,12 @@
                 });
 
 
-                  vegaEmbed("#musicChars1", musicChars1Spec)
-                  .then(result => {
-                    result.view.insert('music-billboard-data', data).run();
-                    return result;
-                });
+                vegaEmbed("#heatMapChar1", genreHeatMapSpec)
+                .then(result => {
+                  result.view.insert('music-billboard-data', data).run();
+                  return result;
+              });
+
 
 
                 vegaEmbed("#genreWeeksBubble", genreWeeksBubbleSpec)
