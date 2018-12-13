@@ -284,4 +284,4 @@ function songScatter(data) {
   autocomplete(document.getElementById('songAutocomplete'), songs, songAutocomplete);
   autocomplete(document.getElementById('artistAutocomplete'), artists, artistAutocomplete);
 }
-d3.json('/data/parsedSongs.json').then(data => { songScatter(data); });
+d3.json('data/parsedSongs.json').then(data => { songScatter(data); });
