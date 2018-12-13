@@ -1,6 +1,13 @@
-/* global d3 */
+/* global d3 autocomplete*/
 function songScatter(data) {
   var filterByGenre = false;
+
+  function updateCircles() {
+    circles.transition()
+      .duration(200)
+      .attr('r', d => d.filtered ? 0 : 5);
+  }
+
   function onCircleMouseOver(d) {
     d3.select(this).transition()
       .duration(200)
@@ -77,9 +84,7 @@ function songScatter(data) {
       if (filterByGenre) d.filtered = d.genre !== text;
       else d.filtered = d.decade !== text;
     });
-    circles.transition()
-      .duration(200)
-      .attr('r', d => d.filtered ? 0 : 5);
+    updateCircles();
     updateMeans();
 
   }
@@ -87,10 +92,10 @@ function songScatter(data) {
   function resetPoints() {
     data.forEach(d => {d.filtered = false;});
     legend.selectAll('text').attr('font-weight', 'normal');
-    circles.transition()
-      .duration(200)
-      .attr('r', 5);
+    updateCircles();
     updateMeans();
+    document.getElementById('songAutocomplete').value = '';
+    document.getElementById('artistAutocomplete').value = '';
   }
 
   function updateFilter() {
@@ -104,22 +109,45 @@ function songScatter(data) {
     legend.call(legendCall);
     updateMeans();
   }
-    
 
+  function songAutocomplete(song) {
+    data.forEach(d => {
+      d.filtered = d.songName != song;
+    });
+    updateCircles();
+    updateMeans();
+  }
+
+  function artistAutocomplete(artist) {
+    data.forEach(d => {
+      d.filtered = d.artist != artist;
+    });
+    updateCircles();
+    updateMeans();
+  }
+  
+  // preprocess
+  let songs = new Set();
+  let artists = new Set();
   data.forEach(d => {
     if (d.genre === undefined) d.genre = 'Unlisted';
     else if (d.genre === 'RhythmAndBlues') d.genre = 'R&B';
     if (d.decade === undefined) d.decade = 'Unlisted';
     d.filtered = false;
+    songs.add(d.songName);
+    artists.add(d.artist);
   });
+  songs = Array.from(songs).sort();
+  artists = Array.from(artists).sort();
+
   // filter out albums and empty songs
-  let albums = ['Red', 'Harvest Moon', 'Unplugged']
+  let albums = ['Red', 'Harvest Moon', 'Unplugged'];
   data = data.filter(d => albums.indexOf(d.songName) == -1 && d.totalChords);
 
   // margins, height, and width
-  let margin = { top: 50, right: 110, bottom: 100, left: 100 };
+  let margin = { top: 50, right: 110, bottom: 100, left: 50 };
   let height = 600;
-  let width = 1000;
+  let width = 900;
   let h = height - margin.top - margin.bottom;
   let w = width - margin.left - margin.right;
 
@@ -130,8 +158,6 @@ function songScatter(data) {
     .attr('width', width)
     .append('g')
     .attr('transform', 'translate(' + margin.left + ',' + margin.top + ')');
-
-  
 
   // scales
   let xScale = d3.scaleLinear()
@@ -251,8 +277,11 @@ function songScatter(data) {
     .attr('font-weight', 'bold')
     .attr('dy', -10);
 
+  d3.select('#songScatterReset').on('click', resetPoints);
+
   updateMeans();
   updateFilter();
-
+  autocomplete(document.getElementById('songAutocomplete'), songs, songAutocomplete);
+  autocomplete(document.getElementById('artistAutocomplete'), artists, artistAutocomplete);
 }
-d3.json('data/parsedSongs.json').then(data => { songScatter(data); });
+d3.json('/data/parsedSongs.json').then(data => { songScatter(data); });

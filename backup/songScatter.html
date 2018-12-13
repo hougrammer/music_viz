@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <title>Song Scatter</title>
+    <link rel="stylesheet" href="/css/autocomplete.css">
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-legend/2.25.6/d3-legend.min.js"></script>
 </head>
 <body>
   <div id="songScatter" style="display: inline-block;"></div>
@@ -12,9 +15,20 @@
       <input type="radio" name="stack" class="songRadio" value="Decade" checked="checked">Decade<br>
       <input type="radio" name="stack" class="songRadio" value="Genre">Genre
     </form>
+    <p>Search by Song: </p>
+    <form autocomplete="off">
+      <div class="autocomplete" style="width:250px;">
+        <input id="songAutocomplete" type="text" onfocus="this.value=''" placeholder="Song Name">
+      </div>
+    </form>
+    <p>Search by Artist: </p>
+    <form autocomplete="off">
+      <div class="autocomplete" style="width:250px;">
+        <input id="artistAutocomplete" type="text" onfocus="this.value=''" placeholder="Artist">
+      </div>
+    </form>
   </div>
-  <script src="https://d3js.org/d3.v5.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-legend/2.25.6/d3-legend.min.js"></script>
-  <script src="js/songScatter.js"></script>
+  <script src="/js/autocomplete.js"></script>
+  <script src="/js/songScatter.js"></script>
 </body>
 </html>
