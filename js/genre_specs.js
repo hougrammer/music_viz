@@ -3,8 +3,10 @@ var genreBoxAllYearSpec =
   "$schema": "https://vega.github.io/schema/vega-lite/v3.json",
   "description": "A vertical 2D box plot showing median, min, and max in the US population distribution of age groups in 2000.",
   "data": { "name": "music-billboard-data" },
+
   "hconcat": [{
-      "width" : 350, "height" : 200,
+    "transform": [{"filter": { "field": "broad_genre", "oneOf" : genres }} ],
+    "width" : 350, "height" : 200,
       "mark": {
         "type": "boxplot",
         "extent": "min-max"
@@ -14,7 +16,7 @@ var genreBoxAllYearSpec =
         "y": {
           "field": "peak_pos",
           "type": "quantitative",
-          "axis": {"title": "peak"}
+          "axis": {"title": "Peak Position"}
         },
         "color": {
             "field": "broad_genre",
@@ -25,6 +27,7 @@ var genreBoxAllYearSpec =
       }
     },
     {
+      "transform": [{"filter": { "field": "broad_genre", "oneOf" : genres }} ],
       "width" : 350, "height" : 200,
       "mark": {
         "type": "boxplot",
@@ -35,12 +38,13 @@ var genreBoxAllYearSpec =
         "y": {
           "field": "rank",
           "type": "quantitative",
-          "axis": {"title": "rank"}
+          "axis": {"title": "Rank"}
         },
         "color": {
             "field": "broad_genre",
             "type": "nominal",
-            "scale": {"scheme": "category20b"}
+            "scale": {"scheme": "category20b"},
+            "legend": {"title": "Genre        ", }
           }                    
     }
     }]
@@ -83,7 +87,8 @@ var genreLinePerYearSpec = {
           "color": {
             "field": "broad_genre",
             "type": "nominal",
-            "scale": {"scheme": "category20b"}
+            "scale": {"scheme": "category20b"},
+            "legend": {"title": "Genre        ", }
           }                    
     
     }
@@ -106,6 +111,7 @@ var totalGenreWeeksAreaSpec = {
                     "timeUnit": "year", "field": "year", "type": "temporal"
                     },
                     "y": {
+                    "axis" : {"title" : "Distinct Songs"},
                     "field" : "spotify_id",
                     "aggregate": "distinct",
                     "type": "quantitative"
@@ -114,7 +120,8 @@ var totalGenreWeeksAreaSpec = {
                     "field": "broad_genre",
                     "type": "nominal",
                     "scale": {"scheme": "category20b"}
-                    }                    
+                    }
+                                    
             }
         },
         {
@@ -127,14 +134,15 @@ var totalGenreWeeksAreaSpec = {
                     "timeUnit": "year", "field": "year", "type": "temporal"
                     },
                     "y": {
-                    "field" : "weeks",
+                      "axis" : {"title" : "Weeks on Chart"},
+                      "field" : "weeks",
                     "aggregate": "sum",
                     "type": "quantitative"
                     },
                     "color": {
                     "field": "broad_genre",
                     "type": "nominal",
-                    "scale": {"scheme": "category20b"}
+                    "scale": {"scheme": "category20b"},
                     }                    
             }
         }
@@ -238,7 +246,11 @@ var genreWeeksBubbleSpec =
       "type": "ordinal",
       "axis": {"labelAngle": 0}
     },
-    "y": {"field": "broad_genre", "type": "nominal", "axis": {"title": ""}},
+    "y": {
+      "field": "broad_genre", 
+      "type": "nominal", 
+      "axis": {"minExtent": 30}
+    },
     "size": {
       "aggregate": "distinct",
       "field": "spotify_id",
