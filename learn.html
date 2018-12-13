@@ -25,7 +25,7 @@
   </div> -->
   <div class="container">
     <h1>An Exploration of Trends in Music</h1>
-    <p>Welcome to our music exploration!  Our goal is to teach you some things about music theory.  Specifically we're going to go over the basic naming of the notes and how they combine into chords.  Then we will take a look at some data scraped from a guitar music website called <a href="https://www.ultimate-guitar.com/">ultimate-guitar.com</a> to show some trends in chord usage.</p>
+    <p>Welcome to our music exploration!  Our goal is to teach you some things about music theory.  Specifically we're going to go over the basic naming of the notes and how they combine into chords.  Then we will take a look at some data scraped from a guitar music website called <a href="https://www.ultimate-guitar.com/">ultimate-guitar.com</a> to show some trends in chord usage.  For this exploration, our audience is both musicians and people who know nothing about music theory.  For the former group, the first few sections will be very rudimentary, but the data towards the end will be enlightening for both.</p>
 
     <h2>A Crash Course on Music Theory</h2>
     <p>Here's a simple piano keyboard to play around with. Press some keys and see how notes are represented on the musical scale. Notice that the notes go up in a predicatable manner as you move left to right on the keyboard. The weird looking symbols at the top left are called clefs and the fractions control the duration of the note if we were to actually play the notes. For now, let's ignore them.</p>
@@ -75,8 +75,8 @@
     <p>This specific sequence of chords is extremely popular. Check out this video.</p>
 
     <iframe id="ytplayer" type="text/html" width="640" height="360"
-  src="https://www.youtube.com/embed/oOlDewpCfZQ?autoplay=0"
-  frameborder="0"></iframe>
+    src="https://www.youtube.com/embed/oOlDewpCfZQ?autoplay=0"
+    frameborder="0"></iframe>
 
     <h3>Keys</h3>
     <p>The key of a song (not to be confused with keys of a piano) governs which sharps and flats are played.  It is why some of chords in the visualization above had black keys and some did not.  For example, the D major chordhas an F# in the middle instead of an F.  Similary, a song in the <i>key</i> of D major plays generally plays F# every time there is an F note.  There are exceptions but that is the general idea.  More information can be found <a href="https://en.wikipedia.org/wiki/Key_signature">here</a></p>
@@ -132,30 +132,47 @@
     <h3>Unique Chords</h3>
     <p>The number of unique chords in a song can be treated as some measure of song variety.  That is, if a song uses a wide variety of chords, it will have a wide variety of sounds.  This is obviously oversimplifying things, as songs can also use things like tempo and dynamics, but the below visualization shows the average number of unique chords b<div class='tableauPlaceholder' id='viz1544499900984' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Av&#47;AverageUniqueChords&#47;AverageUniqueChordsperSong&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='AverageUniqueChords&#47;AverageUniqueChordsperSong' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Av&#47;AverageUniqueChords&#47;AverageUniqueChordsperSong&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1544499900984');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='1000px';vizElement.style.height='827px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
 
-    <p><strong>Insight 1: </strong>Electronic songs have the least amount of chord variety and metal songs have the most.  The former genre is often associated with repetitiveness and the latter with more musical complexity.</p>
-    <p><strong>Insight 2: </strong>Over the last two decades, chord variety has decreased.  This is commensurate with the sentiment that modern music is more simplistic than older music.</p>
+      <p><strong>Insight 1: </strong>Electronic songs have the least amount of chord variety and metal songs have the most.  The former genre is often associated with repetitiveness and the latter with more musical complexity.</p>
+      <p><strong>Insight 2: </strong>Over the last two decades, chord variety has decreased.  This is commensurate with the sentiment that modern music is more simplistic than older music.</p>
 
-    <h3>Let's Just Look at Some Songs</h3>
+      <h3>Let's Just Look at Some Songs</h3>
 
-    <p>Regardless of the inaccuracies of the website, ultimate-guitar is a great resource for just finding out how to play a song on guitar.  We scraped about 3000 popular songs.  The below plot shows the total chords and number of unique chords in each song.  You can hover over a point to get details.  Click the legend to filter by genre or decade.  Unfortunately, most of the songs we scraped did not list the genre.  Click the plot background to clear the filter.</p>
+      <p>Regardless of the inaccuracies of the website, ultimate-guitar is a great resource for just finding out how to play a song on guitar.  We scraped about 3000 popular songs.  The below plot shows the total chords and number of unique chords in each song.  You can hover over a point to get details.  Click the legend to filter by genre or decade.  Unfortunately, most of the songs we scraped did not list the genre.  Click the plot background or the reset buttonto clear the filter.</p>
 
-    <div id="songScatter" style="display: inline-block;"></div>
-    <div style="display: inline-block; padding-top: 20px; vertical-align: top">
-      <p>Filter By: </p>
-      <form id="form">
-        <input type="radio" name="stack" class="songRadio" value="Decade" checked="checked">Decade<br>
-        <input type="radio" name="stack" class="songRadio" value="Genre">Genre
-      </form>
+      <div id="songScatter" style="display: inline-block;"></div>
+      <div style="display: inline-block; padding-top: 20px; vertical-align: top">
+        <p>Filter By: </p>
+        <form id="form">
+          <input type="radio" name="stack" class="songRadio" value="Decade" checked="checked">Decade<br>
+          <input type="radio" name="stack" class="songRadio" value="Genre">Genre<br>
+        </form>
+        <br>
+        <p>Search by Song: </p>
+        <form autocomplete="off">
+          <div class="autocomplete" style="width:200px;">
+            <input id="songAutocomplete" type="text" onfocus="this.value=''" placeholder="Song Name">
+          </div>
+        </form>
+        <br>
+        <p>Search by Artist: </p>
+        <form autocomplete="off">
+          <div class="autocomplete" style="width:200px;">
+            <input id="artistAutocomplete" type="text" onfocus="this.value=''" placeholder="Artist">
+          </div>
+        </form>
+        <br>
+        <button id="songScatterReset" class="btn">Reset</button>
+      </div>
+      <script src="js/autocomplete.js"></script>
+      <script src="js/songScatter.js"></script>
+
+      <p><strong>Insight 1: </strong>Queen's Bohemian Rhapsody tops the unique chords chart (using 23 of the 24 possible chords in our simplified representation).</p>
+      <p><strong>Insight 2: </strong>The total number of chords per tab increases as we go up in decade.  Thus, our previous conclusion that chord variety is decreasing over time may be offset slightly by the fact that there are more chords.</p>
+      
+
+      <!-- Old super laggy Tableau dashboard -->
+      <!--     <div class='tableauPlaceholder' id='viz1542256260272' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;So&#47;SongDashboard&#47;SongDashboard&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='SongDashboard&#47;SongDashboard' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;So&#47;SongDashboard&#47;SongDashboard&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1542256260272');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script> -->
     </div>
-    <script src="js/songScatter.js"></script>
+  </body>
 
-    <p><strong>Insight 1: </strong>Queen's Bohemian Rhapsody tops the unique chords chart (using 23 of the 24 possible chords in our simplified representation).</p>
-    <p><strong>Insight 2: </strong>The total number of chords per tab increases as we go up in decade.  Thus, our previous conclusion that chord variety is decreasing over time may be offset slightly by the fact that there are more chords.</p>
-    
-
-<!-- Old super laggy Tableau dashboard -->
-<!--     <div class='tableauPlaceholder' id='viz1542256260272' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;So&#47;SongDashboard&#47;SongDashboard&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='SongDashboard&#47;SongDashboard' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;So&#47;SongDashboard&#47;SongDashboard&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1542256260272');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script> -->
-  </div>
-</body>
-
-</html>
+  </html>
