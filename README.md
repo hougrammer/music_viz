@@ -10,7 +10,7 @@
 
 ## Overview
 
-This project is an exploration of music in visual form.  Our hope is that it helps you discover something new about music, whether you're a seasoned musician or a complete newby. It is divided into three main sections:
+This project is an exploration of music in visual form.  It is part of the [W209 summer 2018](http://johnguerra.co/viz/berkeleyFinalProjectsFall2018/) class at UC Berkeley MIDS.  Our hope is that it helps you discover something new about music, whether you're a seasoned musician or a complete newby. It is divided into three main sections:
 
 ## Learn
 In this section, we first teach you some music theory, so that you have know the basics as we move along.  We go over the basics of notes, chords, and keys.  In addition, we explore how chords and keys manifest themselves in guitar tabs, showing how they vary over many songs.
