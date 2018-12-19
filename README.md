@@ -1,7 +1,11 @@
 # Music Visualized
 
 ### Authors
-[David Hou](https://github.com/hougrammer) [Kirby Bloom](https://github.com/esko22) [Ryan Fitzgerald](https://github.com/RYDAJO)
+[David Hou](https://github.com/hougrammer) 
+[Kirby Bloom](https://github.com/esko22) 
+[Ryan Fitzgerald](https://github.com/RYDAJO)
+
+## Overview
 
 This project is an exploration of music in visual form.  Our hope is that it helps you discover something new about music, whether you're a seasoned musician or a complete newby. It is divided into three main sections:
 
