@@ -2,8 +2,11 @@
 
 ### Authors
 [David Hou](https://github.com/hougrammer) 
+
 [Kirby Bloom](https://github.com/esko22) 
+
 [Ryan Fitzgerald](https://github.com/RYDAJO)
+
 
 ## Overview
 
